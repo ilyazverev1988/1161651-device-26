@@ -8,17 +8,17 @@
 
 <body>
   <header>
-    <nav>
+    <nav aria-label="Содержимое сайта">
       <a href="index.html">
-        <img src="img/logo.svg" width="163" height="35" alt="Логотип Девайс">
+        <img src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс">
       </a>
       <p>
         <!--<img src="img/search.svg" width="16" height="16" alt="Поиск по сайту">--><input type="search"
           placeholder='Поиск по сайту'></p>
       <ul>
         <li>
-          <!--<img src="img/user.svg" width="13" height="12" alt="Вход">--><button type="button">Валентин
-            Петухов</button>
+          <!--<img src="img/user.svg" width="13" height="12" alt="Вход">--><a href="">Валентин
+            Петухов</a>
         </li>
         <li><button type="button">Выйти</button></li>
         <li>
@@ -30,9 +30,17 @@
         </li>
         <li><button type="button">Каталог товаров</button>
           <!--<img src="img/plus.svg" width="16" height="16" alt="Плюс">-->
+          <ul aria-label="Каталог товаров">
+            <li><a href="">Виртуальная реальность</a></li>
+            <li><a href="">Моноподы для селфи</a></li>
+            <li><a href="">Экшн-камеры</a></li>
+            <li><a href="">Фитнес-браслеты</a></li>
+            <li><a href="">Умные часы</a></li>
+            <li><a href="">Квадрокоптеры</a></li>
+          </ul>
         </li>
       </ul>
-      <ul>
+      <ul aria-label="Доставка. Гарантия. Контакты">
         <li><a href="">Доставка</a></li>
         <li><a href="">Гарантия</a></li>
         <li><a href="">Контакты</a></li>
@@ -41,7 +49,7 @@
   </header>
   <main>
     <h1>Моноподы для селфи</h1>
-    <div>
+    <div aria-label="Вы сейчас находитесь по адресу:">
       <ul>
         <li><a href="index.html">Главная</a></li>
         <li><a href="">Каталог товаров</a></li>
@@ -50,38 +58,41 @@
     </div>
     <!--Блок который делать не надо-->
     <section>
-      <h2>Настройка выбора</h2>
-      <p>Стоимость</p>
-      <!--Выбор стоимости-->
-      <p>Сортировка:</p>
-      <ul>
-        <li><input type="button" value="По цене"></li>
-        <li><input type="button" value="По типу"></li>
-        <li><input type="button" value="По популярности"></li>
-      </ul>
-      <ul>
-        <li><input type="button" value="По возрастанию"></li>
-        <li><input type="button" value="По убыванию"></li>
-      </ul>
-      <p>Цвет</p>
-      <ul>
-        <li><input type="checkbox">Черный</li>
-        <li><input type="checkbox">Белый</li>
-        <li><input type="checkbox">Синий</li>
-        <li><input type="checkbox">Красный</li>
-        <li><input type="checkbox">Розовый</li>
-      </ul>
-      <p>Bluetooth</p>
-      <ul>
-        <li><input type="radio">Есть</li>
-        <li><input type="radio">Нет</li>
-      </ul>
-      <div>
-        <button type="button" type="submit">Показать</button>
-      </div>
+      <h2>Фильтр</h2>
+      <form action="https://echo.htmlacademy.ru" method="GET">
+        <p>Стоимость</p>
+        <!--Выбор стоимости-->
+        <h3>Цвет</h3>>
+        <input type="checkbox" name="black" id="black" checked>
+        <label for="black">Черный</label>
+        <input type="checkbox" name="white" id="white">
+        <label for="white">Белый</label>
+        <input type="checkbox" name="blue" id="blue" checked>
+        <label for="blue'">Синий</label>
+        <input type="checkbox" name="red" id="red" checked>
+        <label for="red">Красный</label>
+        <input type="checkbox" name="pink" id="pink">
+        <label for="pink">Розовый</label>
+        <h2>Bluetooth</h2>
+        <input type="radio" name="Bluetooth" value="yes" id="yes" checked>
+        <label for="yes">Есть</label>
+        <input type="radio" name="Bluetooth" value="no" id="no">
+        <label for="no">Нет</label>
+        <div>
+          <button type="submit">Показать</button>
+        </div>
+      </form>
     </section>
     <section>
-      <h2>Список селфи-палок</h2>
+      <h2>Сортировка:</h2>
+      <input type="button" value="По цене" aria-label="сортировка по цене">
+      <input type="button" value="По типу" aria-label="сортировка по типу">
+      <input type="button" value="По популярности" aria-label=" сортировка по популярности">
+      <input type="button" value="треугольник картинка" aria-label="сортировка по возрастанию">
+      <input type="button" value="треугольник картинка" aria-label="сортировка по убыванию">
+    </section>
+    <section>
+      <h2 class="visually-hidden">Список селфи-палок</h2>
       <ul>
         <li>
           <img src="img/catalog/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
@@ -108,26 +119,27 @@
           </h3>
         </li>
       </ul>
-      <ul>
-        <li><input type="button" value="Назад"></li>
-        <li><input type="button" value="1"></li>
-        <li><input type="button" value="2"></li>
-        <li><input type="button" value="3"></li>
-        <li><input type="button" value="Вперед"></li>
-      </ul>
+    </section>
+    <section>
+      <h2 class="visually-hidden">Меню перелистывания на следующую страницу товаров</h2>
+      <input type="button" value="Назад">
+      <input type="button" value="1">
+      <input type="button" value="2">
+      <input type="button" value="3">
+      <input type="button" value="Вперед">
     </section>
   </main>
   <footer>
     <nav>
       <a href="index.html">
-        <img src="img/logo.svg" width="163" height="35" alt="Логотип Девайс">
+        <img src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс">
       </a>
-      <ul>
+      <ul aria-label="О нас">
         <li>
           <p>г. Москва, ул. Строителей, 15</p>
         </li>
         <li>
-          <a href="">Тел.: +7 (495) 495-95-95</a>
+          <a href="" aria-label="Вы можете позвонить нам по телефону">Тел.: +7 (495) 495-95-95</a>
         </li>
       </ul>
       <ul>
@@ -145,17 +157,17 @@
         </li>
         <li><button type="button">Каталог товаров</button></li>
       </ul>
-      <ul>
+      <ul aria-label="Доставка. Гарантия. Контакты">
         <li><a href="">Доставка</a></li>
         <li><a href="">Гарантия</a></li>
         <li><a href="">Контакты</a></li>
       </ul>
       <ul>
-        <li><a href=""><img src="img/FB.svg" width="32" height="32" alt="Фейсбук"></a></li>
-        <li><a href=""><img src="img/instagram.svg" width="32" height="32" alt="Инстаграмм"></a></li>
-        <li><a href=""><img src="img/tviter.svg" width="32" height="32" alt="Твитер"></a></li>
+        <li><a href=""><img src="img/FB.svg" width="32" height="32" alt="Наш магазин в Фэйсбуке"></a></li>
+        <li><a href=""><img src="img/instagram.svg" width="32" height="32" alt="Наш магазин в Инстаграмм"></a></li>
+        <li><a href=""><img src="img/tviter.svg" width="32" height="32" alt="Наш магазин в Твитер"></a></li>
         <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.png" width="27" height="35"
-              alt="Логотип Академии"></a></li>
+              alt="Ссылка интенсива «Профессиональный HTML и CSS, уровень 1"></a></li>
       </ul>
     </nav>
   </footer>
