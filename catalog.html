@@ -4,23 +4,25 @@
 <head>
   <meta charset="utf-8">
   <title>Проект: Девайс</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <nav aria-label="Содержимое сайта">
+    <nav class="navigation" aria-label="Содержимое сайта">
       <a href="index.html">
         <img src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс">
       </a>
-      <p>
+      <div class="search">
         <!--<img src="img/search.svg" width="16" height="16" alt="Поиск по сайту">--><input type="search"
-          placeholder='Поиск по сайту'></p>
-      <ul>
+          placeholder="Поиск по сайту" aria-label="Поиск по сайту"></p>
+      </div>
+      <ul class="act">
+        <li><button type="button">Валентин Петухов</button></li>
         <li>
-          <!--<img src="img/user.svg" width="13" height="12" alt="Вход">--><a href="">Валентин
-            Петухов</a>
-        </li>
-        <li><button type="button">Выйти</button></li>
+          <!--<img src="img/user.svg" width="13" height="12" alt="Вход">--><button type="button"
+            class="exit">Выйти</button></li>
         <li>
           <!--<img src="img/compare.svg" width="10" height="10" alt="Сравнить">--><button
             type="button">Сравнить</button>
@@ -28,19 +30,18 @@
         <li>
           <!--<img src="img/cart.svg" width="12" height="12" alt="Корзина">--><button type="button">Корзина</button>
         </li>
-        <li><button type="button">Каталог товаров</button>
-          <!--<img src="img/plus.svg" width="16" height="16" alt="Плюс">-->
-          <ul aria-label="Каталог товаров">
-            <li><a href="">Виртуальная реальность</a></li>
-            <li><a href="">Моноподы для селфи</a></li>
-            <li><a href="">Экшн-камеры</a></li>
-            <li><a href="">Фитнес-браслеты</a></li>
-            <li><a href="">Умные часы</a></li>
-            <li><a href="">Квадрокоптеры</a></li>
-          </ul>
-        </li>
       </ul>
-      <ul aria-label="Доставка. Гарантия. Контакты">
+      <button type="button" class="catalog">Каталог товаров</button>
+      <!--<img src="img/plus.svg" width="16" height="16" alt="Плюс">-->
+      <ul class="catalog-item" aria-label="Каталог товаров">
+        <li><a href="">Виртуальная реальность</a></li>
+        <li><a href="">Моноподы для селфи</a></li>
+        <li><a href="">Экшн-камеры</a></li>
+        <li><a href="">Фитнес-браслеты</a></li>
+        <li><a href="">Умные часы</a></li>
+        <li><a href="">Квадрокоптеры</a></li>
+      </ul>
+      <ul class="catalog">
         <li><a href="">Доставка</a></li>
         <li><a href="">Гарантия</a></li>
         <li><a href="">Контакты</a></li>
@@ -48,21 +49,18 @@
     </nav>
   </header>
   <main>
-    <h1>Моноподы для селфи</h1>
-    <div aria-label="Вы сейчас находитесь по адресу:">
-      <ul>
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="">Каталог товаров</a></li>
-        <li>Моноподы для селфи</li>
-      </ul>
+    <h1 class="monopod">Моноподы для селфи</h1>
+    <div class="adress-catalog" aria-label="Вы сейчас находитесь по адресу:">
+      <p><a href="index.html">Главная</a><span>></span><a href="">Каталог товаров</a><span>></span>Моноподы для
+        селфи</p>
     </div>
     <!--Блок который делать не надо-->
     <section>
       <h2>Фильтр</h2>
-      <form action="https://echo.htmlacademy.ru" method="GET">
+      <form class="filter" action="https://echo.htmlacademy.ru" method="GET">
         <p>Стоимость</p>
         <!--Выбор стоимости-->
-        <h3>Цвет</h3>>
+        <p>Цвет</p>
         <input type="checkbox" name="black" id="black" checked>
         <label for="black">Черный</label>
         <input type="checkbox" name="white" id="white">
@@ -73,7 +71,7 @@
         <label for="red">Красный</label>
         <input type="checkbox" name="pink" id="pink">
         <label for="pink">Розовый</label>
-        <h2>Bluetooth</h2>
+        <p>Bluetooth</p>
         <input type="radio" name="Bluetooth" value="yes" id="yes" checked>
         <label for="yes">Есть</label>
         <input type="radio" name="Bluetooth" value="no" id="no">

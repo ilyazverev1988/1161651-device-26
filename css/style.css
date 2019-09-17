@@ -1,0 +1,343 @@
+/*Глобальные правила*/
+@font-face {
+  font-family: "Gilroy - Extra Bold";
+  src: url("/fonts/Gilroyextrabold.ttf");
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url("/fonts/Gilroylight.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans Light";
+  src: url("/fonts/OpenSans-Light.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-Regular.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+
+}
+
+li {
+  list-style-type: none;
+}
+
+/*index.html*/
+/*Шапка*/
+.navigation {
+  /* width: 1160px;
+  height: 299px;*/
+  background-color: #f0c52e;
+  opacity: 0.5;
+}
+
+.navigation img:hover,
+.navigation img:focus {
+  opacity: 0.6;
+}
+
+.navigation img:active {
+  opacity: 0.3;
+}
+
+div.search {
+  opacity: 0.3;
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  ;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+}
+
+div.search:hover {
+  opacity: 0.6;
+}
+
+div.search:focus {
+  opacity: 1;
+}
+
+ul.act {
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  ;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+}
+
+
+.act button {
+  border: none;
+  background-color: #f0c52e;
+}
+
+ul.catalog,
+button.catalog {
+  color: #000000;
+  font-family: "Gilroy - Extra Bold", sans-serif;
+  ;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  border: none;
+  outline: none;
+  background-color: #f0c52e;
+}
+
+ul.catalog-item {
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  ;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+}
+
+
+.act button:hover,
+.act button:focus,
+.catalog li:hover,
+.catalog li:focus,
+.catalog-item li:hover,
+.catalog-item li:focus,
+button.catalog:hover,
+button.catalog:focus {
+  opacity: 0.6;
+  border: none;
+  outline: none;
+  background-color: #f0c52e;
+}
+
+
+.act button:active,
+.catalog li:active,
+.catalog-item li:active,
+button.catalog:active {
+  opacity: 0.3;
+  border: none;
+  outline: none;
+  background-color: #f0c52e;
+}
+
+/*main сейчас пропускаю часть блоков*/
+/*section о Нас + Контакты*/
+.about h2 {
+  color: #000000;
+  font-family: "Gilroy - Extra Bold", sans-serif;
+  ;
+  font-size: 47px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0.21px;
+}
+
+.about p {
+  color: #464646;
+  font-family: "Open Sans", sans-serif;
+  ;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.about li {
+  color: #000000;
+  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+  list-style-type: circle;
+}
+
+/*.about li::before { //Тут пытался сделать серый circle особо не получилось 
+  /*background-color: #e5e5e5;
+  content: url(/img/slider-button1.svg);
+  padding-right: 30px;
+}*/
+
+.about button {
+  color: #000000;
+  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2.15px;
+  /* width: 220px;
+  height: 8px; //Как сделать желтую полосу не знаю
+  background-color: #f0c52e;*/
+}
+
+/*подвал footer*/
+
+.footer {
+  background-color: #464646;
+}
+
+img.logo {
+  filter: invert(76 %) sepia(92%) saturate(2073%) hue-rotate(359deg) brightness(102%) contrast(104%);
+  /*Все таки нашел как изменить цвет, хоть и не учили нас)*/
+}
+
+img.logo:hover,
+img.logo:focus {
+  opacity: 0.6;
+}
+
+img.logo:active {
+  opacity: 0.3;
+}
+
+ul.adress,
+.adress a {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.act-footer button {
+  opacity: 0.7;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+  border: none;
+  background-color: #464646;
+}
+
+.features-footer a {
+  color: #ffffff;
+  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+}
+
+.act-footer button:hover,
+.act-footer button:focus {
+  border: none;
+  outline: none;
+  opacity: 1;
+  background-color: #464646;
+}
+
+.act-footer button:active {
+  opacity: 0.3;
+  border: none;
+  outline: none;
+  background-color: #464646;
+}
+
+.features-footer a:hover,
+.features-footer a:focus,
+img.html-logo:hover,
+img.html-logo:focus {
+  opacity: 0.6;
+}
+
+.features-footer a:active,
+img.html-logo:active {
+  opacity: 0.3;
+}
+
+.socialnetwork img {
+  opacity: 0.7;
+}
+
+.socialnetwork img:hover,
+.socialnetwork img:focus {
+  opacity: 1;
+}
+
+.socialnetwork img:active {
+  opacity: 0.1;
+}
+
+/*catalog.html*/
+button.exit {
+  opacity: 0.3;
+}
+
+/*main catalog.html тут тоже не все*/
+h1.monopod {
+  color: #000000;
+  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-size: 47px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0.17px;
+}
+
+div.adress-catalog {
+  opacity: 0.3;
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.14px;
+}
+
+.adress-catalog span {
+  margin: 18px;
+  color: black;
+  /*тут не получилось сделать черным >, не знаю почему*/
+}
+
+. .filter p {
+  color: #000000;
+  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+}
+
+.filter label {
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 40px;
+  /* Text style for "Черный , Б" */
+  letter-spacing: 0.14px;
+}
+
+.filter button {
+  color: #000000;
+  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  /* Text style for "Показать" */
+  letter-spacing: 2.15px;
+  border: none;
+  outline: none;
+}

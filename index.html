@@ -4,18 +4,21 @@
 <head>
   <meta charset="utf-8">
   <title>Проект: Девайс</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <nav aria-label="Содержимое сайта">
+    <nav class="navigation" aria-label="Содержимое сайта">
       <a href="index.html">
         <img src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс">
       </a>
-      <p>
+      <div class="search">
         <!--<img src="img/search.svg" width="16" height="16" alt="Поиск по сайту">--><input type="search"
           placeholder="Поиск по сайту" aria-label="Поиск по сайту"></p>
-      <ul>
+      </div>
+      <ul class="act">
         <li>
           <!--<img src="img/user.svg" width="13" height="12" alt="Вход">--><button type="button">Войти</button></li>
         <li>
@@ -25,19 +28,18 @@
         <li>
           <!--<img src="img/cart.svg" width="12" height="12" alt="Корзина">--><button type="button">Корзина</button>
         </li>
-        <li><button type="button">Каталог товаров</button>
-          <!--<img src="img/plus.svg" width="16" height="16" alt="Плюс">-->
-          <ul aria-label="Каталог товаров">
-            <li><a href="">Виртуальная реальность</a></li>
-            <li><a href="">Моноподы для селфи</a></li>
-            <li><a href="">Экшн-камеры</a></li>
-            <li><a href="">Фитнес-браслеты</a></li>
-            <li><a href="">Умные часы</a></li>
-            <li><a href="">Квадрокоптеры</a></li>
-          </ul>
-        </li>
       </ul>
-      <ul aria-label="Доставка. Гарантия. Контакты">
+      <button type="button" class="catalog">Каталог товаров</button>
+      <!--<img src="img/plus.svg" width="16" height="16" alt="Плюс">-->
+      <ul class="catalog-item" aria-label="Каталог товаров">
+        <li><a href="">Виртуальная реальность</a></li>
+        <li><a href="">Моноподы для селфи</a></li>
+        <li><a href="">Экшн-камеры</a></li>
+        <li><a href="">Фитнес-браслеты</a></li>
+        <li><a href="">Умные часы</a></li>
+        <li><a href="">Квадрокоптеры</a></li>
+      </ul>
+      <ul class="catalog">
         <li><a href="">Доставка</a></li>
         <li><a href="">Гарантия</a></li>
         <li><a href="">Контакты</a></li>
@@ -137,33 +139,35 @@
         <li><a href=""><img src="img/logo-4.jpg" height="260" width="100" alt="Логотип компании VIVE"></a></li>
       </ul>
     </section>
-    <section>
-      <h2>О нас</h2>
-      <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-      <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
-        компаниями:</p>
-      <ul>
-        <li>Деловые линии</li>
-        <li>Автотрейдинг</li>
-        <li>ЖелДорЭкспедиция</li>
-      </ul>
-      <button type="button">Подробнее о нас</button>
-    </section>
-    <section>
-      <h2>Контакты</h2>
-      <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
-        Всякое бывает.</p>
-      <a href=""><img src="img/map.png" width="560" height="222"
-          alt="Адрес магазина DEVICE по адресу г. Москва, ул. Строителей, 15"></a>
-      <button type="button">Напишите нам</button>
-    </section>
+    <div class="about">
+      <section>
+        <h2>О нас</h2>
+        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
+          компаниями:</p>
+        <ul>
+          <li>Деловые линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+        <button type="button">Подробнее о нас</button>
+      </section>
+      <section>
+        <h2>Контакты</h2>
+        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
+          Всякое бывает.</p>
+        <a href=""><img src="img/map.png" width="560" height="222"
+            alt="Адрес магазина DEVICE по адресу г. Москва, ул. Строителей, 15"></a>
+        <button type="button">Напишите нам</button>
+      </section>
+    </div>
   </main>
-  <footer>
+  <footer class="footer">
     <nav aria-label="Содержимое">
       <a href="index.html">
-        <img src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс">
+        <img src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс" class="logo">
       </a>
-      <ul aria-label="О нас">
+      <ul aria-label="О нас" class="adress">
         <li>
           <p>г. Москва, ул. Строителей, 15</p>
         </li>
@@ -171,7 +175,7 @@
           <a href="" aria-label="Вы можете позвонить нам по телефону">Тел.: +7 (495) 495-95-95</a>
         </li>
       </ul>
-      <ul>
+      <ul class="act-footer">
         <li>
           <!--<img src="img/user_n.png" width="13" height="12" alt="Вход">--><button type="button">Войти</button></li>
         <li>
@@ -181,19 +185,18 @@
         <li>
           <!--<img src="img/cart_n.png" width="12" height="12" alt="Корзина">--><button type="button">Корзина</button>
         </li>
-        <li><a href="catalog.html">Каталог товаров</a></li>
       </ul>
-      <ul aria-label="Доставка. Гарантия. Контакты">
+      <ul aria-label="Доставка. Гарантия. Контакты" class="features-footer">
         <li><a href="">Доставка</a></li>
         <li><a href="">Гарантия</a></li>
         <li><a href="">Контакты</a></li>
       </ul>
-      <ul>
+      <ul class="socialnetwork">
         <li><a href=""><img src="img/FB.svg" width="32" height="32" alt="Магазин в Фэйсбук"></a></li>
         <li><a href=""><img src="img/instagram.svg" width="32" height="32" alt="Магазин в Инстаграмм"></a></li>
         <li><a href=""><img src="img/tviter.svg" width="32" height="32" alt="Магазин в Твитер"></a></li>
-        <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.png" width="27" height="35"
-              alt="Ссылка HTML академии"></a></li>
+        <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.png" class="html-logo" width="27"
+              height="35" alt="Ссылка HTML академии"></a></li>
       </ul>
     </nav>
   </footer>
