@@ -9,28 +9,36 @@
 </head>
 
 <body>
-  <header>
+  <header class="main-header">
+
     <nav class="navigation" aria-label="Содержимое сайта">
       <a href="index.html">
-        <img src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс">
+        <img src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс" class="logo-header">
       </a>
-      <div class="search">
-        <!--<img src="img/search.svg" width="16" height="16" alt="Поиск по сайту">--><input type="search"
+      <div class="container-1">
+        <!--<img src="img/search.svg" width="16" height="16" alt="Поиск по сайту">--><input type="search" class="search"
           placeholder="Поиск по сайту" aria-label="Поиск по сайту"></p>
+        <ul class="act">
+          <li>
+            <div class="enter-div">
+              <!--<img src="img/user.svg" width="13" height="12" alt="Вход">--><button type="button">Войти</button>
+            </div>
+          </li>
+          <li>
+            <div class="сompare-div">
+              <!--<img src="img/compare.svg" width="10" height="10" alt="Сравнить">--><button
+                type="button">Сравнить</button></div>
+          </li>
+          <li>
+            <div class="basket-div">
+              <!--<img src="img/cart.svg" width="12" height="12" alt="Корзина">--><button type="button">Корзина</button>
+            </div>
+          </li>
+        </ul>
       </div>
-      <ul class="act">
-        <li>
-          <!--<img src="img/user.svg" width="13" height="12" alt="Вход">--><button type="button">Войти</button></li>
-        <li>
-          <!--<img src="img/compare.svg" width="10" height="10" alt="Сравнить">--><button
-            type="button">Сравнить</button>
-        </li>
-        <li>
-          <!--<img src="img/cart.svg" width="12" height="12" alt="Корзина">--><button type="button">Корзина</button>
-        </li>
-      </ul>
-      <button type="button" class="catalog">Каталог товаров</button>
-      <!--<img src="img/plus.svg" width="16" height="16" alt="Плюс">-->
+      <div class='container-2'>
+        <button type="button" class="catalog">Каталог товаров</button>
+        <!--<img src="img/plus.svg" width="16" height="16" alt="Плюс">
       <ul class="catalog-item" aria-label="Каталог товаров">
         <li><a href="">Виртуальная реальность</a></li>
         <li><a href="">Моноподы для селфи</a></li>
@@ -38,12 +46,20 @@
         <li><a href="">Фитнес-браслеты</a></li>
         <li><a href="">Умные часы</a></li>
         <li><a href="">Квадрокоптеры</a></li>
-      </ul>
-      <ul class="catalog">
-        <li><a href="">Доставка</a></li>
-        <li><a href="">Гарантия</a></li>
-        <li><a href="">Контакты</a></li>
-      </ul>
+      </ul>-->
+        <div class="div-catalog">
+          <ul class="catalog">
+            <div>
+              <li><a href="">Доставка</a></li>
+            </div>
+            <div>
+              <li><a href="">Гарантия</a></li>
+            </div>
+            <div>
+              <li><a href="">Контакты</a></li>
+            </div>
+          </ul>
+        </div>
     </nav>
   </header>
   <main>
@@ -64,7 +80,7 @@
           <p>Вес палки <span>5 кг</span></p>
           <p>Материал <span>Карбон</span></p>
         </li>
-        <li>
+        <!--<li>
           <h3>02</h3>
           <img src="img/slider-2.png" height="345" width="485" alt="Фитнес-браслет">
           <h4>Худеем правильно!</h4>
@@ -85,7 +101,7 @@
           <a href="">Подробнее</a>
           <p>Дальность полета<span>800 м</span></p>
           <p>Радиус поражения<span>50 м</span></p>
-        </li>
+        </li>-->
       </ul>
     </section>
     <section>
@@ -140,64 +156,69 @@
       </ul>
     </section>
     <div class="about">
-      <section>
-        <h2>О нас</h2>
-        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
-          компаниями:</p>
-        <ul>
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
-        <button type="button">Подробнее о нас</button>
-      </section>
-      <section>
-        <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
-          Всякое бывает.</p>
-        <a href=""><img src="img/map.png" width="560" height="222"
-            alt="Адрес магазина DEVICE по адресу г. Москва, ул. Строителей, 15"></a>
-        <button type="button">Напишите нам</button>
-      </section>
+      <div class="div-about1">
+        <section>
+          <h2>О нас</h2>
+          <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
+            компаниями:</p>
+          <ul>
+            <li>Деловые линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
+          <button type="button">Подробнее о нас</button>
+        </section>
+      </div>
+      <div class="div-about2">
+        <section>
+          <h2>Контакты</h2>
+          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
+            Всякое бывает.</p>
+          <a href=""><img src="img/map.png" width="560" height="222"
+              alt="Адрес магазина DEVICE по адресу г. Москва, ул. Строителей, 15"></a><br>
+          <button type="button">Напишите нам</button>
+        </section>
+      </div>
     </div>
   </main>
   <footer class="footer">
     <nav aria-label="Содержимое">
-      <a href="index.html">
-        <img src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс" class="logo">
-      </a>
-      <ul aria-label="О нас" class="adress">
-        <li>
-          <p>г. Москва, ул. Строителей, 15</p>
-        </li>
-        <li>
-          <a href="" aria-label="Вы можете позвонить нам по телефону">Тел.: +7 (495) 495-95-95</a>
-        </li>
-      </ul>
-      <ul class="act-footer">
-        <li>
-          <!--<img src="img/user_n.png" width="13" height="12" alt="Вход">--><button type="button">Войти</button></li>
-        <li>
-          <!--<img src="img/compare_n.png" width="10" height="10" alt="Сравнить">--><button
-            type="button">Сравнить</button>
-        </li>
-        <li>
-          <!--<img src="img/cart_n.png" width="12" height="12" alt="Корзина">--><button type="button">Корзина</button>
-        </li>
-      </ul>
-      <ul aria-label="Доставка. Гарантия. Контакты" class="features-footer">
-        <li><a href="">Доставка</a></li>
-        <li><a href="">Гарантия</a></li>
-        <li><a href="">Контакты</a></li>
-      </ul>
-      <ul class="socialnetwork">
-        <li><a href=""><img src="img/FB.svg" width="32" height="32" alt="Магазин в Фэйсбук"></a></li>
-        <li><a href=""><img src="img/instagram.svg" width="32" height="32" alt="Магазин в Инстаграмм"></a></li>
-        <li><a href=""><img src="img/tviter.svg" width="32" height="32" alt="Магазин в Твитер"></a></li>
-        <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.png" class="html-logo" width="27"
-              height="35" alt="Ссылка HTML академии"></a></li>
-      </ul>
+      <div class="div-footer1">
+        <a href="index.html">
+          <img src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс" class="logo">
+        </a>
+        <ul aria-label="О нас" class="adress">
+          <li>
+            <p>г. Москва, ул. Строителей, 15</p>
+          </li>
+          <li>
+            <a href="" aria-label="Вы можете позвонить нам по телефону">Тел.: +7 (495) 495-95-95</a>
+          </li>
+        </ul>
+        <ul class="act-footer">
+          <li>
+            <!--<img src="img/user_n.png" width="13" height="12" alt="Вход">--><button type="button">Войти</button></li>
+          <li>
+            <!--<img src="img/compare_n.png" width="10" height="10" alt="Сравнить">--><button
+              type="button">Сравнить</button>
+          </li>
+          <li>
+            <!--<img src="img/cart_n.png" width="12" height="12" alt="Корзина">--><button type="button">Корзина</button>
+          </li>
+        </ul>
+        <ul aria-label="Доставка. Гарантия. Контакты" class="features-footer">
+          <li><a href="">Доставка</a></li>
+          <li><a href="">Гарантия</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+        <ul class="socialnetwork">
+          <li><a href=""><img src="img/FB.svg" width="32" height="32" alt="Магазин в Фэйсбук"></a></li>
+          <li><a href=""><img src="img/instagram.svg" width="32" height="32" alt="Магазин в Инстаграмм"></a></li>
+          <li><a href=""><img src="img/tviter.svg" width="32" height="32" alt="Магазин в Твитер"></a></li>
+          <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.png" class="html-logo"
+                width="27" height="35" alt="Ссылка HTML академии"></a></li>
+        </ul>
     </nav>
   </footer>
 </body>

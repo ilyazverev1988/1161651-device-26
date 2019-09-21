@@ -22,78 +22,133 @@
 body {
   margin: 0;
   padding: 0;
-
   background-color: #ffffff;
 }
 
 a {
   text-decoration: none;
   color: #000000;
-
 }
 
 li {
   list-style-type: none;
 }
 
-/*index.html*/
-/*Шапка*/
+/*разметка index*/
 .navigation {
-  /* width: 1160px;
-  height: 299px;*/
+  display: flex;
+  flex-direction: column;
+  width: 1160px;
+  min-height: 299px;
   background-color: #f0c52e;
-  opacity: 0.5;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
 }
 
-.navigation img:hover,
-.navigation img:focus {
+.container-1 {
+  display: flex;
+  width: 1160px;
+  margin-top: 34px;
+  justify-content: space-between;
+}
+
+.container-2 {
+  display: flex;
+  margin-left: 60px;
+  margin-top: 50px;
+}
+
+.catalog {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.act li:nth-child(3) {
+  margin-right: 61px;
+}
+
+.logo-header {
+  margin-left: 60px;
+}
+
+div.about {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1160px;
+  min-height: 655px;
+  justify-content: space-between;
+}
+
+div.div-about1 {
+  display: flex;
+  margin-right: 136px;
+}
+
+/*конец разметки index*/
+/*index.html*/
+/*Шапка*/
+
+
+img.logo-header:hover,
+img.logo-header:focus {
   opacity: 0.6;
 }
 
-.navigation img:active {
+img.logo-header:active {
   opacity: 0.3;
 }
 
-div.search {
+input.search {
   opacity: 0.3;
   color: #000000;
-  font-family: "Open Sans", sans-serif;
-  ;
+  font-family: "Open Sans", Georgia, Serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
   letter-spacing: 0.15px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 146px;
+  margin-left: 63px;
 }
 
-div.search:hover {
+input.search:hover {
   opacity: 0.6;
 }
 
-div.search:focus {
+input.search:focus {
   opacity: 1;
 }
 
 ul.act {
   color: #000000;
-  font-family: "Open Sans", sans-serif;
-  ;
+  font-family: "Open Sans", Georgia, Serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
   letter-spacing: 0.15px;
+  padding: 0px;
+  margin: 0px;
+  width: 567px;
+  display: flex;
 }
 
+.basket-div {
+  margin-right: 61px;
+}
 
 .act button {
   border: none;
-  background-color: #f0c52e;
+  background-color: transparent;
 }
 
 ul.catalog,
 button.catalog {
   color: #000000;
-  font-family: "Gilroy - Extra Bold", sans-serif;
-  ;
+  font-family: "Gilroy - Extra Bold", Georgia, Serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -101,13 +156,12 @@ button.catalog {
   letter-spacing: 3.6px;
   border: none;
   outline: none;
-  background-color: #f0c52e;
+  background-color: transparent;
 }
 
 ul.catalog-item {
   color: #000000;
-  font-family: "Open Sans", sans-serif;
-  ;
+  font-family: "Open Sans", Georgia, Serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 36px;
@@ -126,7 +180,7 @@ button.catalog:focus {
   opacity: 0.6;
   border: none;
   outline: none;
-  background-color: #f0c52e;
+  background-color: transparent;
 }
 
 
@@ -137,37 +191,46 @@ button.catalog:active {
   opacity: 0.3;
   border: none;
   outline: none;
-  background-color: #f0c52e;
+  background-color: transparent;
 }
 
 /*main сейчас пропускаю часть блоков*/
 /*section о Нас + Контакты*/
 .about h2 {
   color: #000000;
-  font-family: "Gilroy - Extra Bold", sans-serif;
-  ;
+  font-family: "Gilroy - Extra Bold", Georgia, Serif;
   font-size: 47px;
   font-weight: 400;
   line-height: 48px;
   letter-spacing: 0.21px;
+  display: flex
 }
 
 .about p {
   color: #464646;
-  font-family: "Open Sans", sans-serif;
-  ;
+  font-family: "Open Sans", Georgia, Serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
+  display: flex
+}
+
+.about h2+.about p {
+  margin-bottom: 59px;
 }
 
 .about li {
   color: #000000;
-  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-family: "Gilroy - Extra Bold", Georgia, Serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 40px;
   list-style-type: circle;
+}
+
+.about ul {
+  margin-bottom: 0px;
+
 }
 
 /*.about li::before { //Тут пытался сделать серый circle особо не получилось 
@@ -178,7 +241,7 @@ button.catalog:active {
 
 .about button {
   color: #000000;
-  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-family: "Gilroy - Extra Bold", Georgia, Serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -193,10 +256,12 @@ button.catalog:active {
 
 .footer {
   background-color: #464646;
+  display: flex;
+
 }
 
 img.logo {
-  filter: invert(76 %) sepia(92%) saturate(2073%) hue-rotate(359deg) brightness(102%) contrast(104%);
+  filter: invert(76%) sepia(92%) saturate(2073%) hue-rotate(359deg) brightness(102%) contrast(104%);
   /*Все таки нашел как изменить цвет, хоть и не учили нас)*/
 }
 
@@ -212,7 +277,7 @@ img.logo:active {
 ul.adress,
 .adress a {
   color: #ffffff;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", Georgia, Serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
@@ -221,20 +286,19 @@ ul.adress,
 .act-footer button {
   opacity: 0.7;
   color: #ffffff;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", Georgia, Serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 36px;
   letter-spacing: 0.15px;
   border: none;
-  background-color: #464646;
+  background-color: transparent;
 }
 
 .features-footer a {
   color: #ffffff;
-  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-family: "Gilroy - Extra Bold", Georgia, Serif;
   font-size: 18px;
-  font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 3.6px;
@@ -245,14 +309,14 @@ ul.adress,
   border: none;
   outline: none;
   opacity: 1;
-  background-color: #464646;
+  background-color: transparent;
 }
 
 .act-footer button:active {
   opacity: 0.3;
   border: none;
   outline: none;
-  background-color: #464646;
+  background-color: transparent;
 }
 
 .features-footer a:hover,
@@ -280,17 +344,17 @@ img.html-logo:active {
   opacity: 0.1;
 }
 
+/*
 /*catalog.html*/
-button.exit {
+/*button.exit {
   opacity: 0.3;
 }
 
 /*main catalog.html тут тоже не все*/
-h1.monopod {
+/*h1.monopod {
   color: #000000;
-  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-family: "Gilroy - Extra Bold", Georgia, Serif;
   font-size: 47px;
-  font-weight: 400;
   line-height: 48px;
   letter-spacing: 0.17px;
 }
@@ -298,7 +362,7 @@ h1.monopod {
 div.adress-catalog {
   opacity: 0.3;
   color: #000000;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", Georgia, Serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
@@ -309,35 +373,65 @@ div.adress-catalog {
   margin: 18px;
   color: black;
   /*тут не получилось сделать черным >, не знаю почему*/
-}
+/*}
 
 . .filter p {
   color: #000000;
-  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-family: "Gilroy - Extra Bold", Georgia, Serif;
   font-size: 18px;
-  font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.18px;
 }
 
 .filter label {
   color: #000000;
-  font-family: "Open Sans";
+  font-family: "Open Sans", Georgia, Serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 40px;
-  /* Text style for "Черный , Б" */
   letter-spacing: 0.14px;
 }
 
 .filter button {
   color: #000000;
-  font-family: "Gilroy - Extra Bold", sans-serif;
+  font-family: "Gilroy - Extra Bold", Georgia, Serif;
   font-size: 18px;
-  font-weight: 400;
   text-transform: uppercase;
-  /* Text style for "Показать" */
   letter-spacing: 2.15px;
   border: none;
   outline: none;
 }
+
+.about h2 {
+  font-family: "Gilroy - Extra Bold", Georgia, Serif;
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 0.21px;
+}
+
+.about p {
+  color: #464646;
+  font-family: "Open Sans", Georgia, Serif;
+  ;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.about ul {
+  color: #000000;
+  font-family: "Gilroy - Extra Bold", Georgia, Serif;
+  font-size: 16px;
+  line-height: 40px;
+  margin-top: 38px;
+}
+
+.about button {
+  color: #000000;
+  font-family: "Gilroy - Extra Bold", Georgia, Serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2.15px;
+  margin-top: 76px;
+}*/
