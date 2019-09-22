@@ -19,6 +19,10 @@
   src: url("/fonts/OpenSans-Regular.ttf");
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -34,58 +38,274 @@ li {
   list-style-type: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/**конец голоюальных правил/
 /*разметка index*/
+/*разметка шапки*/
 .navigation {
   display: flex;
   flex-direction: column;
   width: 1160px;
   min-height: 299px;
   background-color: #f0c52e;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 140px;
+  margin-right: 140px;
   margin-top: 40px;
+  position: relative;
 }
 
-.container-1 {
+div.wrap-1 {
   display: flex;
-  width: 1160px;
-  margin-top: 34px;
-  justify-content: space-between;
+  margin-top: 35px;
+  align-items: center;
 }
 
-.container-2 {
+div.search-div {
+  margin-left: 63px;
+}
+
+div.act {
   display: flex;
-  margin-left: 60px;
+  flex-direction: row;
+}
+
+div.basket-div {
+  position: absolute;
+  right: 61px;
+}
+
+div.compare-div {
+  position: absolute;
+  right: 184px;
+}
+
+div.enter-div {
+  position: absolute;
+  right: 491px;
+}
+
+img.logo-header {
+  position: relative;
+  top: -19px;
+  left: 60px;
+}
+
+div.wrap-2 {
+  display: flex;
   margin-top: 50px;
+  align-items: center;
 }
 
-.catalog {
-  display: flex;
-  justify-content: flex-end;
+div.contact-div {
+  position: absolute;
+  right: 61px;
 }
 
-.act li:nth-child(3) {
-  margin-right: 61px;
+div.guarantee-div {
+  position: absolute;
+  right: 292px;
 }
 
-.logo-header {
-  margin-left: 60px;
+div.delivery-div {
+  position: absolute;
+  right: 439px;
 }
 
+/*конец разметки шапки*/
+/*разметка сеции о нас и контакты*/
 div.about {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1160px;
-  min-height: 655px;
-  justify-content: space-between;
+  margin-right: 140px;
+  margin-left: 140px;
+  min-height: 710px;
 }
 
-div.div-about1 {
+div.about1-div {
+  position: relative;
+  width: 462px;
+  margin-right: 139px;
+}
+
+div.about2-div {
+  width: 560px;
+}
+
+/*конецразметка сеции о нас и контакты*/
+/*разметка подвала*/
+div.footer1-div {
   display: flex;
-  margin-right: 136px;
+  flex-direction: column;
+  width: 1440px;
 }
 
+div.footer-conteiner1 {
+  display: flex;
+  margin-top: 65px;
+  flex-direction: row;
+  justify-content: baseline;
+  width: 100%;
+  min-height: 35px;
+}
+
+div.footer-conteiner2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  width: 100%;
+  min-height: 15px;
+}
+
+div.footer-conteiner3 {
+  display: flex;
+  justify-content: baseline;
+  margin-top: 69px;
+  flex-direction: row;
+}
+
+div.logo-footer {
+  position: absolute;
+  left: 140px;
+}
+
+div.basket-footer-div {
+  position: absolute;
+  right: 140px;
+}
+
+div.compare-footer-div {
+  position: absolute;
+  right: 263px;
+}
+
+div.enter-footer-div {
+  position: absolute;
+  right: 396px;
+}
+
+div.city-div {
+  position: absolute;
+  left: 140px;
+}
+
+div.phone-div {
+  position: absolute;
+  right: 140px;
+}
+
+div.delivery-footer-div {
+  position: absolute;
+  left: 507px;
+}
+
+div.warranty-footer-div {
+  position: absolute;
+  left: 666px;
+}
+
+div.contact-footer-div {
+  position: absolute;
+  right: 510px;
+}
+
+div.htmlacademy-div {
+  position: absolute;
+  right: 140px;
+}
+
+div.tviter-div {
+  position: absolute;
+  right: 650px;
+}
+
+div.instagram-div {
+  position: absolute;
+  right: 704px;
+}
+
+div.facebook-div {
+  position: absolute;
+  left: 649px;
+}
+
+
+/*конец разметка подвала*/
+/*разметка слайдера*/
+div.slaider {
+  display: flex;
+  flex-direction: row;
+  min-height: 481px;
+  margin-left: 140px;
+  margin-right: 140px;
+  width: 1160px;
+  align-items: flex-start;
+}
+
+div.slaider-wrap {
+  position: relative;
+}
+
+div.slaider-img-div {
+  position: relative;
+  margin-left: 90px;
+  top: -110px;
+  margin-right: 125px;
+}
+
+.slaider-h3-div h3 {
+  color: #ffffff;
+  font-family: "Gilroy - Extra Bold", Georgia, Serif;
+  font-size: 179px;
+  line-height: 179.2px;
+  letter-spacing: 0.36px;
+  margin: 0;
+}
+
+div.slaider-h3-div {
+  position: relative;
+  display: inline-block;
+  min-height: 131px;
+  left: 325px;
+  top: -122px;
+}
+
+.slaider-h4-div h4 {
+  color: #000000;
+  font-family: "Gilroy - Extra Bold", Georgia, Serif;
+  font-size: 47px;
+  line-height: 56px;
+  letter-spacing: 0.17px;
+}
+
+div.slaider-h4-div h4 {
+  display: inline-block;
+  position: absolute;
+  margin: 0;
+  top: -33px;
+}
+
+.slaider-p-div p {
+  color: #464646;
+  font-family: "Open Sans", Georgia, Serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  margin: 0;
+}
+
+div.slaider-p-div {
+  position: relative;
+  margin-top: -107px;
+}
+
+/*конец разметки слайдера*/
 /*конец разметки index*/
 /*index.html*/
 /*Шапка*/
@@ -111,8 +331,6 @@ input.search {
   border: none;
   outline: none;
   background-color: transparent;
-  width: 146px;
-  margin-left: 63px;
 }
 
 input.search:hover {
@@ -130,14 +348,6 @@ ul.act {
   font-weight: 300;
   line-height: 30px;
   letter-spacing: 0.15px;
-  padding: 0px;
-  margin: 0px;
-  width: 567px;
-  display: flex;
-}
-
-.basket-div {
-  margin-right: 61px;
 }
 
 .act button {
@@ -145,7 +355,7 @@ ul.act {
   background-color: transparent;
 }
 
-ul.catalog,
+.catalog,
 button.catalog {
   color: #000000;
   font-family: "Gilroy - Extra Bold", Georgia, Serif;
@@ -157,6 +367,8 @@ button.catalog {
   border: none;
   outline: none;
   background-color: transparent;
+  margin-left: 60px;
+  padding: 0px;
 }
 
 ul.catalog-item {
@@ -171,8 +383,8 @@ ul.catalog-item {
 
 .act button:hover,
 .act button:focus,
-.catalog li:hover,
-.catalog li:focus,
+.catalog :hover,
+.catalog :focus,
 .catalog-item li:hover,
 .catalog-item li:focus,
 button.catalog:hover,
@@ -185,7 +397,7 @@ button.catalog:focus {
 
 
 .act button:active,
-.catalog li:active,
+.catalog :active,
 .catalog-item li:active,
 button.catalog:active {
   opacity: 0.3;
@@ -203,7 +415,9 @@ button.catalog:active {
   font-weight: 400;
   line-height: 48px;
   letter-spacing: 0.21px;
-  display: flex
+  margin: 0px;
+  margin-top: 51px;
+  margin-bottom: 59px;
 }
 
 .about p {
@@ -212,25 +426,25 @@ button.catalog:active {
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
-  display: flex
-}
-
-.about h2+.about p {
-  margin-bottom: 59px;
+  margin: 0;
+  margin-bottom: 44px;
 }
 
 .about li {
   color: #000000;
   font-family: "Gilroy - Extra Bold", Georgia, Serif;
   font-size: 16px;
-  font-weight: 400;
   line-height: 40px;
   list-style-type: circle;
 }
 
 .about ul {
-  margin-bottom: 0px;
+  margin: 0px;
+  margin-top: 39px;
+}
 
+.about img {
+  margin-top: 10px;
 }
 
 /*.about li::before { //Тут пытался сделать серый circle особо не получилось 
@@ -243,7 +457,6 @@ button.catalog:active {
   color: #000000;
   font-family: "Gilroy - Extra Bold", Georgia, Serif;
   font-size: 18px;
-  font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 2.15px;
@@ -252,17 +465,23 @@ button.catalog:active {
   background-color: #f0c52e;*/
 }
 
+.about1-div button {
+  margin-top: 68px;
+}
+
+.about2-div button {
+  margin-top: 83px;
+}
+
 /*подвал footer*/
 
 .footer {
   background-color: #464646;
   display: flex;
-
-}
-
-img.logo {
-  filter: invert(76%) sepia(92%) saturate(2073%) hue-rotate(359deg) brightness(102%) contrast(104%);
-  /*Все таки нашел как изменить цвет, хоть и не учили нас)*/
+  min-height: 323px;
+  position: relative;
+  flex-direction: row;
+  width: 1440px;
 }
 
 img.logo:hover,
@@ -274,13 +493,18 @@ img.logo:active {
   opacity: 0.3;
 }
 
-ul.adress,
+div.adress,
 .adress a {
   color: #ffffff;
   font-family: "Open Sans", Georgia, Serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
+  margin: 0;
+}
+
+.adress p {
+  margin: 0;
 }
 
 .act-footer button {
