@@ -15,20 +15,22 @@
         <img src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс" class="logo-header">
       </a>
       <div class="wrap-1">
-        <div class="search-div">
-          <!--<img src="img/search.svg" width="16" height="16" alt="Поиск по сайту">--><input type="search"
-            class="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
-        </div>
-        <div class="act enter-div">
-          <!--<img src="img/user.svg" width="13" height="12" alt="Вход">--><button type="button">Войти</button>
-        </div>
-        <div class="act compare-div">
-          <!--<img src="img/compare.svg" width="10" height="10" alt="Сравнить">--><button
-            type="button">Сравнить</button>
-        </div>
-        <div class="act basket-div">
-          <!--<img src="img/cart.svg" width="12" height="12" alt="Корзина">--><button type="button">Корзина</button>
-        </div>
+        <!--<img src="img/search.svg" width="16" height="16" alt="Поиск по сайту">--><input type="search" class="search"
+          placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+        <ul class="act">
+          <li>
+            <!--<img src="img/user.svg" width="13" height="12" alt="Вход">--><button type="button"
+              class="enter-header">Войти</button>
+          </li>
+          <li>
+            <!--<img src="img/compare.svg" width="10" height="10" alt="Сравнить">--><button type="button"
+              class="compare-header">Сравнить</button>
+          </li>
+          <li>
+            <!--<img src="img/cart.svg" width="12" height="12" alt="Корзина">--><button type="button"
+              class="basket-header">Корзина</button>
+          </li>
+        </ul>
       </div>
       <div class="wrap-2">
         <button type="button" class="catalog">Каталог товаров</button>
@@ -41,9 +43,11 @@
         <li><a href="">Умные часы</a></li>
         <li><a href="">Квадрокоптеры</a></li>
       </ul>-->
-        <div class="catalog delivery-div"><a href="">Доставка</a></div>
-        <div class="catalog guarantee-div"><a href="">Гарантия</a></div>
-        <div class="catalog contact-div"><a href="">Контакты</a></div>
+        <ul class="catalog">
+          <li></li><a href="" class="delivery-header">Доставка</a></li>
+          <li><a href="" class="guarantee-header">Гарантия</a></li>
+          <li><a href="" class="contact-header">Контакты</a></li>
+        </ul>
       </div>
     </nav>
   </header>
@@ -53,28 +57,33 @@
     <section>
       <div class="slaider">
         <h2 class="visually-hidden">Слайдер с самыми интересными товарами</h2>
-        <div class="slaider-img-div">
-          <img src="img/slider-1.png" height="486" width="384" alt="Палка для селфи">
+        <div class="slaider-img">
+          <img src="img/slider-1.png" height="486" width="384" alt="Палка для селфи" class="slaider-img-div">
         </div>
         <div class="slaider-wrap">
-          <div class="slaider-h3-div">
-            <h3>01</h3>
-          </div>
-          <div class="slaider-h4-div">
-            <h4>Делай селфи,<br> как Бен Стиллер! </h4>
-          </div>
-          <div class="slaider-p-div">
-            <p>Самая длинная палка для селфи доступна в нашем магазине<br>
-              Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-            </p>
-          </div>
+          <h3>01</h3>
+          <h4>Делай селфи,<br> как Бен Стиллер! </h4>
+
+          <p>Самая длинная палка для селфи доступна в нашем магазине<br>
+            Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+          </p>
+
           <div class="slaider-a-div">
             <a href="">Подробнее</a>
           </div>
-          <div class="slaider-p2-div">
-            <p>Длина палки <span>8,5 м</span></p>
-            <p>Вес палки <span>5 кг</span></p>
-            <p>Материал <span>Карбон</span></p>
+          <div class="slaider-ul1-div">
+            <ul>
+              <li>8,5 м</li>
+              <li>5 кг</li>
+              <li>Карбон</li>
+            </ul>
+          </div>
+          <div>
+            <ul class="slaider-ul2-div">
+              <li>Длина палки</li>
+              <li>Вес палки</li>
+              <li>Материал</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -104,33 +113,43 @@
     </section>
     <section>
       <h2 class="visually-hidden">Каталог</h2>
-      <ul>
-        <li><a href=""><img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">Виртуальная
-            реальность</a></li>
-        <li><a href=""><img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">Моноподы для
-            селфи</a></li>
-        <li><a href=""><img src="img/popular-3.svg" width="71" height="87" alt="Экшн-камеры">Экшн-камеры</a></li>
-        <li><a href=""><img src="img/popular-4.svg" width="107" height="65" alt="Фитнес-браслеты">Фитнес-браслеты</a>
-        </li>
-        <li><a href=""><img src="img/popular-5.svg" width="56" height="98" alt="Умные часы">Умные часы</a></li>
-        <li><a href=""><img src="img/popular-6.svg" width="132" height="69" alt="Квадрокоптеры">Квадрокоптеры</a></li>
-      </ul>
+      <div class="gadget">
+        <ul>
+          <li><a href=""><img class="img-gadget1" src="img/popular-1.svg" width="97" height="55"
+                alt="Виртуальная реальность">Виртуальная реальность</a></li>
+          <li><a href=""><img class="img-gadget2" src="img/popular-2.svg" width="86" height="117"
+                alt="Моноподы для селфи">Моноподы для селфи</a></li>
+          <li><a href=""><img class="img-gadget3" src="img/popular-3.svg" width="71" height="87"
+                alt="Экшн-камеры">Экшн-камеры</a></li>
+          <li><a href=""><img class="img-gadget4" src="img/popular-4.svg" width="107" height="65"
+                alt="Фитнес-браслеты">Фитнес-браслеты</a>
+          </li>
+          <li><a href=""><img class="img-gadget5" src="img/popular-5.svg" width="56" height="98" alt="Умные часы">Умные
+              часы</a></li>
+          <li><a href=""><img class="img-gadget6" src="img/popular-6.svg" width="132" height="69"
+                alt="Квадрокоптеры">Квадрокоптеры</a></li>
+        </ul>
+      </div>
     </section>
     <section>
-      <h2 class="visually-hidden">Доставка.Гарантия.Кредит</h2>
-      <ul>
-        <li><button>Доставка</button></li>
-        <li><button>Гарантия</button></li>
-        <li><button>Кредит</button></li>
-      </ul>
-      <ul>
-        <li>
-          <h3>Доставка</h3>
-          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
-            заработаем, поднимая его на ваш этаж.</p>
+      <div class="common">
+        <h2 class="visually-hidden">Доставка.Гарантия.Кредит</h2>
+        <div class="common-div">
+          <ul>
+            <li><button>Доставка</button></li>
+            <li><button>Гарантия</button></li>
+            <li><button>Кредит</button></li>
+          </ul>
+          <img class="strip-common">
+        </div>
+        <div class="details">
+          <div class="details-text">
+            <h3>Доставка</h3>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+              заработаем, поднимая его на ваш этаж.</p>
+          </div>
           <img src="img/delivery.svg" width="136" height="164" alt="Доставка товара">
-        </li>
-        <li>
+          <!--<li>
           <h3>Гарантия</h3>
           <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
             Товар, не дом, конечно же.</p>
@@ -141,8 +160,10 @@
           <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
             условия кредита. Выгодные для нашего банка, разумеется.</p>
           <img src="img/credit.svg" width="156" height="186" alt="Кредит">
-        </li>
-      </ul>
+        </li>-->
+          </ul>
+        </div>
+      </div>
     </section>
     <section>
       <h2 class="visually-hidden">Производители техники</h2>
