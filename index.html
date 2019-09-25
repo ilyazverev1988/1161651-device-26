@@ -49,6 +49,9 @@
           <li><a href="" class="contact-header">Контакты</a></li>
         </ul>
       </div>
+      <div class="wrap-3">
+        <img class="strip-header">
+      </div>
     </nav>
   </header>
   <main>
@@ -167,20 +170,24 @@
     </section>
     <section>
       <h2 class="visually-hidden">Производители техники</h2>
-      <ul>
-        <li><a href=""><img src="img/logo-1.jpg" height="260" width="100" alt="Логотип компании DJI"></a></li>
-        <li><a href=""><img src="img/logo-2.jpg" height="260" width="100" alt="Логотип компании SP Gadgets"></a></li>
-        <li><a href=""><img src="img/logo-3.jpg" height="260" width="100" alt="Логотип компании GoPro"></a></li>
-        <li><a href=""><img src="img/logo-4.jpg" height="260" width="100" alt="Логотип компании VIVE"></a></li>
-      </ul>
+      <div class="manufacturers-div">
+        <ul>
+          <li><a href=""><img src="img/logo-1.jpg" height="260" width="100" alt="Логотип компании DJI"></a></li>
+          <li><a href=""><img src="img/logo-2.jpg" height="260" width="100" alt="Логотип компании SP Gadgets"></a>
+          </li>
+          <li><a href=""><img src="img/logo-3.jpg" height="260" width="100" alt="Логотип компании GoPro"></a></li>
+          <li><a href=""><img src="img/logo-4.jpg" height="260" width="100" alt="Логотип компании VIVE"></a></li>
+        </ul>
+      </div>
     </section>
     <div class="about">
       <div class="about1-div">
         <section>
+          <img class="strip-about">
           <h2>О нас</h2>
           <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-          <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
-            компаниями:</p>
+          <p class="p-about">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими
+            транспортными компаниями:</p>
           <ul>
             <li>Деловые линии</li>
             <li>Автотрейдинг</li>
@@ -191,10 +198,11 @@
       </div>
       <div class="about2-div">
         <section>
+          <img class="strip-about">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
             Всякое бывает.</p>
-          <a href=""><img src="img/map.png" width="560" height="222"
+          <a href=""><img class="map" src="img/map.png" width="560" height="222"
               alt="Адрес магазина DEVICE по адресу г. Москва, ул. Строителей, 15"></a><br>
           <button type="button">Напишите нам</button>
         </section>
@@ -204,71 +212,78 @@
   <footer class="footer">
     <nav aria-label="Содержимое">
       <div class="footer1-div">
-        <div class="footer-conteiner1">
-          <div class="logo-footer">
-            <a href="index.html">
-              <img src="img/logo-yellow.png" width="163" height="35" alt="Логотип магазина Девайс" class="logo">
-            </a>
-          </div>
-          <div class="act-footer enter-footer-div">
+        <a href="index.html">
+          <img src="img/logo-yellow.png" width="163" height="35" alt="Логотип магазина Девайс" class="logo">
+        </a>
+        <ul class="act-footer">
+          <li>
             <!--<img src="img/user_n.png" width="13" height="12" alt="Вход">--><button type="button">Войти</button>
-          </div>
-          <div class="act-footer compare-footer-div">
+          </li>
+          <li>
             <!--<img src="img/compare_n.png" width="10" height="10" alt="Сравнить">--><button
               type="button">Сравнить</button>
-          </div>
-          <div class="act-footer basket-footer-div">
+          </li>
+          <li>
             <!--<img src="img/cart_n.png" width="12" height="12" alt="Корзина">--><button type="button">Корзина</button>
-          </div>
+          </li>
+        </ul>
+      </div>
+      <div class="footer2-div">
+        <div class="city-div" aria-label="О нас">
+          <p>г. Москва, ул. Строителей, 15</p>
         </div>
-        <div class="footer-conteiner2">
-          <div class="adress city-div" aria-label="О нас">
-            <p>г. Москва, ул. Строителей, 15</p>
-          </div>
-          <div class="adress phone-div">
-            <a href="" aria-label="Вы можете позвонить нам по телефону">Тел.: +7 (495) 495-95-95</a>
-          </div>
-          <div class="features-footer delivery-footer-div" aria-label="Доставка">
+        <ul>
+          <li class="features-footer delivery-footer-div" aria-label="Доставка">
             <a href="">Доставка</a>
-          </div>
-          <div class="features-footer warranty-footer-div" aria-label="Гарантия">
+          </li>
+          <li class="features-footer warranty-footer-div" aria-label="Гарантия">
             <a href="">Гарантия</a>
-          </div>
-          <div class="features-footer contact-footer-div">
+          </li>
+          <li class="features-footer contact-footer-div">
             <a href="">Контакты</a>
-          </div>
+          </li>
+        </ul>
+        <div class="phone-div">
+          <a href="" aria-label="Вы можете позвонить нам по телефону">Тел.: +7 (495) 495-95-95</a>
         </div>
-        <div class="footer-conteiner3">
-          <div class="socialnetwork facebook-div"><a href="">
+      </div>
+      <div class="footer3-div">
+        <ul>
+          <li>
+            <img class="strip-footer">
+          </li>
+          <li class="socialnetwork facebook-div"><a href="">
               <img src="img/FB.svg" width="32" height="32" alt="Магазин в Фэйсбук"></a>
-          </div>
-          <div class="socialnetwork instagram-div"><a href="">
+          </li>
+          <li class="socialnetwork instagram-div"><a href="">
               <img src="img/instagram.svg" width="32" height="32" alt="Магазин в Инстаграмм"></a>
-          </div>
-          <div class="socialnetwork tviter-div"><a href="">
+          </li>
+          <li class="socialnetwork tviter-div"><a href="">
               <img src="img/tviter.svg" width="32" height="32" alt="Магазин в Твитер"></a>
-          </div>
-          <div class="socialnetwork htmlacademy-div">
+          </li>
+          <li class="socialnetwork htmlacademy-div">
             <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.png" class="html-logo" width="27"
                 height="35" alt="Ссылка HTML академии"></a>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </nav>
   </footer>
 </body>
 <section>
-  <h2 class="visually-hidden">Напишите нам</h2>
-  <form action="https://echo.htmlacademy.ru" method="post">
-    <button type="button" aria-label="Закрыть">X</button>
-    <label for="name">Ваше имя</label>
-    <input type="text" name="name" id="name" placeholder="Имя Фамилия">
-    <label for="email">Ваш e-mail</label>
-    <input type="email" name="email" id="email" placeholder="email@example.com">
-    <label for="letter">Текст письма</label>
-    <textarea name="letter" id="letter" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-    <button type="submit">Отправить</button>
-  </form>
+  <div class="popup">
+    <h2 class="visually-hidden">Напишите нам</h2>
+    <img>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <button type="button" aria-label="Закрыть">X</button>
+      <label for="name">Ваше имя</label>
+      <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+      <label for="email">Ваш e-mail</label>
+      <input type="email" name="email" id="email" placeholder="email@example.com">
+      <label for="letter">Текст письма</label>
+      <textarea name="letter" id="letter" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+      <button type="submit">Отправить</button>
+    </form>
 </section>
 
 </html>
