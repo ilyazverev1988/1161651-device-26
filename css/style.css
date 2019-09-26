@@ -1,32 +1,32 @@
 /*Глобальные правила*/
 @font-face {
   font-family: "Gilroy - Extra Bold";
-  src: url("/fonts/gilroyextrabold.woff2") format('woff2'),
-    url("/fonts/gilroyextrabold.woff") format('woff');
+  src: url("../fonts/gilroyextrabold.woff2") format('woff2'),
+    url("../fonts/gilroyextrabold.woff") format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: Gilroy;
-  src: url("/fonts/gilroylight.woff2") format('woff2'),
-    url("/fonts/gilroylight.woff") format('woff');
+  font-family: "Gilroy";
+  src: url("../fonts/gilroylight.woff2") format('woff2'),
+    url("../fonts/gilroylight.woff") format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Open Sans Light";
-  src: url("/fonts/opensanslight.woff2") format('woff2'),
-    url("/fonts/opensanslight.woff") format('woff');
+  src: url("../fonts/opensanslight.woff2") format('woff2'),
+    url("../fonts/opensanslight.woff") format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("/fonts/opensans.woff2") format('woff2'),
-    url("/fonts/opensans.woff") format('woff');
+  src: url("../fonts/opensans.woff2") format('woff2'),
+    url("../fonts/opensans.woff") format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -39,7 +39,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
-  font-family: Gilroy, Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
 }
 
 img {
@@ -116,7 +116,7 @@ input.search {
 }
 
 input.search {
-  background-image: url(/img/search.svg);
+  background-image: url(../img/search.svg);
   background-repeat: no-repeat;
   /*Убираем повтор изображения*/
   background-position: 4px;
@@ -149,7 +149,7 @@ button.basket-header::before {
   position: absolute;
   top: 1px;
   left: 12px;
-  background-image: url(/img/cart.svg);
+  background-image: url(../img/cart.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -167,7 +167,7 @@ button.compare-header::before {
   position: absolute;
   top: 1px;
   left: 12px;
-  background-image: url(/img/compare.svg);
+  background-image: url(../img/compare.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -185,7 +185,7 @@ button.enter-header::before {
   position: absolute;
   top: 1px;
   left: 12px;
-  background-image: url(/img/user.svg);
+  background-image: url(../img/user.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -227,7 +227,7 @@ button.catalog::after {
   position: absolute;
   top: 1px;
   right: 12px;
-  background-image: url(/img/plus.svg);
+  background-image: url(../img/plus.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -297,7 +297,7 @@ div.slaider-wrap {
 
 .slaider h3 {
   color: white;
-  font-family: "Gilroy - Extra Bold", Georgia, Serif;
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 179px;
   line-height: 179.2px;
   letter-spacing: 0.36px;
@@ -314,7 +314,7 @@ div.slaider-wrap {
 
 .slaider h4 {
   color: #000000;
-  font-family: "Gilroy - Extra Bold", Georgia, Serif;
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 47px;
   line-height: 56px;
   letter-spacing: 0.17px;
@@ -325,7 +325,7 @@ div.slaider-wrap {
 
 .slaider p {
   color: #464646;
-  font-family: "Open Sans", Georgia, Serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
@@ -342,7 +342,7 @@ div.slaider-wrap {
 
 .slaider-a-div a {
   color: #000000;
-  font-family: "Gilroy - Extra Bold";
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -360,7 +360,7 @@ div.slaider-wrap {
 
 .slaider-ul1-div li {
   color: #000000;
-  font-family: Gilroy;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 36px;
   font-weight: 300;
   line-height: 48px;
@@ -382,7 +382,7 @@ div.slaider-wrap {
 
 .slaider-ul2-div li {
   color: #464646;
-  font-family: "Open Sans";
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 13px;
   font-weight: 300;
   line-height: 20px;
@@ -417,7 +417,7 @@ div.slaider-wrap {
 
 .gadget li {
   color: #000000;
-  font-family: "Gilroy - Extra Bold";
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -490,7 +490,7 @@ img.img-gadget6 {
 
 .common-div li {
   color: #000000;
-  font-family: "Gilroy - Extra Bold";
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -508,7 +508,7 @@ img.strip-common {
 .common-div button {
   width: 160px;
   color: #000000;
-  font-family: "Gilroy - Extra Bold";
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -533,7 +533,7 @@ img.strip-common {
 
 .details-text h3 {
   color: #000000;
-  font-family: "Gilroy - Extra Bold";
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 47px;
   font-weight: 400;
   line-height: 48px;
@@ -544,7 +544,7 @@ img.strip-common {
 
 .details-text p {
   color: #464646;
-  font-family: "Open Sans";
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
@@ -617,7 +617,7 @@ img.strip-about {
 
 .about h2 {
   color: #000000;
-  font-family: "Gilroy - Extra Bold", Georgia, Serif;
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 47px;
   line-height: 48px;
   letter-spacing: 0.21px;
@@ -627,7 +627,7 @@ img.strip-about {
 
 .about p {
   color: #464646;
-  font-family: "Open Sans", Georgia, Serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
@@ -641,7 +641,7 @@ p.p-about {
 
 .about li {
   color: #000000;
-  font-family: "Gilroy - Extra Bold", Georgia, Serif;
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 16px;
   line-height: 40px;
   list-style-type: circle;
@@ -654,7 +654,7 @@ p.p-about {
 
 .about button {
   color: #000000;
-  font-family: "Gilroy - Extra Bold", Georgia, Serif;
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
@@ -769,7 +769,7 @@ img.map {
 .phone-div a {
   margin: 0;
   color: #ffffff;
-  font-family: "Open Sans";
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
@@ -837,7 +837,7 @@ img.logo:active {
 
 .adress a {
   color: #ffffff;
-  font-family: "Open Sans", Georgia, Serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
@@ -851,7 +851,7 @@ img.logo:active {
 .act-footer button {
   opacity: 0.7;
   color: #ffffff;
-  font-family: "Open Sans", Georgia, Serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 36px;
@@ -862,7 +862,7 @@ img.logo:active {
 
 .features-footer a {
   color: #ffffff;
-  font-family: "Gilroy - Extra Bold", Georgia, Serif;
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
@@ -929,7 +929,7 @@ img.logo-header:active {
 input.search {
   opacity: 0.3;
   color: #000000;
-  font-family: "Open Sans", Georgia, Serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
@@ -949,7 +949,7 @@ input.search:focus {
 
 ul.act {
   color: #000000;
-  font-family: "Open Sans", Georgia, Serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
@@ -964,7 +964,7 @@ ul.act {
 .catalog,
 button.catalog {
   color: #000000;
-  font-family: "Gilroy - Extra Bold", Georgia, Serif;
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -979,7 +979,7 @@ button.catalog {
 
 ul.catalog-item {
   color: #000000;
-  font-family: "Open Sans", Georgia, Serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 36px;
@@ -1010,96 +1010,459 @@ button.catalog:active {
   background-color: transparent;
 }
 
-/*main сейчас пропускаю часть блоков*/
-
-
-/*catalog.html*/
-/*button.exit {
-  opacity: 0.3;
+/*КАТАЛОГ*/
+/*разметка шапки*/
+.navigation-catalog {
+  display: flex;
+  flex-direction: column;
+  width: 1160px;
+  min-height: 186px;
+  background-color: #f0c52e;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  position: relative;
 }
 
-/*main catalog.html тут тоже не все*/
-/*h1.monopod {
+div.wrap-1 {
+  display: flex;
+  margin-top: 53px;
+  align-items: baseline;
+}
+
+.wrap-1 ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  width: 950px;
+  justify-content: flex-end;
+}
+
+.act button,
+.catalog a {
+  vertical-align: baseline;
+  padding: 0;
+  display: inline-block;
+}
+
+input.search {
+  display: inline-block;
+  margin-left: 99px;
+  padding: 0px;
+  vertical-align: baseline;
+  padding-left: 30px;
+  position: relative;
+}
+
+input.search {
+  background-image: url(../img/search.svg);
+  background-repeat: no-repeat;
+  /*Убираем повтор изображения*/
+  background-position: 4px;
+  /*Позиционируем*/
+  outline: none;
+  /*убираем стандартную обводку браузера*/
+  -moz-border-radius: 5px;
+  /*закругляем углы для Mozilla*/
+  -webkit-border-radius: 5px;
+  /*закругляем углы для Chrome, Safari*/
+  border-radius: 5px;
+  /*закругляем углы для остальных браузеров*/
+  padding-left: 20px;
+  /*отступ слева от ввода, чтобы текст не был на картинке(выбирать по размеру картинки)*/
+  height: 20px;
+  /*высота строки ввода*/
+  font-size: 13px;
+}
+
+button.basket-header {
+  margin-right: 61px;
+  padding-left: 25px;
+  position: relative;
+}
+
+button.basket-header::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 1px;
+  left: 12px;
+  background-image: url(../img/cart.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+button.compare-header {
+  margin-right: 65px;
+  padding-left: 25px;
+  position: relative;
+}
+
+button.compare-header::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 1px;
+  left: 12px;
+  background-image: url(../img/compare.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+button.exit {
+  margin-right: 85px;
+}
+
+button.enter-header-catalog {
+  margin-right: 20px;
+  padding-left: 25px;
+  position: relative;
+}
+
+button.enter-header-catalog::before {
+  content: "";
+  width: 13px;
+  height: 12px;
+  position: absolute;
+  top: 1px;
+  left: 12px;
+  background-image: url(../img/user.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+div.wrap-2-catalog {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 53px;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.wrap-2-catalog ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  width: 872px;
+  justify-content: flex-end;
+}
+
+.wrap-2-catalog li {
+  padding: 0px;
+  margin: 0px;
+}
+
+button.catalog {
+  display: block;
+  margin-left: 60px;
+  min-width: 255px;
+  vertical-align: middle;
+  padding-right: 25px;
+  position: relative;
+}
+
+button.catalog::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 1px;
+  right: 12px;
+  background-image: url(../img/plus.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+a.contact-header {
+  margin-right: 60px;
+}
+
+a.guarantee-header {
+  margin-right: 114px;
+}
+
+a.delivery-header {
+  margin-right: 38px;
+}
+
+.logo-header {
+  position: absolute;
+  left: 60px;
+  top: -19px;
+}
+
+.wrap-3 {
+  margin-top: 92px;
+  display: flex;
+}
+
+.wrap-3 img {
+  width: 100px;
+  height: 7px;
+  background-color: white;
+  margin-left: 600px;
+}
+
+/*конец разметки шапки*/
+/*Хлебные крошки*/
+.breadcrumbs {
+  display: flex;
+  flex-direction: column;
+  width: 1160px;
+  min-height: 179px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 61px;
+}
+
+.breadcrumbs h1 {
   color: #000000;
-  font-family: "Gilroy - Extra Bold", Georgia, Serif;
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 47px;
+  font-weight: 400;
   line-height: 48px;
   letter-spacing: 0.17px;
 }
 
-div.adress-catalog {
+.breadcrumbs p {
   opacity: 0.3;
   color: #000000;
-  font-family: "Open Sans", Georgia, Serif;
+  font-family: "Open Sans";
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
   letter-spacing: 0.14px;
 }
 
-.adress-catalog span {
-  margin: 18px;
-  color: black;
-  /*тут не получилось сделать черным >, не знаю почему*/
-/*}
+/*конец Хлебные крошки*/
+/*глобальная разметка*/
+.global {
+  display: flex;
+  width: 1440px;
+  flex-direction: row;
+  min-height: 1286px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-. .filter p {
+/*конец глобальная разметка*/
+/*Разметка фильтр*/
+.wrap-filter {
+  width: 468px;
+  min-height: 1287px;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap-filter h2 {
+  vertical-align: middle;
+  min-height: 70px;
+  margin: 0;
+  background-color: #dcdcdc;
+  padding-left: 199px;
+  padding-top: 29px;
   color: #000000;
-  font-family: "Gilroy - Extra Bold", Georgia, Serif;
+  font-family: "Gilroy - Extra Bold";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.91px;
+}
+
+.cost {
+  padding-left: 199px;
+  background-color: #eeeeee;
+}
+
+img.strip-cost-1 {
+  width: 201px;
+  height: 2px;
+  background-color: #000000;
+  margin-top: 69px;
+}
+
+.cost h3 {
+  margin-top: 16px;
+  margin-bottom: 0;
+  color: #000000;
+  font-family: "Gilroy - Extra Bold";
   font-size: 18px;
+  font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.18px;
 }
 
-.filter label {
+img.strip-cost-2 {
+  width: 201px;
+  height: 2px;
+  background-color: #000000;
+  margin-top: 110px;
+}
+
+.color {
+  heigt: 975px;
+  background-color: #eeeeee;
+  display: inline-block;
+  flex-direction: column;
+  padding-left: 199px;
+  min-height: 1006px;
+}
+
+.color ul {
+  padding: 0;
   color: #000000;
-  font-family: "Open Sans", Georgia, Serif;
+  font-family: "Open Sans";
   font-size: 14px;
   font-weight: 300;
   line-height: 40px;
   letter-spacing: 0.14px;
 }
 
-.filter button {
+.color h3 {
   color: #000000;
-  font-family: "Gilroy - Extra Bold", Georgia, Serif;
+  font-family: "Gilroy - Extra Bold";
   font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+}
+
+.color button {
+  margin-top: 53px;
+  color: #000000;
+  font-family: "Gilroy - Extra Bold";
+  font-size: 18px;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 2.15px;
-  border: none;
-  outline: none;
 }
 
-.about h2 {
-  font-family: "Gilroy - Extra Bold", Georgia, Serif;
-  font-size: 47px;
-  line-height: 48px;
-  letter-spacing: 0.21px;
+/*конец Разметка фильтр*/
+/*разметка сортирвка*/
+.sort {
+  display: flex;
+  flex-direction: row;
+  width: 972px;
+  min-height: 70px;
+  background-color: #ebebeb;
+  align-items: center;
 }
 
-.about p {
-  color: #464646;
-  font-family: "Open Sans", Georgia, Serif;
-  ;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 30px;
+.sort ul {
+  display: flex;
+  padding: 0;
+  align-items: center;
 }
 
-.about ul {
+.sort input {
   color: #000000;
-  font-family: "Gilroy - Extra Bold", Georgia, Serif;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.sort h2 {
+  color: #000000;
+  font-family: "Gilroy - Extra Bold";
   font-size: 16px;
-  line-height: 40px;
-  margin-top: 38px;
-}
-
-.about button {
-  color: #000000;
-  font-family: "Gilroy - Extra Bold", Georgia, Serif;
-  font-size: 18px;
+  font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
-  letter-spacing: 2.15px;
-  margin-top: 76px;
-}*/
+  letter-spacing: 0.91px;
+  margin: 0;
+  margin-left: 72px;
+}
+
+.sort li:nth-child(1) {
+  margin-left: 55px;
+}
+
+.sort li:nth-child(2) {
+  margin-left: 29px;
+}
+
+.sort li:nth-child(3) {
+  margin-left: 31px;
+}
+
+.sort li:nth-child(4) {
+  margin-left: 232px;
+}
+
+.sort li:nth-child(5) {
+  margin-left: 19px;
+}
+
+/*конец разметка сортировка*/
+/*разметка палок*/
+.selfi {
+  width: 830px;
+  min-height: 1070px;
+  padding-top: 69px;
+  padding-left: 72px;
+  padding-bottom: 41px;
+}
+
+.selfi ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+}
+
+.selfi li:nth-child(1),
+.selfi li:nth-child(3) {
+  margin-right: 38px;
+}
+
+.selfi li:nth-child(1),
+.selfi li:nth-child(2) {
+  margin-bottom: 49px;
+}
+
+.selfi a {
+  color: #000000;
+  font-family: "Gilroy - Extra Bold";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+
+
+  .selfi p {
+    color: #464646;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.16px;
+    display: flex;
+  }
+
+  /*конец разметка палок*/
+  /*разметка страниц*/
+
+  .page {
+    width: 760px;
+    min-height: 70px;
+    margin-right: 140px;
+    background-color: #ebebeb;
+    margin-bottom: 77px;
+    display: flex;
+  }
+
+  .page ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+
+  /*конец  разметка страниц"*/
