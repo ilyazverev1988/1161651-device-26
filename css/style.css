@@ -264,7 +264,9 @@ a.delivery-header {
 
 /*конец разметки шапки*/
 /*разметка слайдера*/
-.slaider {
+.slaider,
+.slaider2,
+.slaider3 {
   display: flex;
   position: relative;
   flex-wrap: wrap;
@@ -278,21 +280,38 @@ a.delivery-header {
 
 .slaider img {
   position: relative;
-
   top: -110px;
+  left: 90px;
+  width: 384px;
+  height: 486px;
 }
 
-.slaider-img {
-  width: 50%;
-  padding-left: 90px;
+.slaider2 img {
+  position: relative;
+  top: -100px;
+  left: 116px;
+  width: 345px;
+  height: 485px;
 }
 
-div.slaider-wrap {
+.slaider3 img {
+  position: relative;
+  top: -46px;
+  left: 31px;
+  width: 526px;
+  height: 334px;
+}
+
+.slaider-img,
+.slaider-img2,
+.slaider-img3 {
+  width: 600px;
+}
+
+
+.slaider-wrap {
   flex-direction: column;
   align-items: stretch;
-  /*margin-left: 125px;*/
-  width: 50%;
-  padding-left: 20px;
 }
 
 .slaider h3 {
@@ -311,6 +330,35 @@ div.slaider-wrap {
   margin-bottom: 0px;
 }
 
+.slaider2 h3 {
+  color: white;
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
+  font-size: 179px;
+  line-height: 179.2px;
+  letter-spacing: 0.36px;
+  margin: 0px;
+  min-width: 166px;
+  min-height: 131px;
+  vertical-align: baseline;
+  display: block;
+  margin-left: 308px;
+  margin-top: -123px;
+}
+
+.slaider3 h3 {
+  color: white;
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
+  font-size: 179px;
+  line-height: 179.2px;
+  letter-spacing: 0.36px;
+  margin: 0px;
+  min-width: 166px;
+  min-height: 131px;
+  vertical-align: baseline;
+  display: block;
+  margin-left: 308px;
+  margin-top: -123px;
+}
 
 .slaider h4 {
   color: #000000;
@@ -322,8 +370,31 @@ div.slaider-wrap {
   margin-bottom: 0px;
 }
 
+.slaider2 h4 {
+  width: 258px;
+  color: #000000;
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 56px;
+  letter-spacing: 0.17px;
+  margin-top: -85px;
+  margin-bottom: 0px;
+}
 
-.slaider p {
+.slaider3 h4 {
+  width: 258px;
+  color: #000000;
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 56px;
+  letter-spacing: 0.17px;
+  margin-top: -85px;
+  margin-bottom: 0px;
+  width: 502px;
+}
+
+.slaider p,
+.slaider2 p {
   color: #464646;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
@@ -332,6 +403,21 @@ div.slaider-wrap {
   letter-spacing: 0.15px;
   margin-bottom: 0px;
   margin-top: 31px;
+}
+
+.slaider3 p {
+  color: #464646;
+  font-family: "Open Sans", Arial, sans-serif;
+  ;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  margin-bottom: 0px;
+  margin-top: 31px;
+  width: 480px;
+  /*какая то фигня с размерами на макете*/
+  min-height: 46px;
 }
 
 .slaider-a-div {
@@ -372,6 +458,28 @@ div.slaider-wrap {
   margin-right: 0px;
 }
 
+.slaider3-ul1-div>ul {
+  display: flex;
+  flex-direction: row;
+  margin-top: 71px;
+  padding: 0;
+  margin-bottom: 0px;
+}
+
+.slaider3-ul1-div li {
+  color: #000000;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 48px;
+  letter-spacing: 0.36px;
+  margin-right: 64px;
+}
+
+.slaider3-ul1-div li:nth-child(2) {
+  margin-right: 0px;
+}
+
 .slaider-ul2-div {
   display: flex;
   flex-direction: row;
@@ -391,6 +499,28 @@ div.slaider-wrap {
 }
 
 .slaider-ul2-div li:nth-child(3) {
+  margin-right: 0px;
+}
+
+.slaider3-ul2-div {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  padding: 0;
+  margin-bottom: 0px;
+}
+
+.slaider3-ul2-div li {
+  color: #464646;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.13px;
+  margin-right: 47px;
+}
+
+.slaider3-ul2-div li:nth-child(2) {
   margin-right: 0px;
 }
 
@@ -1231,7 +1361,7 @@ a.delivery-header {
 .breadcrumbs p {
   opacity: 0.3;
   color: #000000;
-  font-family: "Open Sans";
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
@@ -1266,7 +1396,7 @@ a.delivery-header {
   padding-left: 199px;
   padding-top: 29px;
   color: #000000;
-  font-family: "Gilroy - Extra Bold";
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -1290,7 +1420,7 @@ img.strip-cost-1 {
   margin-top: 16px;
   margin-bottom: 0;
   color: #000000;
-  font-family: "Gilroy - Extra Bold";
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -1316,7 +1446,7 @@ img.strip-cost-2 {
 .color ul {
   padding: 0;
   color: #000000;
-  font-family: "Open Sans";
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 40px;
@@ -1325,7 +1455,7 @@ img.strip-cost-2 {
 
 .color h3 {
   color: #000000;
-  font-family: "Gilroy - Extra Bold";
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -1335,7 +1465,7 @@ img.strip-cost-2 {
 .color button {
   margin-top: 53px;
   color: #000000;
-  font-family: "Gilroy - Extra Bold";
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   text-transform: uppercase;
@@ -1361,7 +1491,7 @@ img.strip-cost-2 {
 
 .sort input {
   color: #000000;
-  font-family: "Open Sans";
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -1369,7 +1499,7 @@ img.strip-cost-2 {
 
 .sort h2 {
   color: #000000;
-  font-family: "Gilroy - Extra Bold";
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -1429,40 +1559,246 @@ img.strip-cost-2 {
 
 .selfi a {
   color: #000000;
-  font-family: "Gilroy - Extra Bold";
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.18px;
+}
 
+.selfi p {
+  color: #464646;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+  display: flex;
+  justify-content: space-between;
+}
 
-  .selfi p {
-    color: #464646;
-    font-family: Gilroy;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 24px;
-    letter-spacing: 0.16px;
-    display: flex;
-  }
+a.selfi1 {
+  width: 247px;
+}
 
-  /*конец разметка палок*/
-  /*разметка страниц*/
+a.selfi2 {
+  width: 173px;
+}
 
-  .page {
-    width: 760px;
-    min-height: 70px;
-    margin-right: 140px;
-    background-color: #ebebeb;
-    margin-bottom: 77px;
-    display: flex;
-  }
+a.selfi3 {
+  width: 252px;
+}
 
-  .page ul {
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
-  }
+a.selfi4 {
+  width: 225px;
+}
 
-  /*конец  разметка страниц"*/
+/*конец разметка палок*/
+/*разметка страниц*/
+
+.pages {
+  display: flex;
+  min-height: 70px;
+  background-color: #ebebeb;
+  width: 760px;
+  margin-left: 74px;
+  padding-left: 30px;
+  align-items: center;
+  margin-bottom: 77px;
+
+}
+
+.pages ul {
+  display: flex;
+  color: #000000;
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.91px;
+  margin: 0;
+  padding: 0;
+}
+
+.pages li:nth-child(2) {
+  margin-left: 240px;
+}
+
+.pages li:nth-child(3) {
+  margin-left: 31px;
+}
+
+.pages li:nth-child(4) {
+  margin-left: 31px;
+}
+
+.pages li:nth-child(5) {
+  margin-left: 232px;
+}
+
+.pages input {
+  outline: none;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+/*конец  разметка страниц"*/
+/*разметка подвала каталога*/
+.footer1-div-catalog {
+  display: flex;
+  margin-top: 65px;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.footer1-div-catalog ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  width: 1137px;
+  justify-content: flex-end;
+}
+
+.footer1-div-catalog img {
+  margin-left: 140px;
+}
+
+.footer1-div-catalog li {
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer1-div-catalog button {
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer1-div-catalog li:nth-child(4) {
+  margin-right: 140px;
+}
+
+.footer1-div-catalog li:nth-child(3) {
+  margin-right: 41px;
+}
+
+.footer1-div-catalog li:nth-child(2) {
+  margin-right: 44px;
+}
+
+.footer1-div-catalog li:nth-child(1) {
+  margin-right: 20px;
+}
+
+/*конец разметки подвала*/
+/*разметка попапа*/
+.popup {
+  display: flex;
+  width: 960px;
+  height: 553px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  padding-left: 100px;
+  border: 1px #000000 solid;
+}
+
+.popup-close {
+  display: flex;
+  margin-top: 22px;
+  margin-right: 22px;
+  justify-content: flex-end;
+}
+
+.popup-close button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  height: 55px;
+}
+
+.popup-person {
+  display: flex;
+  margin-top: 21px;
+  padding-right: 100px;
+  /*flex-wrap: wrap;*/
+}
+
+.popup-person input {
+  width: 360px;
+  height: 50px;
+  opacity: 0.5;
+  margin-right: 40px;
+  margin-top: 13px;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.popup-person input::placeholder {
+  padding-left: 20px;
+  opacity: 0.4;
+  color: #464646;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.popup-person label,
+.popup-letter label {
+  color: #000000;
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.popup-letter {
+  display: flex;
+  flex-direction: column;
+  margin-top: 39px;
+  padding-right: 100px;
+  align-items: flex-start;
+}
+
+.popup-letter textarea {
+  width: 760px;
+  height: 156px;
+  opacity: 0.5;
+  margin-right: 40px;
+  margin-top: 13px;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.popup-letter textarea::placeholder {
+  padding-left: 20px;
+  opacity: 0.4;
+  color: #464646;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.popup-letter button {
+  margin-top: 55px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  border: none;
+  color: #000000;
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2.15px;
+  background-color: transparent;
+
+}
+
+/*разметка попапа*/

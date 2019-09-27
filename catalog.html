@@ -117,25 +117,25 @@
               <li>
                 <img src="img/catalog/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
                 <p>
-                  <a href="">Любительская селфи-палка</a>500 руб.
+                  <a href="" class="selfi1">Любительская селфи-палка</a>500 руб.
                 </p>
               </li>
               <li>
-                <img src="img/catalog/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка ">
+                <img src="img/catalog/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
                 <p>
-                  <a href="">Любительская селфи-палка</a>1500 руб.
+                  <a href="" class="selfi2">Профессиональная селфи-палка</a>1500 руб.
                 </p>
               </li>
               <li>
                 <img src="img/catalog/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
                 <p>
-                  <a href="">Любительская селфи-палка</a>2500 руб.
+                  <a href="" class="selfi3">"Непотопляемая селфи-палка"</a>2500 руб.
                 </p>
               </li>
               <li>
                 <img src="img/catalog/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                 <p>
-                  <a href="">Селфи-палка «Следуй за мной»</a>4900 руб.
+                  <a href="" class="selfi4">Селфи-палка «Следуй за мной»</a>4900 руб.
                 </p>
               </li>
             </ul>
@@ -143,59 +143,78 @@
         </section>
         <section>
           <h2 class="visually-hidden">Кнопки выбора страниц с товаром</h2>
-          <div class="page">
+          <div class="pages">
             <ul>
               <li><input type="button" value="Назад"></li>
               <li><input type="button" value="1"></li>
               <li><input type="button" value="2"></li>
               <li><input type="button" value="3"></li>
               <li><input type="button" value="Вперед"></li>
-            </ul>
           </div>
         </section>
       </div>
     </div>
   </main>
-  <footer>
-    <nav>
-      <a href="index.html">
-        <img src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс">
-      </a>
-      <ul aria-label="О нас">
-        <li>
+  <footer class="footer">
+    <nav aria-label="Содержимое">
+      <div class="footer1-div-catalog">
+        <a href="index.html">
+          <img src="img/logo-yellow.png" width="163" height="35" alt="Логотип магазина Девайс" class="logo">
+        </a>
+        <ul class="act-footer">
+          <li><button type="button">Валентин Петухов</button>
+          </li>
+          <li>
+            <!--<img src="img/user_n.png" width="13" height="12" alt="Вход">--><button type="button">Войти</button>
+          </li>
+          <li>
+            <!--<img src="img/compare_n.png" width="10" height="10" alt="Сравнить">--><button
+              type="button">Сравнить</button>
+          </li>
+          <li>
+            <!--<img src="img/cart_n.png" width="12" height="12" alt="Корзина">--><button type="button">Корзина</button>
+          </li>
+        </ul>
+      </div>
+      <div class="footer2-div">
+        <div class="city-div" aria-label="О нас">
           <p>г. Москва, ул. Строителей, 15</p>
-        </li>
-        <li>
+        </div>
+        <ul>
+          <li class="features-footer delivery-footer-div" aria-label="Доставка">
+            <a href="">Доставка</a>
+          </li>
+          <li class="features-footer warranty-footer-div" aria-label="Гарантия">
+            <a href="">Гарантия</a>
+          </li>
+          <li class="features-footer contact-footer-div">
+            <a href="">Контакты</a>
+          </li>
+        </ul>
+        <div class="phone-div">
           <a href="" aria-label="Вы можете позвонить нам по телефону">Тел.: +7 (495) 495-95-95</a>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <!--<img src="img/user_n.png" width="13" height="12" alt="Вход">--><button type="button">Валентин
-            Петухов</button>
-        </li>
-        <li><button type="button">Выйти</button></li>
-        <li>
-          <!--<img src="img/compare_n.png" width="10" height="10" alt="Сравнить">--><button
-            type="button">Сравнить</button>
-        </li>
-        <li>
-          <!--<img src="img/cart_n.png" width="12" height="12" alt="Корзина">--><button type="button">Корзина</button>
-        </li>
-        <li><button type="button">Каталог товаров</button></li>
-      </ul>
-      <ul aria-label="Доставка. Гарантия. Контакты">
-        <li><a href="">Доставка</a></li>
-        <li><a href="">Гарантия</a></li>
-        <li><a href="">Контакты</a></li>
-      </ul>
-      <ul>
-        <li><a href=""><img src="img/FB.svg" width="32" height="32" alt="Магазин в Фэйсбук"></a></li>
-        <li><a href=""><img src="img/instagram.svg" width="32" height="32" alt="Магазин в Инстаграмм"></a></li>
-        <li><a href=""><img src="img/tviter.svg" width="32" height="32" alt="Магазин в Твитер"></a></li>
-        <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.png" width="27" height="35"
-              alt="Ссылка HTML академии"></a></li>
-      </ul>
+        </div>
+      </div>
+      <div class="footer3-div">
+        <ul>
+          <li>
+            <img class="strip-footer">
+          </li>
+          <li class="socialnetwork facebook-div"><a href="">
+              <img src="img/FB.svg" width="32" height="32" alt="Магазин в Фэйсбук"></a>
+          </li>
+          <li class="socialnetwork instagram-div"><a href="">
+              <img src="img/instagram.svg" width="32" height="32" alt="Магазин в Инстаграмм"></a>
+          </li>
+          <li class="socialnetwork tviter-div"><a href="">
+              <img src="img/tviter.svg" width="32" height="32" alt="Магазин в Твитер"></a>
+          </li>
+          <li class="socialnetwork htmlacademy-div">
+            <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.png" class="html-logo" width="27"
+                height="35" alt="Ссылка HTML академии"></a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </footer>
 </body>

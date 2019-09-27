@@ -58,6 +58,7 @@
     <h1 class="visually-hidden">Магазин Device</h1>
     <!--Блок который делать не надо-->
     <section>
+
       <div class="slaider">
         <h2 class="visually-hidden">Слайдер с самыми интересными товарами</h2>
         <div class="slaider-img">
@@ -66,11 +67,9 @@
         <div class="slaider-wrap">
           <h3>01</h3>
           <h4>Делай селфи,<br> как Бен Стиллер! </h4>
-
           <p>Самая длинная палка для селфи доступна в нашем магазине<br>
             Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
           </p>
-
           <div class="slaider-a-div">
             <a href="">Подробнее</a>
           </div>
@@ -90,29 +89,60 @@
           </div>
         </div>
       </div>
-      <!--<li>
-          <h3>02</h3>
+
+      <div class="slaider2">
+        <div class="slaider-img2">
           <img src="img/slider-2.png" height="345" width="485" alt="Фитнес-браслет">
+        </div>
+        <div class="slaider-wrap">
+          <h3>02</h3>
           <h4>Худеем правильно!</h4>
           <p>Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
             не пропускать занятия и соблюдать диету.
           </p>
-          <a href="">Подробнее</a>
-          <p>Без подзарядки<span>48 часов</span></p>
-        </li>
-        <li>
-          <h3>03</h3>
+          <div class="slaider-a-div">
+            <a href="">Подробнее</a>
+          </div>
+          <div class="slaider-ul1-div">
+            <ul>
+              <li>48 часов</li>
+            </ul>
+          </div>
+          <div>
+            <ul class="slaider-ul2-div">
+              <li>Без подзарядки</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="slaider3">
+        <div class="slaider-img3">
           <img src="img/slider-3.png" height="526" width="334" alt="Квадрокоптер">
-          <h4>Порхает как бабочка,<br>
-            жалит как пчела!</h4>
-          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
-            мощным лазером, замаскированным под стандартную камеру.
+        </div>
+        <div class="slaider-wrap">
+          <h3>03</h3>
+          <h4>Порхает как бабочка, жалит как пчела!</h4>
+          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером, замаскированным под стандартную
+            камеру.
           </p>
-          <a href="">Подробнее</a>
-          <p>Дальность полета<span>800 м</span></p>
-          <p>Радиус поражения<span>50 м</span></p>
-        </li>-->
-      </ul>
+          <div class="slaider-a-div">
+            <a href="">Подробнее</a>
+          </div>
+          <div class="slaider3-ul1-div">
+            <ul>
+              <li>800 м</li>
+              <li>50 м</li>
+            </ul>
+          </div>
+          <div>
+            <ul class="slaider3-ul2-div">
+              <li>Дальность полета</li>
+              <li>Радиус поражения</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
     <section>
       <h2 class="visually-hidden">Каталог</h2>
@@ -271,19 +301,29 @@
   </footer>
 </body>
 <section>
-  <div class="popup">
-    <h2 class="visually-hidden">Напишите нам</h2>
-    <img>
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <button type="button" aria-label="Закрыть">X</button>
-      <label for="name">Ваше имя</label>
-      <input type="text" name="name" id="name" placeholder="Имя Фамилия">
-      <label for="email">Ваш e-mail</label>
-      <input type="email" name="email" id="email" placeholder="email@example.com">
-      <label for="letter">Текст письма</label>
-      <textarea name="letter" id="letter" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-      <button type="submit">Отправить</button>
-    </form>
+  <h2 class="visually-hidden">Напишите нам</h2>
+  <form action="https://echo.htmlacademy.ru" method="post">
+    <div class="popup">
+      <div class="popup-close">
+        <button type="button" aria-label="Закрыть"><img src="img/close.svg" alt="Иконка закрыть"></button>
+      </div>
+      <div class="popup-person">
+        <div>
+          <label for="name">Ваше имя:</label>
+          <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+        </div>
+        <div>
+          <label for="email">Ваш e-mail:</label>
+          <input type="email" name="email" id="email" placeholder="email@example.com">
+        </div>
+      </div>
+      <div class="popup-letter">
+        <label for="letter">Текст письма</label>
+        <textarea name="letter" id="letter" placeholder="В свободной форме"></textarea>
+        <button type="submit">Отправить</button>
+      </div>
+    </div>
+  </form>
 </section>
 
 </html>
