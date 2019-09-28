@@ -77,7 +77,7 @@ li {
   flex-direction: column;
   width: 1160px;
   min-height: 299px;
-  background-color: #f0c52e;
+  background-color: #f7e296;
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
@@ -88,6 +88,7 @@ div.wrap-1 {
   display: flex;
   margin-top: 53px;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .wrap-1 ul {
@@ -95,7 +96,7 @@ div.wrap-1 {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  width: 950px;
+  width: 660px;
   justify-content: flex-end;
 }
 
@@ -108,7 +109,6 @@ div.wrap-1 {
 
 input.search {
   display: inline-block;
-  margin-left: 99px;
   padding: 0px;
   vertical-align: baseline;
   padding-left: 30px;
@@ -190,6 +190,137 @@ button.enter-header::before {
   background-position: 0 0;
 }
 
+img.logo-header:hover,
+img.logo-header:focus {
+  opacity: 0.6;
+}
+
+img.logo-header:active {
+  opacity: 0.3;
+}
+
+/*интерактивный поиск*/
+.search-div {
+  margin-left: 63px;
+  width: 460px;
+  vertical-align: middle
+}
+
+.search-div input[type="search"] {
+  width: 356px;
+}
+
+.search-div input[type="submit"] {
+  width: 85px;
+  height: 49px;
+  border: 2px solid #000000;
+  padding: 0px;
+  background-color: transparent;
+  vertical-align: bottom;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  display: none;
+  top: 29px;
+  border-bottom: 1px solid #000000;
+  position: absolute;
+}
+
+.search-div input[type="submit"]:hover,
+.search-div input[type="submit"]:focus {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.search-div input[type="submit"]:active {
+  opacity: 0.3;
+}
+
+
+input.search {
+  opacity: 0.3;
+  color: #000000;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+input.search:hover {
+  opacity: 0.6;
+}
+
+input.search:focus {
+  opacity: 1;
+  border-bottom: 1px solid #000000;
+}
+
+input.search:focus+input.search-div-submit,
+input.search:active+input.search-div-submit {
+  display: inline-block;
+}
+
+/*конец поиск*/
+ul.act {
+  color: #000000;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+}
+
+.act button {
+  border: none;
+  background-color: transparent;
+}
+
+.catalog,
+button.catalog {
+  color: #000000;
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin-left: 60px;
+  padding: 0px;
+}
+
+.act button:hover,
+.act button:focus,
+.catalog :hover,
+.catalog :focus,
+.catalog-item li:hover,
+.catalog-item li:focus,
+button.catalog:hover,
+button.catalog:focus {
+  opacity: 0.6;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.act button:active,
+.catalog :active,
+.catalog-item li:active,
+button.catalog:active {
+  opacity: 0.3;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
 div.wrap-2 {
   display: flex;
   margin-top: 50px;
@@ -197,12 +328,11 @@ div.wrap-2 {
   flex-wrap: nowrap;
 }
 
-.wrap-2 ul {
+ul.catalog {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  width: 872px;
   justify-content: flex-end;
 }
 
@@ -211,13 +341,42 @@ div.wrap-2 {
   margin: 0px;
 }
 
+
+/*выпадающий список*/
+ul.catalog-item {
+  color: #000000;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+  position: absolute;
+  width: 1160px;
+  min-height: 130px;
+  padding: 0;
+  margin: 0;
+  display: none;
+  flex-direction: row;
+  justify-content: flex-start;
+  top: 35px;
+  background-color: #f7e296;
+  z-index: 20;
+  padding-left: 60px;
+}
+
+.catalog li {
+  position: relative;
+}
+
+.catalog li:hover .catalog-item {
+  display: flex;
+}
+
 button.catalog {
-  display: block;
+  position: relative;
   margin-left: 60px;
-  min-width: 255px;
   vertical-align: middle;
   padding-right: 25px;
-  position: relative;
 }
 
 button.catalog::after {
@@ -225,23 +384,33 @@ button.catalog::after {
   width: 16px;
   height: 16px;
   position: absolute;
-  top: 1px;
-  right: 12px;
+  /*top: 1px;
+  right: 12px;*/
   background-image: url(../img/plus.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
+.catalog-item-div2 {
+  margin-left: 58px;
+}
+
+.catalog-item-div3 {
+  margin-left: 77px;
+}
+
+/*выпадающий список конец*/
+
 a.contact-header {
-  margin-right: 60px;
+  margin-left: 114px;
 }
 
 a.guarantee-header {
-  margin-right: 114px;
+  margin-left: 38px;
 }
 
 a.delivery-header {
-  margin-right: 38px;
+  margin-left: 294px;
 }
 
 .logo-header {
@@ -565,7 +734,7 @@ a.delivery-header {
 .gadget img {
   width: 160px;
   height: 160px;
-  background-color: #f0c52e;
+  background-color: #f7e296;
   margin-bottom: 41px;
 }
 
@@ -1040,304 +1209,7 @@ img.html-logo:active {
 }
 
 /*конец подвала*/
-/*попап начало*/
 
-/*конец попап*/
-/*конец разметки index*/
-/*index.html*/
-/*Шапка*/
-
-img.logo-header:hover,
-img.logo-header:focus {
-  opacity: 0.6;
-}
-
-img.logo-header:active {
-  opacity: 0.3;
-}
-
-input.search {
-  opacity: 0.3;
-  color: #000000;
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 30px;
-  letter-spacing: 0.15px;
-  border: none;
-  outline: none;
-  background-color: transparent;
-}
-
-input.search:hover {
-  opacity: 0.6;
-}
-
-input.search:focus {
-  opacity: 1;
-}
-
-ul.act {
-  color: #000000;
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 30px;
-  letter-spacing: 0.15px;
-}
-
-.act button {
-  border: none;
-  background-color: transparent;
-}
-
-.catalog,
-button.catalog {
-  color: #000000;
-  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 24px;
-  text-transform: uppercase;
-  letter-spacing: 3.6px;
-  border: none;
-  outline: none;
-  background-color: transparent;
-  margin-left: 60px;
-  padding: 0px;
-}
-
-ul.catalog-item {
-  color: #000000;
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 36px;
-  letter-spacing: 0.15px;
-}
-
-.act button:hover,
-.act button:focus,
-.catalog :hover,
-.catalog :focus,
-.catalog-item li:hover,
-.catalog-item li:focus,
-button.catalog:hover,
-button.catalog:focus {
-  opacity: 0.6;
-  border: none;
-  outline: none;
-  background-color: transparent;
-}
-
-.act button:active,
-.catalog :active,
-.catalog-item li:active,
-button.catalog:active {
-  opacity: 0.3;
-  border: none;
-  outline: none;
-  background-color: transparent;
-}
-
-/*КАТАЛОГ*/
-/*разметка шапки*/
-.navigation-catalog {
-  display: flex;
-  flex-direction: column;
-  width: 1160px;
-  min-height: 186px;
-  background-color: #f0c52e;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 40px;
-  position: relative;
-}
-
-div.wrap-1 {
-  display: flex;
-  margin-top: 53px;
-  align-items: baseline;
-}
-
-.wrap-1 ul {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  width: 950px;
-  justify-content: flex-end;
-}
-
-.act button,
-.catalog a {
-  vertical-align: baseline;
-  padding: 0;
-  display: inline-block;
-}
-
-input.search {
-  display: inline-block;
-  margin-left: 99px;
-  padding: 0px;
-  vertical-align: baseline;
-  padding-left: 30px;
-  position: relative;
-}
-
-input.search {
-  background-image: url(../img/search.svg);
-  background-repeat: no-repeat;
-  /*Убираем повтор изображения*/
-  background-position: 4px;
-  /*Позиционируем*/
-  outline: none;
-  /*убираем стандартную обводку браузера*/
-  -moz-border-radius: 5px;
-  /*закругляем углы для Mozilla*/
-  -webkit-border-radius: 5px;
-  /*закругляем углы для Chrome, Safari*/
-  border-radius: 5px;
-  /*закругляем углы для остальных браузеров*/
-  padding-left: 20px;
-  /*отступ слева от ввода, чтобы текст не был на картинке(выбирать по размеру картинки)*/
-  height: 20px;
-  /*высота строки ввода*/
-  font-size: 13px;
-}
-
-button.basket-header {
-  margin-right: 61px;
-  padding-left: 25px;
-  position: relative;
-}
-
-button.basket-header::before {
-  content: "";
-  width: 12px;
-  height: 12px;
-  position: absolute;
-  top: 1px;
-  left: 12px;
-  background-image: url(../img/cart.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-button.compare-header {
-  margin-right: 65px;
-  padding-left: 25px;
-  position: relative;
-}
-
-button.compare-header::before {
-  content: "";
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  top: 1px;
-  left: 12px;
-  background-image: url(../img/compare.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-button.exit {
-  margin-right: 85px;
-}
-
-button.enter-header-catalog {
-  margin-right: 20px;
-  padding-left: 25px;
-  position: relative;
-}
-
-button.enter-header-catalog::before {
-  content: "";
-  width: 13px;
-  height: 12px;
-  position: absolute;
-  top: 1px;
-  left: 12px;
-  background-image: url(../img/user.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-div.wrap-2-catalog {
-  display: flex;
-  margin-top: 50px;
-  margin-bottom: 53px;
-  align-items: center;
-  flex-wrap: nowrap;
-}
-
-.wrap-2-catalog ul {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  width: 872px;
-  justify-content: flex-end;
-}
-
-.wrap-2-catalog li {
-  padding: 0px;
-  margin: 0px;
-}
-
-button.catalog {
-  display: block;
-  margin-left: 60px;
-  min-width: 255px;
-  vertical-align: middle;
-  padding-right: 25px;
-  position: relative;
-}
-
-button.catalog::after {
-  content: "";
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  top: 1px;
-  right: 12px;
-  background-image: url(../img/plus.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-a.contact-header {
-  margin-right: 60px;
-}
-
-a.guarantee-header {
-  margin-right: 114px;
-}
-
-a.delivery-header {
-  margin-right: 38px;
-}
-
-.logo-header {
-  position: absolute;
-  left: 60px;
-  top: -19px;
-}
-
-.wrap-3 {
-  margin-top: 92px;
-  display: flex;
-}
-
-.wrap-3 img {
-  width: 100px;
-  height: 7px;
-  background-color: white;
-  margin-left: 600px;
-}
-
-/*конец разметки шапки*/
 /*Хлебные крошки*/
 .breadcrumbs {
   display: flex;

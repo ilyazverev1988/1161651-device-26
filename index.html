@@ -15,8 +15,10 @@
         <img src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс" class="logo-header">
       </a>
       <div class="wrap-1">
-        <!--<img src="img/search.svg" width="16" height="16" alt="Поиск по сайту">--><input type="search" class="search"
-          placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+        <div class="search-div">
+          <input type="search" class="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+          <input type="submit" class="search-div-submit" value="Найти">
+        </div>
         <ul class="act">
           <li>
             <!--<img src="img/user.svg" width="13" height="12" alt="Вход">--><button type="button"
@@ -33,18 +35,26 @@
         </ul>
       </div>
       <div class="wrap-2">
-        <button type="button" class="catalog">Каталог товаров</button>
-        <!--<img src="img/plus.svg" width="16" height="16" alt="Плюс">
-      <ul class="catalog-item" aria-label="Каталог товаров">
-        <li><a href="">Виртуальная реальность</a></li>
-        <li><a href="">Моноподы для селфи</a></li>
-        <li><a href="">Экшн-камеры</a></li>
-        <li><a href="">Фитнес-браслеты</a></li>
-        <li><a href="">Умные часы</a></li>
-        <li><a href="">Квадрокоптеры</a></li>
-      </ul>-->
         <ul class="catalog">
-          <li></li><a href="" class="delivery-header">Доставка</a></li>
+          <li><button type="button" class="catalog">Каталог товаров</button>
+            <!--<img src="img/plus.svg" width="16" height="16" alt="Плюс"-->
+            <ul class="catalog-item" aria-label="Каталог товаров">
+              <div>
+                <li><a href="">Виртуальная реальность</a></li>
+                <li><a href="">Моноподы для селфи</a></li>
+                <li><a href="">Экшн-камеры</a></li>
+              </div>
+              <div class="catalog-item-div2">
+                <li><a href="">Фитнес-браслеты</a></li>
+                <li><a href="">Умные часы</a></li>
+              </div>
+              <div class="catalog-item-div3">
+                <li><a href="">Квадрокоптеры</a></li>
+              </div>
+            </ul>
+          </li>
+
+          <li><a href="" class="delivery-header">Доставка</a></li>
           <li><a href="" class="guarantee-header">Гарантия</a></li>
           <li><a href="" class="contact-header">Контакты</a></li>
         </ul>
