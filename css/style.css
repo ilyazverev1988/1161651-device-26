@@ -593,6 +593,7 @@ a.delivery-header {
   margin-top: 62px;
   padding-left: 44px;
   padding-right: 43px;
+  position: relative;
 }
 
 .slaider-a-div a {
@@ -603,6 +604,31 @@ a.delivery-header {
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 2.15px;
+  position: relative;
+  width: 220px;
+  height: 8px;
+
+}
+
+.slaider-content {
+  position: absolute;
+  width: 220px;
+  height: 8px;
+  background-color: #f0c52e;
+  left: 0px;
+  top: 7px;
+  z-index: -1;
+}
+
+
+.slaider-a-div a:hover+.slaider-content,
+.slaider-a-div a:hover+.slaider-content {
+  height: 40px;
+  top: -10px;
+}
+
+.slaider-a-div a:active {
+  opacity: 0.3;
 }
 
 .slaider-ul1-div>ul {
@@ -738,6 +764,24 @@ a.delivery-header {
   margin-bottom: 41px;
 }
 
+.gadget a {
+  color: #000000;
+  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+}
+
+.gadget img:hover,
+.gadget img:active {
+  background-color: #f0c52e;
+}
+
+.gadget li:active {
+  opacity: 0.3;
+}
+
 img.img-gadget1 {
   padding: 52px 32px 53px 31px;
 }
@@ -785,6 +829,7 @@ img.img-gadget6 {
   padding: 0;
   margin-left: 145px;
   margin-top: -20px;
+  z-index: 2;
 }
 
 .common-div li {
@@ -796,6 +841,7 @@ img.img-gadget6 {
   text-transform: uppercase;
   letter-spacing: 2.15px;
   margin-bottom: 53px;
+  position: relative;
 }
 
 img.strip-common {
@@ -813,24 +859,76 @@ img.strip-common {
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 2.15px;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+
+.common-div-content {
+  position: absolute;
+  width: 160px;
+  height: 8px;
+  background-color: #f0c52e;
+  top: 7px;
+  z-index: -1;
+  outline: none;
+}
+
+
+
+.common-div button:hover+.common-div-content {
+  height: 40px;
+  top: -8px;
+}
+
+.common-div button:active+.common-div-content {
+  width: 278px;
+  height: 40px;
+  background-color: #000000;
+  top: -8px;
+  outline: none;
+}
+
+.common-div button:active {
+  color: #f7e184;
+  outline: none;
+  border: none;
+}
+
+.common-div-content.focus {
+  width: 278px;
+  height: 40px;
+  background-color: #000000;
+  top: -8px;
+  outline: none;
+}
+
+button.focus {
+  color: #f7e184;
+  outline: none;
+  border: none;
 }
 
 .details {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
   padding-left: 116px;
   min-width: auto;
+  width: 1016px;
 }
 
-.details-text {
-  width: 440px;
-  justify-content: space-between;
-  /* padding-right: 132px;*/
-  margin-right: 132px;
+.details-text1,
+.details-text2,
+.details-text3 {
+  display: flex;
+  position: relative;
 }
 
-.details-text h3 {
+
+.details-text1 h3,
+.details-text2 h3,
+.details-text3 h3 {
   color: #000000;
   font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 47px;
@@ -841,7 +939,7 @@ img.strip-common {
   margin-top: -25px;
 }
 
-.details-text p {
+.details-text1 p {
   color: #464646;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
@@ -853,8 +951,46 @@ img.strip-common {
   width: 440px;
 }
 
-.details img {
-  margin-top: -17px;
+.details-text2 p {
+  color: #464646;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  margin: 0;
+  margin-top: 43px;
+  width: 436px;
+}
+
+.details-text3 p {
+  color: #464646;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  margin: 0;
+  margin-top: 43px;
+  width: 445px;
+}
+
+.details-text1 img {
+  margin-left: 132px;
+  position: absolute;
+  top: -15px;
+}
+
+.details-text2 img {
+  margin-left: 107px;
+  position: absolute;
+  top: -33px;
+}
+
+.details-text3 img {
+  margin-left: 110px;
+  position: absolute;
+  top: -40px;
 }
 
 /*конец разметка гарантия кредит доставка*/
@@ -886,6 +1022,31 @@ img.strip-common {
 .manufacturers-div img {
   width: 260px;
   height: 100px;
+}
+
+.logo:hover {
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 260px;
+  height: 100px;
+  padding-right: 260px;
+}
+
+.logo1:hover {
+  background: url(../img/logo-1-1.jpg);
+}
+
+.logo2:hover {
+  background: url(../img/logo-2-2.jpg);
+}
+
+.logo3:hover {
+  background: url(../img/logo-3-3.jpg);
+}
+
+.logo4:hover {
+  background: url(../img/logo-4-4.jpg);
 }
 
 /* конец разметка производители*/
