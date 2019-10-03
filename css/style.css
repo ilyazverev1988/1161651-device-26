@@ -1768,6 +1768,19 @@ button.enter-header-catalog {
   display: none;
 }
 
+.disabled-a {
+  pointer-events: none;
+  cursor: default;
+}
+
+.breadcrumbs li a:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs li a:active {
+  opacity: 0.1;
+}
+
 /*конец Хлебные крошки*/
 /*глобальная разметка*/
 .global {
@@ -1828,11 +1841,10 @@ img.strip-cost-1 {
   letter-spacing: 0.18px;
 }
 
-img.strip-cost-2 {
+.strip-cost-2 {
   width: 201px;
   height: 2px;
   background-color: #000000;
-  margin-top: 110px;
 }
 
 .color {
@@ -1966,6 +1978,71 @@ img.strip-cost-2 {
 }
 
 /*конец Разметка фильтр*/
+/*разметка ползунка*/
+.min-price,
+.max-price {
+  opacity: 0.2;
+  color: #000000;
+  font-family: Gilroy;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.range-filter {
+  width: 201px;
+  margin-top: 41px;
+}
+
+.range-controls {
+  margin-bottom: 6px;
+  position: relative;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background-color: #dbdbdb;
+}
+
+.range-controls .bar {
+  width: 110px;
+  height: 2px;
+  background-color: #91c92f;
+}
+
+.range-controls .toggle {
+  width: 20px;
+  height: 22px;
+  background-image: url(/img/catalog/filter-button.png);
+  cursor: pointer;
+  position: absolute;
+  top: -10px;
+}
+
+.range-controls .toggle-min {
+  left: -5px;
+}
+
+.range-controls .toggle-max {
+  left: 98px;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 40%;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls input {
+  width: 46px;
+  padding: 0;
+  border: none;
+}
+
+/*конец разметки ползунка*/
 /*разметка сортирвка*/
 .sort {
   display: flex;
@@ -2237,7 +2314,6 @@ a.selfi4 {
   background-color: #ebebeb;
   width: 760px;
   margin-left: 74px;
-  padding-left: 30px;
   align-items: center;
   margin-bottom: 77px;
 
@@ -2256,27 +2332,69 @@ a.selfi4 {
   padding: 0;
 }
 
+.pages li input {
+  border: none;
+  background-color: transparent;
+}
+
+.pages li:nth-child(1) input,
+.pages li:nth-child(5) input {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 27px;
+}
+
+.pages li:nth-child(1) input:hover,
+.pages li:nth-child(1) input:focus,
+.pages li:nth-child(1) input:active,
+.pages li:nth-child(5) input:hover,
+.pages li:nth-child(5) input:focus,
+.pages li:nth-child(5) input:active {
+  background-color: #d8d8d8;
+}
+
+.pages li:nth-child(1) input:active,
+.pages li:nth-child(5) input:active {
+  color: rgba(0, 0, 0, 0.3)
+}
+
+.pages li:nth-child(2) input:hover,
+.pages li:nth-child(2) input:focus,
+.pages li:nth-child(3) input:hover,
+.pages li:nth-child(3) input:focus,
+.pages li:nth-child(4) input:hover,
+.pages li:nth-child(4) input:focus {
+  opacity: 0.3;
+}
+
+.pages li:nth-child(2) input:active,
+.pages li:nth-child(3) input:active,
+.pages li:nth-child(4) input:active {
+  opacity: 1;
+}
+
 .pages li:nth-child(2) {
   margin-left: 240px;
+  margin-top: 30px;
 }
 
 .pages li:nth-child(3) {
   margin-left: 31px;
+  margin-top: 30px;
 }
 
 .pages li:nth-child(4) {
   margin-left: 31px;
+  margin-top: 30px;
 }
 
 .pages li:nth-child(5) {
-  margin-left: 232px;
+  margin-left: 173px;
 }
 
-.pages input {
-  outline: none;
-  padding: 0;
-  border: 0;
-  background-color: transparent;
+.disable {
+  opacity: 0.3;
 }
 
 /*конец  разметка страниц"*/
@@ -2314,18 +2432,61 @@ a.selfi4 {
 
 .footer1-div-catalog li:nth-child(4) {
   margin-right: 140px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.footer1-div-catalog li:nth-child(4)::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 10px;
+  left: 4px;
+  background-image: url(../img/catalog/cart.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .footer1-div-catalog li:nth-child(3) {
   margin-right: 41px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.footer1-div-catalog li:nth-child(3)::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 10px;
+  left: 4px;
+  background-image: url(../img/catalog/compare.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .footer1-div-catalog li:nth-child(2) {
   margin-right: 44px;
+  opacity: 0.3;
 }
 
 .footer1-div-catalog li:nth-child(1) {
   margin-right: 20px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.footer1-div-catalog li:nth-child(1)::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 10px;
+  left: 4px;
+  background-image: url(../img/catalog/user.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 /*конец разметки подвала*/

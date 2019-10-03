@@ -69,9 +69,9 @@
     </div>
     <div aria-label="Текущий адрес страниц" class="breadcrumbs">
       <ul>
-        <li>Главная</li>
-        <li>Каталог товаров</li>
-        <li>Моноподы для селфи</li>
+        <li><a href="">Главная</a></li>
+        <li><a href="">Каталог товаров</a></li>
+        <li><a href="" class="disabled-a">Моноподы для селфи</a></li>
       </ul>
     </div>
     <div class="global">
@@ -82,7 +82,21 @@
             <img class="strip-cost-1">
             <h3>Стоимость</h3>
             <!--Неведомая хрень-->
-            <img class="strip-cost-2">
+            <form method="get" action="https://echo.htmlacademy.ru">
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                  <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
+                </div>
+              </div>
+              <img class="strip-cost-2">
           </div>
           <div class="color">
             <form class="filter" action="https://echo.htmlacademy.ru" method="GET">
@@ -212,8 +226,8 @@
             <ul>
               <li><input type="button" value="Назад"></li>
               <li><input type="button" value="1"></li>
-              <li><input type="button" value="2"></li>
-              <li><input type="button" value="3"></li>
+              <li><input class="disable" type="button" value="2"></li>
+              <li><input class="disable" type="button" value="3"></li>
               <li><input type="button" value="Вперед"></li>
           </div>
         </section>
@@ -224,13 +238,14 @@
     <nav aria-label="Содержимое">
       <div class="footer1-div-catalog">
         <a href="index.html">
-          <img src="img/logo-yellow.png" width="163" height="35" alt="Логотип магазина Девайс" class="logo">
+          <img class="footer1-div-img" src="img/logo-yellow.png" width="163" height="35" alt="Логотип магазина Девайс"
+            class="logo">
         </a>
         <ul class="act-footer">
           <li><button type="button">Валентин Петухов</button>
           </li>
           <li>
-            <!--<img src="img/user_n.png" width="13" height="12" alt="Вход">--><button type="button">Войти</button>
+            <!--<img src="img/user_n.png" width="13" height="12" alt="Вход">--><button type="button">Выйти</button>
           </li>
           <li>
             <!--<img src="img/compare_n.png" width="10" height="10" alt="Сравнить">--><button
