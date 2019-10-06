@@ -90,8 +90,8 @@
                   <label class="min-price">от <input name="min-price" type="text" value="0"></label>
                   <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
                 </div>
+                <img class="strip-cost-2">
               </div>
-              <img class="strip-cost-2">
           </div>
           <div class="color">
             <form class="filter" action="https://echo.htmlacademy.ru" method="GET">
@@ -118,6 +118,7 @@
                   <label for="pink">Розовый</label>
                 </li>
               </ul>
+              <img class="strip-cost-3">
               <h3>Bluetooth</h3>
               <ul>
                 <li><input class="filter-input-radio visually-hidden" type="radio" name="Bluetooth" value="yes" id="yes"
@@ -139,11 +140,11 @@
         <div class="sort">
           <h2>Сортировка:</h2>
           <ul>
-            <li><input type="button" value="По цене" aria-label="сортировка по цене"></li>
+            <li><input type="button" value="По цене" aria-label="сортировка по цене" class="selected"></li>
             <li><input type="button" value="По типу" aria-label="сортировка по типу"></li>
             <li><input type="button" value="По популярности" aria-label=" сортировка по популярности"></li>
             <li><input type="button" aria-label="сортировка по возрастанию"></li>
-            <li><input type="button" aria-label="сортировка по убыванию"></li>
+            <li class="selected"><input type="button" aria-label="сортировка по убыванию" class="selected"></li>
             <ul>
         </div>
         </section>
@@ -193,7 +194,7 @@
                   </div>
                 </div>
                 <p>
-                  <a href="" class="selfi3">"Непотопляемая селфи-палка"</a>2500 руб.
+                  <a href="" class="selfi3">Непотопляемая селфи-палка</a>2500 руб.
                 </p>
               </li>
               <li>
@@ -240,19 +241,18 @@
           <li><button type="button">Валентин Петухов</button>
           </li>
           <li>
-            <!--<img src="img/user_n.png" width="13" height="12" alt="Вход">--><button type="button">Выйти</button>
+            <button type="button">Выйти</button>
           </li>
           <li>
-            <!--<img src="img/compare_n.png" width="10" height="10" alt="Сравнить">--><button
-              type="button">Сравнить</button>
+            <button type="button">Сравнить</button>
           </li>
           <li>
-            <!--<img src="img/cart_n.png" width="12" height="12" alt="Корзина">--><button type="button">Корзина</button>
+            <button type="button">Корзина</button>
           </li>
         </ul>
       </div>
-      <div class="footer2-div">
-        <div class="city-div" aria-label="О нас">
+      <div class="footer2-div-catalog">
+        <div class="city-div-catalog" aria-label="О нас">
           <p>г. Москва, ул. Строителей, 15</p>
         </div>
         <ul>
@@ -266,14 +266,14 @@
             <a href="">Контакты</a>
           </li>
         </ul>
-        <div class="phone-div">
+        <div class="phone-div-catalog">
           <a href="tel:+74954959595" aria-label="Вы можете позвонить нам по телефону">Тел.: +7 (495) 495-95-95</a>
         </div>
       </div>
-      <div class="footer3-div">
+      <div class="footer3-div-catalog">
         <ul>
           <li>
-            <img class="strip-footer">
+            <img class="strip-footer-catalog">
           </li>
           <li class="socialnetwork facebook-div"><a href="">
               <img src="img/FB.svg" width="32" height="32" alt="Магазин в Фэйсбук"></a>
