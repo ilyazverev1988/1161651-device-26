@@ -16,8 +16,10 @@
       </a>
       <div class="wrap-1">
         <div class="search-div">
-          <input type="search" class="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
-          <input type="submit" class="search-div-submit" value="Найти">
+          <form class="input-search" action="https://echo.htmlacademy.ru" method="POST">
+            <input type="search" class="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+            <input type="submit" class="search-div-submit" value="Найти">
+          </form>
         </div>
         <ul class="act">
           <li>
@@ -34,28 +36,34 @@
           </li>
         </ul>
       </div>
-      <div class="wrap-2">
+      <div class="catalog-menu">
+        <div class="catalog-wrap-a">
+          <button type="button" class="catalog-button">Каталог товаров</button>
+          <div class="catalog-wrap">
+            <ul class="catalog-item" aria-label="Каталог товаров">
+              <div>
+                <li><a href="">Виртуальная реальность</a></li>
+                <li><a href="catalog.html">Моноподы для селфи</a></li>
+                <li><a href="">Экшн-камеры</a></li>
+              </div>
+              <div class="catalog-item-div2">
+                <li><a href="">Фитнес-браслеты</a></li>
+                <li><a href="">Умные часы</a></li>
+              </div>
+              <div class="catalog-item-div3">
+                <li><a href="">Квадрокоптеры</a></li>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div class="wrap-2"></div>
         <ul class="catalog">
-          <li><button type="button" class="catalog">Каталог товаров</button></li>
-          <ul class="catalog-item" aria-label="Каталог товаров">
-            <div>
-              <li><a href="">Виртуальная реальность</a></li>
-              <li><a href="">Моноподы для селфи</a></li>
-              <li><a href="">Экшн-камеры</a></li>
-            </div>
-            <div class="catalog-item-div2">
-              <li><a href="">Фитнес-браслеты</a></li>
-              <li><a href="">Умные часы</a></li>
-            </div>
-            <div class="catalog-item-div3">
-              <li><a href="">Квадрокоптеры</a></li>
-            </div>
-          </ul>
           <li><a href="" class="delivery-header">Доставка</a></li>
           <li><a href="" class="guarantee-header">Гарантия</a></li>
           <li><a href="" class="contact-header">Контакты</a></li>
         </ul>
       </div>
+
     </nav>
   </header>
   <main>
@@ -153,8 +161,10 @@
             <h2 class="visually-hidden">Список селфи-палок</h2>
             <ul>
               <li>
-                <div class="selfi-wrap">
-                  <img src="img/catalog/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                <div class="wrapper-selfi">
+                  <div class="selfi-wrap">
+                    <img src="img/catalog/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                  </div>
                   <div class="in-basket">
                     <button>В корзину</button>
                     <div class="in-basket-strip"></div>
@@ -168,8 +178,10 @@
                 </p>
               </li>
               <li>
-                <div class="selfi-wrap">
-                  <img src="img/catalog/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                <div class="wrapper-selfi">
+                  <div class="selfi-wrap">
+                    <img src="img/catalog/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                  </div>
                   <div class="in-basket">
                     <button>В корзину</button>
                     <div class="in-basket-strip"></div>
@@ -183,8 +195,10 @@
                 </p>
               </li>
               <li>
-                <div class="selfi-wrap">
-                  <img src="img/catalog/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                <div class="wrapper-selfi">
+                  <div class="selfi-wrap">
+                    <img src="img/catalog/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                  </div>
                   <div class="in-basket">
                     <button>В корзину</button>
                     <div class="in-basket-strip"></div>
@@ -198,8 +212,10 @@
                 </p>
               </li>
               <li>
-                <div class="selfi-wrap">
-                  <img src="img/catalog/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+                <div class="wrapper-selfi">
+                  <div class="selfi-wrap">
+                    <img src="img/catalog/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+                  </div>
                   <div class="in-basket">
                     <button>В корзину</button>
                     <div class="in-basket-strip"></div>

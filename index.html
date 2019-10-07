@@ -16,7 +16,7 @@
       </a>
       <div class="wrap-1">
         <div class="search-div">
-          <form action="https://echo.htmlacademy.ru" method="post">
+          <form class="input-search" action="https://echo.htmlacademy.ru" method="POST">
             <input type="search" class="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
             <input type="submit" class="search-div-submit" value="Найти">
           </form>
@@ -33,28 +33,34 @@
           </li>
         </ul>
       </div>
-      <div class="wrap-2">
+      <div class="catalog-menu">
+        <div class="catalog-wrap-a">
+          <button type="button" class="catalog-button">Каталог товаров</button>
+          <div class="catalog-wrap">
+            <ul class="catalog-item" aria-label="Каталог товаров">
+              <div>
+                <li><a href="">Виртуальная реальность</a></li>
+                <li><a href="catalog.html">Моноподы для селфи</a></li>
+                <li><a href="">Экшн-камеры</a></li>
+              </div>
+              <div class="catalog-item-div2">
+                <li><a href="">Фитнес-браслеты</a></li>
+                <li><a href="">Умные часы</a></li>
+              </div>
+              <div class="catalog-item-div3">
+                <li><a href="">Квадрокоптеры</a></li>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div class="wrap-2"></div>
         <ul class="catalog">
-          <li><button type="button" class="catalog">Каталог товаров</button></li>
-          <ul class="catalog-item" aria-label="Каталог товаров">
-            <div>
-              <li><a href="">Виртуальная реальность</a></li>
-              <li><a href="">Моноподы для селфи</a></li>
-              <li><a href="">Экшн-камеры</a></li>
-            </div>
-            <div class="catalog-item-div2">
-              <li><a href="">Фитнес-браслеты</a></li>
-              <li><a href="">Умные часы</a></li>
-            </div>
-            <div class="catalog-item-div3">
-              <li><a href="">Квадрокоптеры</a></li>
-            </div>
-          </ul>
           <li><a href="" class="delivery-header">Доставка</a></li>
           <li><a href="" class="guarantee-header">Гарантия</a></li>
           <li><a href="" class="contact-header">Контакты</a></li>
         </ul>
       </div>
+
       <div class="wrap-3">
         <img>
       </div>
@@ -159,7 +165,7 @@
         <ul>
           <li><a href=""><img class="img-gadget1" src="img/popular-1.svg" width="97" height="55"
                 alt="Виртуальная реальность">Виртуальная реальность</a></li>
-          <li><a href=""><img class="img-gadget2" src="img/popular-2.svg" width="86" height="117"
+          <li><a href="catalog.html"><img class="img-gadget2" src="img/popular-2.svg" width="86" height="117"
                 alt="Моноподы для селфи">Моноподы<br> для селфи</a></li>
           <li><a href=""><img class="img-gadget3" src="img/popular-3.svg" width="71" height="87"
                 alt="Экшн-камеры">Экшн-камеры</a></li>

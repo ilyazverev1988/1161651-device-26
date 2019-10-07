@@ -194,7 +194,7 @@ img.logo-header:active {
   line-height: 30px;
   letter-spacing: 0.15px;
   display: none;
-  top: 29px;
+  top: 21px;
   border-bottom: 1px solid #000000;
   position: absolute;
 }
@@ -256,8 +256,8 @@ input.search:focus {
   border-bottom: 1px solid #000000;
 }
 
-input.search:focus+input.search-div-submit,
-input.search:active+input.search-div-submit {
+.input-search>input.search:focus+input.search-div-submit,
+.input-search:active>input.search-div-submit {
   display: inline-block;
 }
 
@@ -278,7 +278,7 @@ ul.act {
 }
 
 .catalog,
-button.catalog {
+.catalog-button {
   color: #000000;
   font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 18px;
@@ -295,12 +295,12 @@ button.catalog {
 
 .act button:hover,
 .act button:focus,
-.catalog :hover,
-.catalog :focus,
-.catalog-item li:hover,
-.catalog-item li:focus,
-button.catalog:hover,
-button.catalog:focus {
+.catalog li :hover,
+.catalog li :focus,
+.catalog-item a:hover,
+.catalog-item a:focus,
+.catalog-button:hover,
+.catalog-button:focus {
   opacity: 0.6;
   border: none;
   outline: none;
@@ -308,9 +308,9 @@ button.catalog:focus {
 }
 
 .act button:active,
-.catalog :active,
-.catalog-item li:active,
-button.catalog:active {
+.catalog li :active,
+.catalog-item a:active,
+.catalog-button:active {
   opacity: 0.3;
   border: none;
   outline: none;
@@ -339,7 +339,7 @@ ul.catalog {
 
 
 /*выпадающий список*/
-.catalog-item {
+.catalog-wrap {
   color: #000000;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
@@ -347,39 +347,44 @@ ul.catalog {
   line-height: 36px;
   letter-spacing: 0.15px;
   position: absolute;
-  width: 1104px;
+  width: 1160px;
   min-height: 130px;
   padding: 0;
   margin: 0;
   display: none;
   flex-direction: row;
   justify-content: flex-start;
-  top: 168px;
+  top: 161px;
   background-color: #f7e296;
-  z-index: 10;
-  padding-left: 57px;
+  z-index: 30;
+  padding-left: 17px;
 }
 
-
-.catalog li:hover+.catalog-item {
+.catalog-item {
   display: flex;
 }
 
-button.catalog {
+.catalog-menu {
+  display: flex;
+  margin-top: 59px;
+}
+
+.catalog-wrap-a:hover div.catalog-wrap {
+  display: flex;
+}
+
+.catalog-button {
   position: relative;
   margin-left: 59px;
   vertical-align: middle;
   padding-right: 25px;
-
 }
 
-button.catalog::after {
+.catalog-button::after {
   content: "";
   width: 16px;
   height: 16px;
   position: absolute;
-  /*top: 1px;
-  right: 12px;*/
   background-image: url(../img/plus.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -2215,6 +2220,7 @@ li.selected {
   min-height: 1070px;
   padding-top: 69px;
   padding-left: 72px;
+  position: relative;
 }
 
 .selfi ul {
@@ -2359,6 +2365,7 @@ a.selfi4 {
   border: none;
   outline: none;
   background-color: transparent;
+  text-transform: none
 }
 
 .to-compare button:hover,
@@ -2370,15 +2377,19 @@ a.selfi4 {
   opacity: 0.2;
 }
 
-.selfi img:hover {
+.wrapper-selfi {
+  position: relative;
+}
+
+.wrapper-selfi:hover img {
   opacity: 0.7;
 }
 
-.selfi li:hover .to-compare {
+.wrapper-selfi:hover .in-basket {
   display: block;
 }
 
-.selfi li:hover .in-basket {
+.wrapper-selfi:hover .to-compare {
   display: block;
 }
 
