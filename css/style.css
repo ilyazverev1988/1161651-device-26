@@ -348,10 +348,10 @@ ul.catalog {
   display: none;
   flex-direction: row;
   justify-content: flex-start;
-  top: 161px;
+  top: 170px;
   background-color: #f7e296;
   z-index: 30;
-  padding-left: 17px;
+  padding-left: 59px;
 }
 
 .catalog-item {
@@ -386,13 +386,24 @@ ul.catalog {
   right: -3px;
 }
 
+.catalog-item-div1 {
+  display: flex;
+  flex-direction: column;
+}
+
 .catalog-item-div2 {
   margin-left: 58px;
+  display: flex;
+  flex-direction: column;
 }
+
 
 .catalog-item-div3 {
   margin-left: 77px;
+  display: flex;
+  flex-direction: column;
 }
+
 
 /*выпадающий список конец*/
 
@@ -415,17 +426,18 @@ a.delivery-header {
 }
 
 .wrap-3 {
-  margin-top: 87px;
+  margin-top: 65px;
   display: flex;
 }
 
-.wrap-3 img {
+.wrap-3 hr {
   width: 100px;
   height: 7px;
   background-color: white;
   margin-left: 600px;
   border: none;
-
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /*конец разметки шапки*/
@@ -863,13 +875,14 @@ img.img-gadget6 {
   margin-bottom: 43px;
 }
 
-img.strip-common {
+hr.strip-common {
   width: 10px;
   height: 322px;
   background-color: #000000;
   position: absolute;
   top: -103px;
   left: 416px;
+  border: 0;
 }
 
 .common-div button {
@@ -1007,7 +1020,6 @@ button.focus {
   position: absolute;
   top: -14px;
 }
-}
 
 .details-text2 img {
   margin-left: 107px;
@@ -1101,6 +1113,8 @@ button.focus {
   width: 80px;
   height: 7px;
   background-color: #000000;
+  margin: 0;
+  border: 0;
 }
 
 .about h2 {
@@ -1396,11 +1410,12 @@ img.map {
   align-items: center;
 }
 
-img.strip-footer {
+hr.strip-footer {
   width: 80px;
   height: 7px;
   background-color: #ffc600;
-  margin-left: 98px;
+  border: 0;
+  margin: 0 0 0 98px;
 }
 
 .footer3-div ul {
@@ -1880,11 +1895,12 @@ button.enter-header-catalog {
   background-color: #eeeeee;
 }
 
-img.strip-cost-1 {
+.strip-cost-1 {
   width: 201px;
   height: 2px;
   background-color: #000000;
-  margin-top: 69px;
+  border: 0;
+  margin: 69px 0 0 0;
 }
 
 .cost h3 {
@@ -1902,6 +1918,8 @@ img.strip-cost-1 {
   width: 201px;
   height: 2px;
   background-color: #000000;
+  border: 0;
+  margin: 0;
 }
 
 .color {
@@ -1909,7 +1927,6 @@ img.strip-cost-1 {
   background-color: #eeeeee;
   display: inline-block;
   flex-direction: column;
-  padding-left: 199px;
   min-height: 1004px;
 }
 
@@ -1978,6 +1995,8 @@ img.strip-cost-1 {
   width: 201px;
   height: 2px;
   background-color: #000000;
+  border: 0;
+  margin: 0;
 }
 
 .filter-input-radio:checked+label::after {
@@ -2139,6 +2158,7 @@ img.strip-cost-1 {
   border: none;
   outline: none;
   background-color: transparent;
+  padding: 0;
 }
 
 input.selected,
@@ -2660,11 +2680,12 @@ a.selfi4 {
   align-items: center;
 }
 
-img.strip-footer-catalog {
+.strip-footer-catalog {
   width: 80px;
   height: 7px;
   background-color: #ffc600;
-  margin-left: 141px;
+  border: 0;
+  margin: 0 0 0 141px;
 }
 
 .footer3-div-catalog ul {

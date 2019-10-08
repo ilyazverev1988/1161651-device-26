@@ -40,20 +40,20 @@
         <div class="catalog-wrap-a">
           <button type="button" class="catalog-button">Каталог товаров</button>
           <div class="catalog-wrap">
-            <ul class="catalog-item" aria-label="Каталог товаров">
-              <div>
-                <li><a href="">Виртуальная реальность</a></li>
-                <li><a href="catalog.html">Моноподы для селфи</a></li>
-                <li><a href="">Экшн-камеры</a></li>
+            <div class="catalog-item" aria-label="Каталог товаров">
+              <div class="catalog-item-div1">
+                <a href="">Виртуальная реальность</a>
+                <a href="catalog.html">Моноподы для селфи</a>
+                <a href="">Экшн-камеры</a>
               </div>
               <div class="catalog-item-div2">
-                <li><a href="">Фитнес-браслеты</a></li>
-                <li><a href="">Умные часы</a></li>
+                <a href="">Фитнес-браслеты</a>
+                <a href="">Умные часы</a>
               </div>
               <div class="catalog-item-div3">
-                <li><a href="">Квадрокоптеры</a></li>
+                <a href="">Квадрокоптеры</a>
               </div>
-            </ul>
+            </div>
           </div>
         </div>
         <div class="wrap-2"></div>
@@ -82,7 +82,8 @@
         <div class="wrap-filter">
           <h2>Фильтр:</h2>
           <div class="cost">
-            <img class="strip-cost-1">
+            <hr class="strip-cost-1">
+            </hr>
             <h3>Стоимость</h3>
             <!--Неведомая хрень-->
             <form method="get" action="https://echo.htmlacademy.ru">
@@ -98,52 +99,60 @@
                   <label class="min-price">от <input name="min-price" type="text" value="0"></label>
                   <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
                 </div>
-                <img class="strip-cost-2">
+                <hr class="strip-cost-2">
+                </hr>
               </div>
-          </div>
-          <div class="color">
-            <form class="filter" action="https://echo.htmlacademy.ru" method="GET">
-              <h3>Цвет</h3>
-              <ul>
-                <li>
-                  <input type="checkbox" class="filter-input-checkbox visually-hidden" name="black" id="black" checked>
-                  <label for="black">Черный</label>
-                </li>
-                <li>
-                  <input type="checkbox" class="filter-input-checkbox visually-hidden" name="white" id="white">
-                  <label for="white">Белый</label>
-                </li>
-                <li>
-                  <input type="checkbox" class="filter-input-checkbox visually-hidden" name="blue" id="blue" checked>
-                  <label for="blue">Синий</label>
-                </li>
-                <li>
-                  <input type="checkbox" class="filter-input-checkbox visually-hidden" name="red" id="red" checked>
-                  <label for="red">Красный</label>
-                </li>
-                <li>
-                  <input type="checkbox" class="filter-input-checkbox visually-hidden" name="pink" id="pink">
-                  <label for="pink">Розовый</label>
-                </li>
-              </ul>
-              <img class="strip-cost-3">
-              <h3>Bluetooth</h3>
-              <ul>
-                <li><input class="filter-input-radio visually-hidden" type="radio" name="Bluetooth" value="yes" id="yes"
-                    checked>
-                  <label for="yes">Есть</label></li>
-                <li><input class="filter-input-radio visually-hidden" type="radio" name="Bluetooth" value="no" id="no">
-                  <label for="no">Нет</label></li>
-                <div class="wrap-button">
-                  <button type="submit">Показать</button>
-                  <div class="strip-button-filter"></div>
+              <div class="color">
+                <div class="filter" action="https://echo.htmlacademy.ru" method="GET">
+                  <h3>Цвет</h3>
+                  <ul>
+                    <li>
+                      <input type="checkbox" class="filter-input-checkbox visually-hidden" name="black" id="black"
+                        checked>
+                      <label for="black">Черный</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="filter-input-checkbox visually-hidden" name="white" id="white">
+                      <label for="white">Белый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="filter-input-checkbox visually-hidden" name="blue" id="blue"
+                        checked>
+                      <label for="blue">Синий</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="filter-input-checkbox visually-hidden" name="red" id="red" checked>
+                      <label for="red">Красный</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="filter-input-checkbox visually-hidden" name="pink" id="pink">
+                      <label for="pink">Розовый</label>
+                    </li>
+                  </ul>
+                  <hr class="strip-cost-3">
+                  </hr>
+                  <h3>Bluetooth</h3>
+                  <ul>
+                    <li><input class="filter-input-radio visually-hidden" type="radio" name="Bluetooth" value="yes"
+                        id="yes" checked>
+                      <label for="yes">Есть</label>
+                    </li>
+                    <li><input class="filter-input-radio visually-hidden" type="radio" name="Bluetooth" value="no"
+                        id="no">
+                      <label for="no">Нет</label>
+                    </li>
+                    <li>
+                      <div class="wrap-button">
+                        <button type="submit">Показать</button>
+                        <div class="strip-button-filter"></div>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
-              </ul>
+              </div>
             </form>
           </div>
-        </div>
       </section>
-      <section></section>
       <div>
         <div class="sort">
           <h2>Сортировка:</h2>
@@ -151,9 +160,10 @@
             <li><input type="button" value="По цене" aria-label="сортировка по цене" class="selected"></li>
             <li><input type="button" value="По типу" aria-label="сортировка по типу"></li>
             <li><input type="button" value="По популярности" aria-label=" сортировка по популярности"></li>
-            <li><input type="button" aria-label="сортировка по возрастанию"></li>
-            <li class="selected"><input type="button" aria-label="сортировка по убыванию" class="selected"></li>
-            <ul>
+            <li><input type="button" value="" aria-label="сортировка по возрастанию"></li>
+            <li class="selected"><input type="button" value="" aria-label="сортировка по убыванию" class="selected">
+            </li>
+          </ul>
         </div>
         </section>
         <section>
@@ -241,6 +251,7 @@
               <li><input class="disable" type="button" value="2"></li>
               <li><input class="disable" type="button" value="3"></li>
               <li><input type="button" value="Вперед"></li>
+            </ul>
           </div>
         </section>
       </div>
@@ -250,8 +261,7 @@
     <nav aria-label="Содержимое">
       <div class="footer1-div-catalog">
         <a href="index.html">
-          <img class="footer1-div-img" src="img/logo-yellow.png" width="163" height="35" alt="Логотип магазина Девайс"
-            class="logo">
+          <img class="footer1-div-img" src="img/logo-yellow.png" width="163" height="35" alt="Логотип магазина Девайс">
         </a>
         <ul class="act-footer">
           <li><button type="button">Валентин Петухов</button>
@@ -289,7 +299,8 @@
       <div class="footer3-div-catalog">
         <ul>
           <li>
-            <img class="strip-footer-catalog">
+            <hr class="strip-footer-catalog">
+            </hr>
           </li>
           <li class="socialnetwork facebook-div"><a href="">
               <img src="img/FB.svg" width="32" height="32" alt="Магазин в Фэйсбук"></a>
