@@ -191,7 +191,7 @@ img.logo-header:active {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
-  line-height: 30px;
+  /* line-height: 30px;*/
   letter-spacing: 0.15px;
   display: none;
   top: 21px;
@@ -226,19 +226,13 @@ input.search {
 }
 
 input.search {
-  background-image: url("/img/search.svg");
+  background-image: url("../img/search.svg");
   background-repeat: no-repeat;
   /*Убираем повтор изображения*/
   background-position: 4px;
   /*Позиционируем*/
   outline: none;
   /*убираем стандартную обводку браузера*/
-  -moz-border-radius: 5px;
-  /*закругляем углы для Mozilla*/
-  -webkit-border-radius: 5px;
-  /*закругляем углы для Chrome, Safari*/
-  border-radius: 5px;
-  /*закругляем углы для остальных браузеров*/
   padding-left: 40px;
   /*отступ слева от ввода, чтобы текст не был на картинке(выбирать по размеру картинки)*/
   height: 20px;
@@ -857,6 +851,7 @@ img.img-gadget6 {
   text-transform: uppercase;
   letter-spacing: 2.15px;
   margin-bottom: 53px;
+  cursor: pointer;
   position: relative;
 }
 
@@ -889,6 +884,7 @@ img.strip-common {
   background-color: transparent;
   padding: 0;
   border: none;
+  cursor: pointer;
 }
 
 .common-div-content {
@@ -1184,6 +1180,7 @@ img.map {
   margin-left: 16px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .about1-div section {
@@ -1195,6 +1192,7 @@ img.map {
   margin-left: 34px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .about1-div div,
@@ -1464,6 +1462,7 @@ img.logo:active {
   border: none;
   outline: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .features-footer a {
@@ -1662,6 +1661,7 @@ img.html-logo:active {
   background-color: transparent;
   margin-left: 34px;
   position: relative;
+  cursor: pointer;
 }
 
 .popup-letter div {
@@ -2181,7 +2181,7 @@ li.selected {
 
 .sort li:nth-child(4) {
   margin-left: 225px;
-  background-image: url(/img/catalog/icon-up-dir.svg);
+  background-image: url(../img/catalog/icon-up-dir.svg);
   background-repeat: no-repeat;
   width: 11px;
   height: 10px;
@@ -2190,7 +2190,7 @@ li.selected {
 
 .sort li:nth-child(5) {
   margin-left: 19px;
-  background-image: url(/img/catalog/icon-down-dir.svg);
+  background-image: url(../img/catalog/icon-down-dir.svg);
   background-repeat: no-repeat;
   width: 11px;
   height: 10px;
@@ -2365,7 +2365,8 @@ a.selfi4 {
   border: none;
   outline: none;
   background-color: transparent;
-  text-transform: none
+  text-transform: none;
+  cursor: pointer;
 }
 
 .to-compare button:hover,
