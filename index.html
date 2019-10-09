@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <header class="main-header">
+  <header>
     <nav class="navigation" aria-label="Содержимое сайта">
       <a href="index.html">
         <img src="img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс" class="logo-header">
@@ -281,12 +281,12 @@
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность
             покупки.
             Всякое бывает.</p>
-          <a href="https://yandex.ru/maps/213/moscow/?ll=37.529655%2C55.686980&mode=search&sll=37.529654%2C55.686980&source=wizgeo&text=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A1%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9%2C%2015&utm_medium=maps-desktop&utm_source=serp&z=16"
-            target="blank">
-            <img class="map" src="img/map.png" width="560" height="222"
-              alt="Адрес магазина DEVICE по адресу г. Москва, ул. Строителей, 15"></a><br>
+
+
+          <img class="map" src="img/map.png" width="560" height="222"
+            alt="Адрес магазина DEVICE по адресу г. Москва, ул. Строителей, 15"></a><br>
           <div>
-            <button type="button">Напишите нам</button>
+            <button class="modal-open" type="button">Напишите нам</button>
             <div class="about-content"></div>
           </div>
         </section>
@@ -352,17 +352,18 @@
       </div>
     </nav>
   </footer>
-  <section>
+  <section class="modal-write">
     <h2 class="visually-hidden">Напишите нам</h2>
     <form action="https://echo.htmlacademy.ru" method="post">
       <div class="popup">
         <div class="popup-close">
-          <button type="button" aria-label="Закрыть"><img src="img/modal-close.svg" alt="Иконка закрыть"></button>
+          <button class="popup-close" type="button" aria-label="Закрыть"><img src="img/modal-close.svg"
+              alt="Иконка закрыть"></button>
         </div>
         <div class="popup-person">
           <div>
             <label for="name">Ваше имя:</label>
-            <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+            <input type="text" class="your-name" name="name" id="name" placeholder="Имя Фамилия">
           </div>
           <div>
             <label for="email">Ваш e-mail:</label>
@@ -382,9 +383,43 @@
   </section>
   <section class="map-popup">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <button type="button" aria-label="Закрыть"><img src="img/modal-close.svg" alt="Иконка закрыть"></button>
-    <img src="/img/map-big.jpg" alt="Адрес магазина DEVICE по адресу г. Москва, ул. Строителей, 15">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112548877997!2d37.52742931589823!3d55.68703098053582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1570646546249!5m2!1sru!2sru"
+      width="960" height="559" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    allowfullscreen="true"></iframe>
+    <button class="popup-close-map" type="button" aria-label="Закрыть"><img class="close-img" src="img/modal-close.svg"
+        alt="Иконка закрыть"></button>
+    <img src="../img/map-big.jpg" alt="Адрес магазина DEVICE по адресу г. Москва, ул. Строителей, 15">
   </section>
+
+  <script>
+    var link = document.querySelector(".modal-open");
+    var popup = document.querySelector(".modal-write");
+    var close = document.querySelector(".popup-close");
+    var name1 = document.querySelector(".your-name");
+    link.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.add("modal-write-open");
+      name1.focus();
+    });
+    close.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.remove("modal-write-open");
+    });
+
+    var closeMap = document.querySelector(".popup-close-map");
+    var mapOpen = document.querySelector(".map");
+    var mapPopup = document.querySelector(".map-popup");
+    mapOpen.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      mapPopup.classList.add("modal-write-open");
+    });
+    closeMap.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      mapPopup.classList.remove("modal-write-open");
+    });
+
+  </script>
 </body>
 
 </html>

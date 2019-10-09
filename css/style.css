@@ -84,7 +84,7 @@ li {
   position: relative;
 }
 
-div.wrap-1 {
+.wrap-1 {
   display: flex;
   margin-top: 43px;
   align-items: baseline;
@@ -161,12 +161,12 @@ button.enter-header::before {
   background-position: 0 0;
 }
 
-img.logo-header:hover,
-img.logo-header:focus {
+.logo-header:hover,
+.logo-header:focus {
   opacity: 0.6;
 }
 
-img.logo-header:active {
+.logo-header:active {
   opacity: 0.3;
 }
 
@@ -210,7 +210,7 @@ img.logo-header:active {
 }
 
 
-input.search {
+.search {
   opacity: 0.3;
   color: #000000;
   font-family: "Open Sans", Arial, sans-serif;
@@ -219,44 +219,33 @@ input.search {
   line-height: 30px;
   letter-spacing: 1.15px;
   border: none;
-  outline: none;
   background-color: transparent;
   padding-left: 25px;
   position: relative;
-}
-
-input.search {
   background-image: url("../img/search.svg");
   background-repeat: no-repeat;
-  /*Убираем повтор изображения*/
   background-position: 4px;
-  /*Позиционируем*/
   outline: none;
-  /*убираем стандартную обводку браузера*/
   padding-left: 40px;
-  /*отступ слева от ввода, чтобы текст не был на картинке(выбирать по размеру картинки)*/
   height: 20px;
-  /*высота строки ввода*/
-  font-size: 13px;
-  /*размер шрифта*/
 }
 
-input.search:hover {
+.search:hover {
   opacity: 0.6;
 }
 
-input.search:focus {
+.search:focus {
   opacity: 1;
   border-bottom: 1px solid #000000;
 }
 
-.input-search>input.search:focus+input.search-div-submit,
-.input-search:active>input.search-div-submit {
+.input-search>.search:focus+.search-div-submit,
+.input-search:active>.search-div-submit {
   display: inline-block;
 }
 
 /*конец поиск*/
-ul.act {
+.act {
   color: #000000;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
@@ -269,6 +258,7 @@ ul.act {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  outline: none;
 }
 
 .catalog,
@@ -296,9 +286,6 @@ ul.act {
 .catalog-button:hover,
 .catalog-button:focus {
   opacity: 0.6;
-  border: none;
-  outline: none;
-  background-color: transparent;
 }
 
 .act button:active,
@@ -306,19 +293,16 @@ ul.act {
 .catalog-item a:active,
 .catalog-button:active {
   opacity: 0.3;
-  border: none;
-  outline: none;
-  background-color: transparent;
 }
 
-div.wrap-2 {
+.wrap-2 {
   display: flex;
   margin-top: 40px;
   align-items: center;
   flex-wrap: nowrap;
 }
 
-ul.catalog {
+.catalog {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -330,7 +314,6 @@ ul.catalog {
   padding: 0px;
   margin: 0px;
 }
-
 
 /*выпадающий список*/
 .catalog-wrap {
@@ -404,14 +387,13 @@ ul.catalog {
   flex-direction: column;
 }
 
-
 /*выпадающий список конец*/
 
-a.contact-header {
+.contact-header {
   margin-left: 108px;
 }
 
-a.guarantee-header {
+.guarantee-header {
   margin-left: 34px;
 }
 
@@ -771,8 +753,6 @@ a.delivery-header {
   min-width: 160px;
 }
 
-
-
 .gadget li:nth-child(6) {
   margin-right: 0px;
 }
@@ -803,27 +783,27 @@ a.delivery-header {
   opacity: 0.3;
 }
 
-img.img-gadget1 {
+.img-gadget1 {
   padding: 52px 32px 53px 31px;
 }
 
-img.img-gadget2 {
+.img-gadget2 {
   padding: 41px 36px 2px 38px;
 }
 
-img.img-gadget3 {
+.img-gadget3 {
   padding: 38px 40px 35px 49px;
 }
 
-img.img-gadget4 {
+.img-gadget4 {
   padding: 50px 25px 45px 28px;
 }
 
-img.img-gadget5 {
+.img-gadget5 {
   padding: 32px 49px 30px 55px;
 }
 
-img.img-gadget6 {
+.img-gadget6 {
   padding: 49px 15px 42px 13px;
 }
 
@@ -875,7 +855,7 @@ img.img-gadget6 {
   margin-bottom: 43px;
 }
 
-hr.strip-common {
+.strip-common {
   width: 10px;
   height: 322px;
   background-color: #000000;
@@ -1115,6 +1095,7 @@ button.focus {
   background-color: #000000;
   margin: 0;
   border: 0;
+  margin-right: auto;
 }
 
 .about h2 {
@@ -1144,6 +1125,8 @@ p.p-about {
   margin-top: 30px;
   letter-spacing: -0.5px;
 }
+
+/*не трогать разметка ломается*/
 
 .about li {
   color: #000000;
@@ -1185,7 +1168,7 @@ p.p-about {
   background-color: #f0c52e;*/
 }
 
-img.map {
+.map {
   margin-top: 38px;
 }
 
@@ -1410,7 +1393,7 @@ img.map {
   align-items: center;
 }
 
-hr.strip-footer {
+.strip-footer {
   width: 80px;
   height: 7px;
   background-color: #ffc600;
@@ -1444,12 +1427,12 @@ hr.strip-footer {
   margin-left: 483px;
 }
 
-img.logo:hover,
-img.logo:focus {
+.logo:hover,
+.logo:focus {
   opacity: 0.6;
 }
 
-img.logo:active {
+.logo:active {
   opacity: 0.3;
 }
 
@@ -1506,13 +1489,13 @@ img.logo:active {
 
 .features-footer a:hover,
 .features-footer a:focus,
-img.html-logo:hover,
-img.html-logo:focus {
+.html-logo:hover,
+.html-logo:focus {
   opacity: 0.6;
 }
 
 .features-footer a:active,
-img.html-logo:active {
+.html-logo:active {
   opacity: 0.3;
 }
 
@@ -1531,7 +1514,8 @@ img.html-logo:active {
 
 /*конец подвала*/
 /*модальное окно*/
-.popup-close img {
+.popup-close img,
+.close-img {
   opacity: 0.5;
   cursor: pointer;
   outline: none;
@@ -1705,25 +1689,31 @@ img.html-logo:active {
 
 /*попап разметка карты*/
 .map-popup {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  width: 992px;
-  height: 591px;
+  position: fixed;
+  width: 960px;
+  height: 559px;
+  display: none;
+  bottom: 430px;
+  left: 50%;
+  margin-left: -481px;
+  z-index: 2;
 }
 
-.map-popup button {
-  top: 22px;
+
+.popup-close-map {
+  top: -239px;
   position: absolute;
   padding: 0;
   border: none;
   background-color: transparent;
   height: 55px;
-  z-index: 2;
-  left: 883px;
+  z-index: 16;
+  left: 881px;
   cursor: pointer;
   outline: none;
   opacity: 0.5;
+  width: 55px;
+  height: 55px;
 }
 
 .map-popup button:hover {
@@ -1858,7 +1848,7 @@ button.enter-header-catalog {
   display: flex;
   width: 1440px;
   flex-direction: row;
-  min-height: 1286px;
+  min-height: 1270px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 32px;
@@ -1923,7 +1913,7 @@ button.enter-header-catalog {
 }
 
 .color {
-  min-heigt: 975px;
+  min-height: 975px;
   background-color: #eeeeee;
   display: inline-block;
   flex-direction: column;
@@ -2228,8 +2218,7 @@ li.selected {
   opacity: 1;
 }
 
-input.selected,
-li.selected {
+.selected {
   opacity: 1;
 }
 
@@ -2283,19 +2272,19 @@ li.selected {
   margin-bottom: 1px;
 }
 
-a.selfi1 {
+.selfi1 {
   width: 247px;
 }
 
-a.selfi2 {
+.selfi2 {
   width: 173px;
 }
 
-a.selfi3 {
+.selfi3 {
   width: 256px;
 }
 
-a.selfi4 {
+.selfi4 {
   width: 225px;
 }
 
@@ -2304,7 +2293,6 @@ a.selfi4 {
   width: 360px;
   height: 380px;
 }
-
 
 .new {
   position: absolute;
@@ -2420,7 +2408,7 @@ a.selfi4 {
 
 .pages {
   display: flex;
-  height: 70px;
+  min-height: 50px;
   background-color: #ebebeb;
   width: 760px;
   margin-left: 74px;
@@ -2715,3 +2703,36 @@ a.selfi4 {
 }
 
 /*конец разметки подвала*/
+/*разметка модального окна*/
+.modal-write {
+  position: fixed;
+  width: 960px;
+  height: 553px;
+  top: 270px;
+  left: 50%;
+  background-color: #ffffff;
+  z-index: 50;
+  margin-left: -480px;
+  display: none;
+}
+
+.modal-write-open {
+  display: block;
+}
+
+.map-popup iframe {
+  position: relative;
+  z-index: 10;
+  border: none;
+}
+
+.map-popup img {
+  position: absolute;
+  z-index: 2;
+  width: 960px;
+  height: 559px;
+  top: 0px;
+  left: 0px;
+}
+
+/*конец разметка модального окна*/
