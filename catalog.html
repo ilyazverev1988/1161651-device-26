@@ -36,7 +36,7 @@
           </li>
         </ul>
       </div>
-      <div class="catalog-menu">
+      <div class="catalog-menu-catalog">
         <div class="catalog-wrap-a">
           <button type="button" class="catalog-button">Каталог товаров</button>
           <div class="catalog-wrap">
@@ -63,7 +63,6 @@
           <li><a href="" class="contact-header">Контакты</a></li>
         </ul>
       </div>
-
     </nav>
   </header>
   <main>
@@ -77,101 +76,96 @@
         <li><a href="" class="disabled-a">Моноподы для селфи</a></li>
       </ul>
     </div>
-    <div class="filter-search">
-      <div class="global">
-        <section>
-          <div>
-            <div class="wrap-filter">
-              <div>
-                <h2>Фильтр:</h2>
+    <div class="filter-remaster">
+      <div class="filter-container-remaster">
+        <div class="wrap-filter-h2">
+          <h2>Фильтр:</h2>
+        </div>
+        <div class="sort">
+          <h2>Сортировка:</h2>
+          <ul>
+            <li><input type="button" value="По цене" aria-label="сортировка по цене" class="selected"></li>
+            <li><input type="button" value="По типу" aria-label="сортировка по типу"></li>
+            <li><input type="button" value="По популярности" aria-label=" сортировка по популярности"></li>
+            <li><input type="button" value=" " aria-label="сортировка по возрастанию"></li>
+            <li class="selected"><input type="button" value=" " aria-label="сортировка по убыванию" class="selected">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="catalog-wrap-remaster">
+      <div class="catalog-container-remaster">
+        <div class="wrap-filter">
+          <div class="cost">
+            <hr class="strip-cost-1">
+            <h3>Стоимость</h3>
+            <form method="get" action="https://echo.htmlacademy.ru">
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                  <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
+                </div>
+                <hr class="strip-cost-2">
               </div>
-              <div class="cost">
-                <hr class="strip-cost-1">
-                <h3>Стоимость</h3>
-                <!--Неведомая хрень-->
-                <form method="get" action="https://echo.htmlacademy.ru">
-                  <div class="range-filter">
-                    <div class="range-controls">
-                      <div class="scale">
-                        <div class="bar"></div>
+              <div class="color">
+                <div class="filter">
+                  <h3>Цвет</h3>
+                  <ul>
+                    <li>
+                      <input type="checkbox" class="filter-input-checkbox visually-hidden" name="black" id="black"
+                        checked>
+                      <label for="black">Черный</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="filter-input-checkbox visually-hidden" name="white" id="white">
+                      <label for="white">Белый</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="filter-input-checkbox visually-hidden" name="blue" id="blue"
+                        checked>
+                      <label for="blue">Синий</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="filter-input-checkbox visually-hidden" name="red" id="red" checked>
+                      <label for="red">Красный</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="filter-input-checkbox visually-hidden" name="pink" id="pink">
+                      <label for="pink">Розовый</label>
+                    </li>
+                  </ul>
+                  <hr class="strip-cost-3">
+                  <h3>Bluetooth</h3>
+                  <ul>
+                    <li><input class="filter-input-radio visually-hidden" type="radio" name="Bluetooth" value="yes"
+                        id="yes" checked>
+                      <label for="yes">Есть</label>
+                    </li>
+                    <li><input class="filter-input-radio visually-hidden" type="radio" name="Bluetooth" value="no"
+                        id="no">
+                      <label for="no">Нет</label>
+                    </li>
+                    <li>
+                      <div class="wrap-button">
+                        <button type="submit">Показать</button>
+                        <div class="strip-button-filter"></div>
                       </div>
-                      <div class="toggle toggle-min"></div>
-                      <div class="toggle toggle-max"></div>
-                    </div>
-                    <div class="price-controls">
-                      <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                      <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
-                    </div>
-                    <hr class="strip-cost-2">
-                  </div>
-                  <div class="color">
-                    <div class="filter">
-                      <h3>Цвет</h3>
-                      <ul>
-                        <li>
-                          <input type="checkbox" class="filter-input-checkbox visually-hidden" name="black" id="black"
-                            checked>
-                          <label for="black">Черный</label>
-                        </li>
-                        <li>
-                          <input type="checkbox" class="filter-input-checkbox visually-hidden" name="white" id="white">
-                          <label for="white">Белый</label>
-                        </li>
-                        <li>
-                          <input type="checkbox" class="filter-input-checkbox visually-hidden" name="blue" id="blue"
-                            checked>
-                          <label for="blue">Синий</label>
-                        </li>
-                        <li>
-                          <input type="checkbox" class="filter-input-checkbox visually-hidden" name="red" id="red"
-                            checked>
-                          <label for="red">Красный</label>
-                        </li>
-                        <li>
-                          <input type="checkbox" class="filter-input-checkbox visually-hidden" name="pink" id="pink">
-                          <label for="pink">Розовый</label>
-                        </li>
-                      </ul>
-                      <hr class="strip-cost-3">
-                      <h3>Bluetooth</h3>
-                      <ul>
-                        <li><input class="filter-input-radio visually-hidden" type="radio" name="Bluetooth" value="yes"
-                            id="yes" checked>
-                          <label for="yes">Есть</label>
-                        </li>
-                        <li><input class="filter-input-radio visually-hidden" type="radio" name="Bluetooth" value="no"
-                            id="no">
-                          <label for="no">Нет</label>
-                        </li>
-                        <li>
-                          <div class="wrap-button">
-                            <button type="submit">Показать</button>
-                            <div class="strip-button-filter"></div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </form>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
+            </form>
           </div>
-        </section>
+        </div>
         <div>
-          <div class="sort-wrap">
-            <div class="sort">
-              <h2>Сортировка:</h2>
-              <ul>
-                <li><input type="button" value="По цене" aria-label="сортировка по цене" class="selected"></li>
-                <li><input type="button" value="По типу" aria-label="сортировка по типу"></li>
-                <li><input type="button" value="По популярности" aria-label=" сортировка по популярности"></li>
-                <li><input type="button" value=" " aria-label="сортировка по возрастанию"></li>
-                <li class="selected"><input type="button" value=" " aria-label="сортировка по убыванию"
-                    class="selected">
-                </li>
-              </ul>
-            </div>
-          </div>
           <section>
             <div class="selfi">
               <h2 class="visually-hidden">Список селфи-палок</h2>

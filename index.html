@@ -65,7 +65,6 @@
   </header>
   <main>
     <h1 class="visually-hidden">Магазин Device</h1>
-    <!--Блок который делать не надо-->
     <section>
       <div class="slaider">
         <h2 class="visually-hidden">Слайдер с самыми интересными товарами</h2>
@@ -98,7 +97,6 @@
           </div>
         </div>
       </div>
-
       <div class="slaider2 slaider-off">
         <div class="slaider-img2">
           <img src="img/slider-2.png" height="345" width="485" alt="Фитнес-браслет">
@@ -125,7 +123,6 @@
           </div>
         </div>
       </div>
-
       <div class="slaider3 slaider-off">
         <div class="slaider-img3">
           <img src="img/slider-3.png" height="526" width="334" alt="Квадрокоптер">
@@ -155,7 +152,6 @@
         </div>
       </div>
     </section>
-
     <section>
       <h2 class="visually-hidden">Каталог</h2>
       <div class="gadget">
@@ -194,7 +190,6 @@
           </ul>
           <hr class="strip-common">
         </div>
-
         <div class="details">
           <div class="details-text1">
             <div>
@@ -218,7 +213,6 @@
               <img src="img/warranty.svg" width="171" height="194" alt="Гарантия">
             </div>
           </div>
-
           <div class="details-text3 details-off">
             <div>
               <h3>Кредит</h3>
@@ -232,7 +226,6 @@
         </div>
       </div>
     </section>
-
     <section>
       <h2 class="visually-hidden">Производители техники</h2>
       <div class="manufacturers-div">
@@ -278,8 +271,6 @@
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность
             покупки.
             Всякое бывает.</p>
-
-
           <img class="map" src="img/map.png" width="560" height="222"
             alt="Адрес магазина DEVICE по адресу г. Москва, ул. Строителей, 15"></a><br>
           <div>
@@ -349,7 +340,7 @@
   </footer>
   <section class="modal-write">
     <h2 class="visually-hidden">Напишите нам</h2>
-    <form action="https://echo.htmlacademy.ru" method="post">
+    <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
       <div class="popup">
         <div class="popup-close">
           <button class="popup-close" type="button" aria-label="Закрыть"><img src="img/modal-close.svg"
@@ -392,6 +383,35 @@
     var popup = document.querySelector(".modal-write");
     var close = document.querySelector(".popup-close");
     var name1 = document.querySelector(".your-name");
+    var form = document.querySelector(".write-us");
+    var email = document.querySelector("[name=email]");
+    var letter = document.querySelector("[name=letter]");
+    var isStorageSupport = true;
+    var storage = "";
+
+    if (storage) {
+      name1.value = storage;
+      email.value = storage;
+    }
+
+    try {
+      storage = localStorage.getItem("login");
+    } catch (err) {
+      isStorageSupport = false;
+    }
+
+    form.addEventListener("submit", function (evt) {
+      if (!name1.value || !email.value || !letter.value) {
+        evt.preventDefault();
+        popup.classList.add("modal-error");
+      } else {
+        if (isStorageSupport) {
+          localStorage.setItem("name1", name1.value);
+          localStorage.setItem("email", email.value);
+        }
+      }
+    });
+
     link.addEventListener("click", function (evt) {
       evt.preventDefault();
       popup.classList.add("modal-write-open");
@@ -400,7 +420,16 @@
     close.addEventListener("click", function (evt) {
       evt.preventDefault();
       popup.classList.remove("modal-write-open");
+      popup.classList.remove("modal-error");
     });
+
+    if (storage) {
+      name1.value = storage;
+      email.focus();
+    } else {
+      name1.focus();
+    }
+
 
     var closeMap = document.querySelector(".popup-close-map");
     var mapOpen = document.querySelector(".map");
