@@ -104,59 +104,56 @@ li {
   display: inline-block;
 }
 
-/*утяжеление свойства специально*/
-button.basket-header {
-  margin-right: 59px;
+.basket-header {
+  margin-right: 60px;
   padding-left: 25px;
   position: relative;
 }
 
-button.basket-header::before {
+.basket-header::before {
   content: "";
   width: 12px;
   height: 12px;
   position: absolute;
-  top: 3px;
-  left: 4px;
-  background-image: url(../img/cart.svg);
+  top: 2px;
+  left: -20px;
+  background-image: url(../img/cart.png);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-/*утяжеление свойства специально*/
-button.compare-header {
-  margin-right: 37px;
+.compare-header {
+  margin-right: 61px;
   padding-left: 25px;
   position: relative;
 }
 
-button.compare-header::before {
+.compare-header::before {
   content: "";
   width: 10px;
   height: 10px;
   position: absolute;
   top: 4px;
-  left: 6px;
-  background-image: url(../img/compare.svg);
+  left: -19px;
+  background-image: url(../img/compare.png);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-/*утяжеление свойства специально*/
-button.enter-header {
-  margin-right: 211px;
+.enter-header {
+  margin-right: 236px;
   padding-left: 25px;
   position: relative;
 }
 
-button.enter-header::before {
+.enter-header::before {
   content: "";
   width: 13px;
   height: 12px;
   position: absolute;
   top: 2px;
-  left: -1px;
-  background-image: url(../img/user.svg);
+  left: -26px;
+  background-image: url(../img/user.png);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -190,7 +187,6 @@ button.enter-header::before {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
-  /* line-height: 30px;*/
   letter-spacing: 0.15px;
   display: none;
   top: -23px;
@@ -326,13 +322,13 @@ button.enter-header::before {
   letter-spacing: 0.15px;
   position: absolute;
   width: 1160px;
-  min-height: 130px;
+  min-height: 145px;
   padding: 0 0 0 59px;
   margin: 0;
   display: none;
   flex-direction: row;
   justify-content: flex-start;
-  top: 170px;
+  top: 154px;
   background-color: #f7e296;
   z-index: 30;
 }
@@ -343,7 +339,7 @@ button.enter-header::before {
 
 .catalog-menu {
   display: flex;
-  margin-top: 59px;
+  margin-top: 41px;
 }
 
 .catalog-menu-catalog {
@@ -410,7 +406,7 @@ button.enter-header::before {
 }
 
 .wrap-3 {
-  margin-top: 65px;
+  margin-top: 71px;
   display: flex;
 }
 
@@ -428,7 +424,6 @@ button.enter-header::before {
   display: flex;
   position: relative;
   flex-wrap: wrap;
-  flex-direction: space-between;
   min-height: 481px;
   margin-left: auto;
   margin-right: auto;
@@ -483,7 +478,6 @@ button.enter-header::before {
   letter-spacing: 0.36px;
   min-width: 166px;
   min-height: 131px;
-  vertical-align: baseline;
   display: block;
   margin: -125px 0 0 330px;
 }
@@ -496,7 +490,6 @@ button.enter-header::before {
   letter-spacing: 0.36px;
   min-width: 166px;
   min-height: 131px;
-  vertical-align: baseline;
   display: block;
   margin: -123px 0 0 308px;
 }
@@ -509,7 +502,6 @@ button.enter-header::before {
   letter-spacing: 0.36px;
   min-width: 166px;
   min-height: 131px;
-  vertical-align: baseline;
   display: block;
   margin: -123px 0 0 308px;
 }
@@ -520,7 +512,7 @@ button.enter-header::before {
   font-size: 47px;
   line-height: 56px;
   letter-spacing: 0.55px;
-  margin-top: -86px;
+  margin-top: -85px;
   margin-bottom: 0px;
 }
 
@@ -536,7 +528,6 @@ button.enter-header::before {
 }
 
 .slaider3 h4 {
-  width: 258px;
   color: #000000;
   font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 47px;
@@ -554,12 +545,11 @@ button.enter-header::before {
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
-  letter-spacing: -0.1px;
+  letter-spacing: -0.15px;
   margin-bottom: 0px;
-  margin-top: 21px;
-  margin-left: -3px;
-  width: 484px;
-
+  margin-top: 19px;
+  margin-left: 0px;
+  width: 484px
 }
 
 .slaider3 p {
@@ -576,8 +566,8 @@ button.enter-header::before {
 }
 
 .slaider-a-div {
-  margin-top: 52px;
-  padding-left: 44px;
+  margin-top: 51px;
+  padding-left: 46px;
   padding-right: 43px;
   position: relative;
   cursor: pointer;
@@ -669,7 +659,7 @@ button.enter-header::before {
   flex-direction: row;
   margin-top: 9px;
   padding: 0;
-  margin-bottom: 121px;
+  margin-bottom: 112px;
 }
 
 .slaider-ul2-div li {
@@ -678,7 +668,7 @@ button.enter-header::before {
   font-size: 13px;
   font-weight: 300;
   line-height: 20px;
-  letter-spacing: -0.3px;
+  letter-spacing: -0.27px;
   margin-right: 81px;
 }
 
@@ -712,12 +702,12 @@ button.enter-header::before {
   display: flex;
   position: relative;
   flex-wrap: wrap;
-  flex-direction: space-around;
-  min-height: 419px;
+  min-height: 422px;
   margin-left: auto;
   margin-right: auto;
   width: 1160px;
   align-items: flex-start;
+  margin-top: -8px;
 }
 
 .gadget ul {
@@ -798,7 +788,6 @@ button.enter-header::before {
   min-height: 288px;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .common-wrap {
@@ -814,10 +803,8 @@ button.enter-header::before {
 }
 
 .common-div ul {
-  margin: 0;
+  margin: -12px 0 0 144px;
   padding: 0;
-  margin-left: 142px;
-  margin-top: -9px;
   z-index: 2;
 }
 
@@ -843,18 +830,17 @@ button.enter-header::before {
 }
 
 .strip-common {
-  width: 10px;
-  height: 322px;
+  width: 8px;
+  height: 320px;
   background-color: #000000;
   position: absolute;
-  top: -103px;
-  left: 416px;
+  top: -109px;
+  left: 419px;
   border: 0;
 }
 
 .common-div button {
   width: 160px;
-  color: #000000;
   font-family: "Gilroy - Extra Bold", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -915,9 +901,8 @@ button.enter-header::before {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 119px;
-  min-width: auto;
-  width: 1016px;
+  padding-left: 121px;
+  min-width: 1016px;
 }
 
 .details-text1,
@@ -940,7 +925,7 @@ button.enter-header::before {
   font-weight: 400;
   line-height: 48px;
   letter-spacing: 1.21px;
-  margin: -25px 0 0 0;
+  margin: -28px 0 0 0;
 }
 
 .details-text1 p {
@@ -952,7 +937,7 @@ button.enter-header::before {
   letter-spacing: -0.05px;
   margin: 32px 0 0 0;
   width: 440px;
-  padding-bottom: 151px;
+  padding-bottom: 144px;
 }
 
 .details-text2 p {
@@ -980,9 +965,9 @@ button.enter-header::before {
 }
 
 .details-text1 img {
-  margin-left: 119px;
+  margin-left: 118px;
   position: absolute;
-  top: -14px;
+  top: -16px;
 }
 
 .details-text2 img {
@@ -1001,7 +986,7 @@ button.enter-header::before {
   display: flex;
   flex-direction: row;
   width: 1160px;
-  min-height: 282px;
+  min-height: 291px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1013,7 +998,7 @@ button.enter-header::before {
 }
 
 .manufacturers-div li {
-  margin-top: 96px;
+  margin-top: 93px;
   margin-right: 39px;
 }
 
@@ -1055,14 +1040,14 @@ button.enter-header::before {
   display: flex;
   margin-right: auto;
   margin-left: auto;
-  min-height: 662px;
+  min-height: 627px;
   width: 1160px;
 }
 
 .about1-div {
   position: relative;
   width: 462px;
-  margin-right: 138px;
+  margin-right: 137px;
 }
 
 .about2-div {
@@ -1073,7 +1058,7 @@ button.enter-header::before {
   width: 80px;
   height: 7px;
   background-color: #000000;
-  margin: 0 auto 0 0;
+  margin: -5px auto 0 0;
   border: 0;
 }
 
@@ -1083,23 +1068,27 @@ button.enter-header::before {
   font-size: 47px;
   line-height: 48px;
   letter-spacing: 0.21px;
-  margin: 41px 0 0 -2px;
+  margin: 46px 0 0 -2px;
 }
 
-.about p {
+.p1-about {
   color: #464646;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
   margin: 43px 0 0 -2px;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.17px;
 }
 
-/*не трогать разметка ломается*/
-p.p-about {
-  margin-top: 30px;
-  letter-spacing: -0.5px;
+.p2-about {
+  color: #464646;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  margin: 30px 0 0 -2px;
+  letter-spacing: -0.47px;
 }
 
 .about li {
@@ -1125,7 +1114,7 @@ p.p-about {
 }
 
 .about ul {
-  margin: 67px 0 0 -30px;
+  margin: 66px 0 0 -30px;
 }
 
 .about button {
@@ -1150,7 +1139,7 @@ p.p-about {
 }
 
 .about1-div section {
-  min-height: 720px;
+  min-height: 656px;
 }
 
 .about2-div button {
@@ -1164,7 +1153,7 @@ p.p-about {
 .about1-div div,
 .about2-div div {
   position: relative;
-  margin-bottom: 110px;
+  margin-bottom: 46px;
 }
 
 .about-content {
@@ -1191,7 +1180,6 @@ p.p-about {
 .about2-div button:active {
   opacity: 0.3;
   outline: none;
-
 }
 
 .footer {
@@ -1213,7 +1201,7 @@ p.p-about {
 
 .footer1-div {
   display: flex;
-  margin-top: 55px;
+  margin-top: 53px;
   align-items: center;
   width: 100%;
   justify-content: flex-start;
@@ -1229,7 +1217,7 @@ p.p-about {
 }
 
 .footer1-div-img {
-  margin-left: 100px;
+  margin-left: 139px;
   margin-top: 12px;
 }
 
@@ -1273,7 +1261,7 @@ p.p-about {
   width: 13px;
   height: 12px;
   position: absolute;
-  top: 10px;
+  top: 12px;
   left: -25px;
   background-image: url(../img/user_n.png);
   background-repeat: no-repeat;
@@ -1285,8 +1273,8 @@ p.p-about {
   width: 10px;
   height: 10px;
   position: absolute;
-  top: 11px;
-  left: -20px;
+  top: 14px;
+  left: -19px;
   background-image: url(../img/compare_n.png);
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1297,7 +1285,7 @@ p.p-about {
   width: 12px;
   height: 12px;
   position: absolute;
-  top: 10px;
+  top: 11px;
   left: -20px;
   background-image: url(../img/cart_n.png);
   background-repeat: no-repeat;
@@ -1307,7 +1295,7 @@ p.p-about {
 .footer2-div {
   display: flex;
   flex-wrap: wrap;
-  margin: 25px 0 0 0;
+  margin: 28px 0 0 0;
   padding: 0;
   justify-content: flex-start;
   align-items: center;
@@ -1316,7 +1304,7 @@ p.p-about {
 .footer2-div ul {
   display: flex;
   flex-wrap: wrap;
-  margin: 8px 0 0 0;
+  margin: 6px 0 0 -2px;
   width: 594px;
   justify-content: flex-end;
 }
@@ -1330,7 +1318,7 @@ p.p-about {
 }
 
 .footer2-div li:nth-child(1) {
-  margin-right: 36px;
+  margin-right: 34px;
 }
 
 .city-div p,
@@ -1345,19 +1333,18 @@ p.p-about {
 }
 
 .city-div {
-  margin-left: 97px;
+  margin-left: 137px;
 }
 
 .phone-div {
-  margin-left: 201px;
-  margin-top: -2px;
+  margin-left: 203px;
 }
 
 .footer3-div {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin: 61px 0 0 0;
+  margin: 62px 0 0 0;
   padding: 0;
   justify-content: flex-start;
   align-items: center;
@@ -1368,7 +1355,7 @@ p.p-about {
   height: 7px;
   background-color: #ffc600;
   border: 0;
-  margin: 0 0 0 98px;
+  margin: 0 0 0 140px;
 }
 
 .footer3-div ul {
@@ -1382,7 +1369,7 @@ p.p-about {
 }
 
 .footer3-div li:nth-child(2) {
-  margin-left: 429px;
+  margin-left: 428px;
 }
 
 .footer3-div li:nth-child(3) {
@@ -1562,8 +1549,6 @@ p.p-about {
   display: none;
 }
 
-
-
 .popup {
   display: flex;
   width: 960px;
@@ -1573,7 +1558,6 @@ p.p-about {
   flex-direction: column;
   padding-left: 100px;
   box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
-
 }
 
 .popup-close {
@@ -1748,9 +1732,8 @@ p.p-about {
   min-height: 186px;
 }
 
-/*утяжеление свойства*/
-button.footer-compare {
-  margin-right: 36px;
+.footer-compare {
+  margin-right: 37px;
 }
 
 .exit {
@@ -1758,8 +1741,23 @@ button.footer-compare {
   opacity: 0.3;
 }
 
-/*утяжеление свойства*/
-button.enter-header-catalog {
+.act.catalog-ul li:nth-child(1) {
+  margin-right: -2px;
+}
+
+.act.catalog-ul li:nth-child(2) {
+  margin-right: 27px;
+}
+
+.act.catalog-ul li:nth-child(3) {
+  margin-right: 25px;
+}
+
+.act.catalog-ul li:nth-child(4) {
+  margin-right: -2px;
+}
+
+.enter-header-catalog {
   margin-right: 19px;
   padding-left: 30px;
   position: relative;
@@ -1770,9 +1768,9 @@ button.enter-header-catalog {
   width: 13px;
   height: 12px;
   position: absolute;
-  top: 1px;
-  left: 6px;
-  background-image: url(../img/user.svg);
+  top: 2px;
+  left: -24px;
+  background-image: url(../img/user.png);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1783,8 +1781,8 @@ button.enter-header-catalog {
   width: 1160px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 60px;
-  margin-top: 36px;
+  padding-left: 58px;
+  margin-top: 37px;
   flex-wrap: wrap;
 }
 
@@ -1815,7 +1813,7 @@ button.enter-header-catalog {
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
-  letter-spacing: -0.3px;
+  letter-spacing: -0.31px;
   padding-left: 0;
   display: flex;
 }
@@ -1830,8 +1828,8 @@ button.enter-header-catalog {
   width: 4px;
   height: 7px;
   position: absolute;
-  right: -21px;
-  top: 8px;
+  right: -22px;
+  top: 9px;
   background-image: url(../img/catalog/galka.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1883,7 +1881,7 @@ button.enter-header-catalog {
   justify-content: space-between;
   width: 1160px;
   margin: auto auto;
-  padding-left: 57px;
+  padding-left: 60px;
 }
 
 .wrap-filter-h2 {
@@ -1918,7 +1916,7 @@ button.enter-header-catalog {
 
 .cost {
   background-color: #eeeeee;
-  padding-left: 37px;
+  padding-left: 39px;
   padding-right: 68px;
 }
 
@@ -1962,7 +1960,7 @@ button.enter-header-catalog {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   font-weight: 300;
-  line-height: 40px;
+  line-height: 40.5px;
   letter-spacing: -0.3px;
   margin-left: 40px;
   margin-bottom: 20px;
@@ -1983,8 +1981,8 @@ button.enter-header-catalog {
   background-image: url(../img/catalog/checkbox-off.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
-  left: -38px;
-  bottom: 9px;
+  left: -40px;
+  bottom: 7px;
 }
 
 .filter-input-checkbox:checked+label::after {
@@ -1995,8 +1993,8 @@ button.enter-header-catalog {
   background-image: url(../img/catalog/checkbox-on.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
-  left: -38px;
-  bottom: 9px;
+  left: -40px;
+  bottom: 8px;
 }
 
 .filter-input-checkbox:checked+label::after:hover,
@@ -2043,8 +2041,8 @@ button.enter-header-catalog {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.18px;
-  margin-top: 12px;
-  margin-bottom: 18px;
+  margin-top: 13px;
+  margin-bottom: 17px;
 }
 
 .color button {
@@ -2161,7 +2159,7 @@ button.enter-header-catalog {
   min-height: 70px;
   background-color: #ebebeb;
   align-items: center;
-  margin-left: 177px;
+  margin-left: 175px;
 }
 
 .sort-wrap {
@@ -2265,8 +2263,8 @@ button.enter-header-catalog {
 .selfi {
   min-width: 927px;
   min-height: 1070px;
-  padding-top: 70px;
-  padding-left: 73px;
+  padding-top: 68px;
+  padding-left: 72px;
   position: relative;
 }
 
@@ -2280,7 +2278,7 @@ button.enter-header-catalog {
 
 /*.selfi li:nth-child(1),*/
 .selfi li:nth-child(2n+1) {
-  margin-right: 38px;
+  margin-right: 41px;
   margin-bottom: 44px;
 }
 
@@ -2304,10 +2302,10 @@ button.enter-header-catalog {
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
-  letter-spacing: 0.16px;
+  letter-spacing: 0.6px;
   display: flex;
   justify-content: space-between;
-  margin-top: 29px;
+  margin-top: 30px;
   margin-bottom: 1px;
 }
 
@@ -2340,8 +2338,8 @@ button.enter-header-catalog {
   background-repeat: no-repeat;
   width: 60px;
   height: 61px;
-  top: 29px;
-  right: 25px;
+  top: 30px;
+  right: 28px;
 }
 
 .selfi-wrap {
@@ -2446,8 +2444,8 @@ button.enter-header-catalog {
   background-color: #ebebeb;
   width: 760px;
   align-items: center;
-  margin-left: 74px;
-  margin-top: -10px;
+  margin-left: 73px;
+  margin-top: -12px;
 }
 
 .pages ul {
@@ -2463,8 +2461,7 @@ button.enter-header-catalog {
   font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
-  letter-spacing: 2.91px;
-
+  letter-spacing: 3.1px;
 }
 
 .pages li input {
@@ -2527,7 +2524,7 @@ button.enter-header-catalog {
 }
 
 .pages li:nth-child(5) {
-  margin-left: 194px;
+  margin-left: 191px;
 }
 
 .disable {
@@ -2540,7 +2537,7 @@ button.enter-header-catalog {
   align-items: center;
   width: 100%;
   justify-content: flex-start;
-  margin-left: -15px;
+  margin-left: -18px;
 }
 
 .footer1-div-catalog ul {
@@ -2553,21 +2550,21 @@ button.enter-header-catalog {
 }
 
 .footer1-div-catalog img {
-  margin-left: 140px;
+  margin-left: 156px;
 }
 
 .footer1-div-catalog li {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .footer1-div-catalog button {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .footer1-div-catalog li:nth-child(4) {
-  margin-right: 122px;
+  margin-right: 118px;
   padding-left: 25px;
   position: relative;
 }
@@ -2579,7 +2576,7 @@ button.enter-header-catalog {
   position: absolute;
   top: 11px;
   left: 4px;
-  background-image: url(../img/catalog/cart.png);
+  background-image: url(../img/cart_n.png);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -2597,7 +2594,7 @@ button.enter-header-catalog {
   position: absolute;
   top: 13px;
   left: 7px;
-  background-image: url(../img/catalog/compare.png);
+  background-image: url(../img/compare_n.png);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -2608,7 +2605,7 @@ button.enter-header-catalog {
 }
 
 .footer1-div-catalog li:nth-child(1) {
-  margin-right: 16px;
+  margin-right: 15px;
   padding-left: 22px;
   position: relative;
 }
@@ -2619,8 +2616,8 @@ button.enter-header-catalog {
   height: 12px;
   position: absolute;
   top: 12px;
-  left: 0px;
-  background-image: url(../img/catalog/user.png);
+  left: -1px;
+  background-image: url(../img/user_n.png);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -2640,7 +2637,7 @@ button.enter-header-catalog {
 .footer2-div-catalog {
   display: flex;
   flex-wrap: wrap;
-  margin: 25px 0 0 -15px;
+  margin: 26px 0 0 -2px;
   padding: 0;
   justify-content: flex-start;
   align-items: center;
@@ -2658,39 +2655,39 @@ button.enter-header-catalog {
   font-size: 16px;
   font-weight: 300;
   line-height: 30px;
-  letter-spacing: -0.7px;
+  letter-spacing: -0.68px;
 }
 
 .footer2-div-catalog ul {
   display: flex;
   flex-wrap: wrap;
-  margin: 8px 0 0 0;
+  margin: 6px 0 0 0;
   width: 594px;
   justify-content: flex-end;
 }
 
 .footer2-div-catalog li:nth-child(1) {
-  margin-right: 36px;
+  margin-right: 35px;
 }
 
 .footer2-div-catalog li:nth-child(2) {
-  margin-right: 33px;
+  margin-right: 31px;
 }
 
 .footer2-div-catalog li:nth-child(3) {
-  margin-right: -1px;
+  margin-right: 3px;
 }
 
 .phone-div-catalog {
   margin-left: 201px;
-  margin-top: -2px;
+  margin-top: -1px;
 }
 
 .footer3-div-catalog {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin: 61px 0 0 -13px;
+  margin: 62px 0 0 0;
   padding: 0;
   justify-content: flex-start;
   align-items: center;
