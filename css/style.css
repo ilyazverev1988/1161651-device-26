@@ -40,6 +40,7 @@ body {
   padding: 0;
   background-color: #ffffff;
   font-family: "Gilroy", Arial, sans-serif;
+  min-width: 1440px;
 }
 
 img {
@@ -1089,6 +1090,7 @@ li {
   line-height: 30px;
   margin: 30px 0 0 -2px;
   letter-spacing: -0.47px;
+  height: 59px;
 }
 
 .about li {
@@ -1153,7 +1155,7 @@ li {
 .about1-div div,
 .about2-div div {
   position: relative;
-  margin-bottom: 46px;
+  margin-bottom: 20px;
 }
 
 .about-content {
@@ -1196,7 +1198,6 @@ li {
 .footer-wrap {
   margin-left: auto;
   margin-right: auto;
-  background-color: #464646;
 }
 
 .footer1-div {
@@ -1864,11 +1865,21 @@ li {
 }
 
 .wrap-filter {
-  width: 469px;
+  /*width: 469px;
   min-height: 1208px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column;*/
+  position: relative;
+  background-color: #eeeeee;
 }
+
+/*.wrap-filter::before {
+  content: '';
+  box-shadow: -100vw 0 0 0#eeeeee;
+  height: 100%;
+  width: 100vw;
+  position: absolute;
+}*/
 
 .filter-remaster {
   background-image: linear-gradient(to right, #dcdcdc 50%, #ebebeb 50%);
@@ -1888,7 +1899,17 @@ li {
   display: flex;
   align-items: center;
   background-color: #dcdcdc;
+  min-width: 268px;
+  position: relative;
 }
+
+/*.wrap-filter-h2::before {
+  content: '';
+  box-shadow: -100vw 0 0 0#dcdcdc;
+  height: 100%;
+  width: 100vw;
+  position: absolute;
+}*/
 
 .wrap-filter-h2 h2 {
   color: #000000;
@@ -1902,7 +1923,7 @@ li {
 
 .catalog-wrap-remaster {
   background-image: linear-gradient(to right, #eeeeee 32%, white 32%);
-  min-height: 1218px;
+  min-height: 1214px;
 }
 
 .catalog-container-remaster {
@@ -1915,7 +1936,7 @@ li {
 }
 
 .cost {
-  background-color: #eeeeee;
+  /*background-color: #eeeeee;*/
   padding-left: 39px;
   padding-right: 68px;
 }
@@ -1948,7 +1969,7 @@ li {
 }
 
 .color {
-  background-color: #eeeeee;
+  /*background-color: #eeeeee;*/
   display: inline-block;
   flex-direction: column;
   min-height: 1004px;
@@ -2159,8 +2180,18 @@ li {
   min-height: 70px;
   background-color: #ebebeb;
   align-items: center;
-  margin-left: 175px;
+  position: relative;
 }
+
+/*.sort::before {
+  content: '';
+  box-shadow: 100vw 0 0 0#ebebeb;
+  height: 100%;
+  width: 100vw;
+  position: absolute;
+  background-color: #ebebeb;
+  z-index: -1;
+}*/
 
 .sort-wrap {
   width: 100%;
@@ -2533,7 +2564,7 @@ li {
 
 .footer1-div-catalog {
   display: flex;
-  margin-top: 52px;
+  margin-top: 56px;
   align-items: center;
   width: 100%;
   justify-content: flex-start;
