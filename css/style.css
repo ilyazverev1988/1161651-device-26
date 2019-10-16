@@ -2781,3 +2781,7 @@ li {
   top: 0px;
   left: 0px;
 }
+
+.iframe {
+  border: 0;
+}
