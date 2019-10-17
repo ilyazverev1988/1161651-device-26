@@ -1,4 +1,3 @@
-/*Глобальные правила*/
 @font-face {
   font-family: "Gilroy - Extra Bold";
   src: url("../fonts/gilroyextrabold.woff2") format('woff2'),
@@ -191,7 +190,6 @@ li {
   letter-spacing: 0.15px;
   display: none;
   top: -23px;
-  border-bottom: 1px solid #000000;
   position: absolute;
   right: 12px;
 }
@@ -223,7 +221,7 @@ li {
   outline: none;
   padding-left: 40px;
   height: 26px;
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
 
 .input-search {
@@ -1171,9 +1169,9 @@ li {
 .about1-div button:hover+.about-content,
 .about1-div button:focus+.about-content,
 .about1-div button:active+.about-content,
-.about2-div button:hover+.about-content,
-.about2-div button:focus+.about-content,
-.about2-div button:active+.about-content {
+.about2-div form:hover+.about-content,
+.about2-div form:focus+.about-content,
+.about2-div form:active+.about-content {
   height: 40px;
   top: -34px;
 }
@@ -1550,6 +1548,10 @@ li {
   display: none;
 }
 
+.modal-write-show {
+  display: block;
+}
+
 .popup {
   display: flex;
   width: 960px;
@@ -1639,6 +1641,7 @@ li {
   background-color: #f2f2f2;
   border: none;
   padding-left: 20px;
+  padding-top: 18px;
 }
 
 .popup-letter textarea::placeholder {
@@ -1865,21 +1868,9 @@ li {
 }
 
 .wrap-filter {
-  /*width: 469px;
-  min-height: 1208px;
-  display: flex;
-  flex-direction: column;*/
   position: relative;
   background-color: #eeeeee;
 }
-
-/*.wrap-filter::before {
-  content: '';
-  box-shadow: -100vw 0 0 0#eeeeee;
-  height: 100%;
-  width: 100vw;
-  position: absolute;
-}*/
 
 .filter-remaster {
   background-image: linear-gradient(to right, #dcdcdc 50%, #ebebeb 50%);
@@ -1903,14 +1894,6 @@ li {
   position: relative;
 }
 
-/*.wrap-filter-h2::before {
-  content: '';
-  box-shadow: -100vw 0 0 0#dcdcdc;
-  height: 100%;
-  width: 100vw;
-  position: absolute;
-}*/
-
 .wrap-filter-h2 h2 {
   color: #000000;
   font-family: "Gilroy - Extra Bold", Arial, sans-serif;
@@ -1922,7 +1905,7 @@ li {
 }
 
 .catalog-wrap-remaster {
-  background-image: linear-gradient(to right, #eeeeee 32%, white 32%);
+  background-image: linear-gradient(to right, #eeeeee calc(50% - 580px + 268px), white calc(50% - 580px + 268px));
   min-height: 1214px;
 }
 
@@ -1936,7 +1919,6 @@ li {
 }
 
 .cost {
-  /*background-color: #eeeeee;*/
   padding-left: 39px;
   padding-right: 68px;
 }
@@ -1969,7 +1951,6 @@ li {
 }
 
 .color {
-  /*background-color: #eeeeee;*/
   display: inline-block;
   flex-direction: column;
   min-height: 1004px;
@@ -2003,7 +1984,7 @@ li {
   background-repeat: no-repeat;
   background-position: 0 0;
   left: -40px;
-  bottom: 7px;
+  bottom: 8px;
 }
 
 .filter-input-checkbox:checked+label::after {
@@ -2032,7 +2013,7 @@ li {
   background-repeat: no-repeat;
   background-position: 0 0;
   left: -39px;
-  bottom: 7px;
+  bottom: 8px;
 }
 
 .strip-cost-3 {
@@ -2183,16 +2164,6 @@ li {
   position: relative;
 }
 
-/*.sort::before {
-  content: '';
-  box-shadow: 100vw 0 0 0#ebebeb;
-  height: 100%;
-  width: 100vw;
-  position: absolute;
-  background-color: #ebebeb;
-  z-index: -1;
-}*/
-
 .sort-wrap {
   width: 100%;
   background-color: #ebebeb;
@@ -2292,7 +2263,7 @@ li {
 }
 
 .selfi {
-  min-width: 927px;
+  width: 927px;
   min-height: 1070px;
   padding-top: 68px;
   padding-left: 72px;
@@ -2307,7 +2278,6 @@ li {
   margin: 0;
 }
 
-/*.selfi li:nth-child(1),*/
 .selfi li:nth-child(2n+1) {
   margin-right: 41px;
   margin-bottom: 44px;
@@ -2472,17 +2442,18 @@ li {
 .pages {
   display: flex;
   min-height: 70px;
-  background-color: #ebebeb;
   width: 760px;
   align-items: center;
   margin-left: 73px;
   margin-top: -12px;
+  margin-bottom: 72px;
 }
 
 .pages ul {
   display: flex;
-  margin: -3px 0 0 0;
+  margin: 3px 0 0 -1px;
   padding: 0;
+  background-color: #ebebeb;
 }
 
 .pages input {
@@ -2493,6 +2464,7 @@ li {
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 3.1px;
+  cursor: pointer;
 }
 
 .pages li input {
@@ -2503,11 +2475,10 @@ li {
 
 .pages li:nth-child(1) input,
 .pages li:nth-child(5) input {
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 27px;
-  padding-bottom: 18px;
+  width: 131px;
+  height: 70px;
   outline: none;
+  cursor: pointer;
 }
 
 .pages li:nth-child(1) input:hover,
@@ -2540,22 +2511,22 @@ li {
 }
 
 .pages li:nth-child(2) {
-  margin-left: 203px;
-  margin-top: 26px;
+  margin-left: 201px;
+  margin-top: 23px;
 }
 
 .pages li:nth-child(3) {
   margin-left: 15px;
-  margin-top: 26px;
+  margin-top: 23px;
 }
 
 .pages li:nth-child(4) {
-  margin-left: 18px;
-  margin-top: 26px;
+  margin-left: 16px;
+  margin-top: 23px;
 }
 
 .pages li:nth-child(5) {
-  margin-left: 191px;
+  margin-left: 197px;
 }
 
 .disable {
