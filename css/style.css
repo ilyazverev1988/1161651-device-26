@@ -1540,7 +1540,7 @@ li {
   position: fixed;
   width: 960px;
   height: 553px;
-  top: 26px;
+  top: 298px;
   left: 50%;
   background-color: #ffffff;
   z-index: 50;
@@ -1706,7 +1706,7 @@ li {
   left: 50%;
   margin-left: -481px;
   z-index: 2;
-  top: 600px;
+  top: 298px;
 }
 
 .popup-close-map {
