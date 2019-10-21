@@ -21,19 +21,19 @@
         </div>
         <ul class="act">
           <li>
-            <button type="button" class="enter-header">Войти</button>
+            <a href="" class="enter-header">Войти</a>
           </li>
           <li>
-            <button type="button" class="compare-header">Сравнить</button>
+            <a href="" class="compare-header">Сравнить</a>
           </li>
           <li>
-            <button type="button" class="basket-header">Корзина</button>
+            <a href="" class="basket-header">Корзина</a>
           </li>
         </ul>
       </div>
       <div class="catalog-menu">
         <div class="catalog-wrap-a">
-          <button type="button" class="catalog-button">Каталог товаров</button>
+          <a href="" class="catalog-button">Каталог товаров</a>
           <div class="catalog-wrap">
             <div class="catalog-item" aria-label="Каталог товаров">
               <div class="catalog-item-div1">
@@ -65,7 +65,15 @@
   </header>
   <main>
     <h1 class="visually-hidden">Магазин Device</h1>
-    <section>
+    <section class="section-slaider">
+      <input type="radio" id="promo-btn-1" class="promo-toggle promo-btn-1 visually-hidden" name="promo-toggle" checked>
+      <input type="radio" id="promo-btn-2" class="promo-toggle promo-btn-2 visually-hidden" name="promo-toggle">
+      <input type="radio" id="promo-btn-2" class="promo-toggle promo-btn-3 visually-hidden" name="promo-toggle">
+      <div class="switch-slaider">
+        <label for="promo-btn-1"></label>
+        <label for="promo-btn-2"></label>
+        <label for="promo-btn-3"></label>
+      </div>
       <div class="slaider">
         <h2 class="visually-hidden">Слайдер с самыми интересными товарами</h2>
         <div class="slaider-img">
@@ -79,7 +87,6 @@
           </p>
           <div class="slaider-a-div">
             <a href="">Подробнее</a>
-            <div class="slaider-content"></div>
           </div>
           <div class="slaider-ul1-div">
             <ul>
@@ -109,7 +116,6 @@
           </p>
           <div class="slaider-a-div">
             <a href="">Подробнее</a>
-            <div class="slaider-content"></div>
           </div>
           <div class="slaider-ul1-div">
             <ul>
@@ -135,7 +141,6 @@
           </p>
           <div class="slaider-a-div">
             <a href="">Подробнее</a>
-            <div class="slaider-content"></div>
           </div>
           <div class="slaider3-ul1-div">
             <ul>
@@ -259,8 +264,7 @@
             <li>ЖелДорЭкспедиция</li>
           </ul>
           <div>
-            <button type="button">Подробнее о нас</button>
-            <div class="about-content"></div>
+            <a href="">Подробнее о нас</a>
           </div>
         </section>
       </div>
@@ -270,12 +274,10 @@
           <h2>Контакты</h2>
           <p class="p1-about">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
             работоспособность покупки. Всякое бывает.</p>
-          <a><img class="map" src="img/map.png" width="560" height="222"
+          <a href="map.html"><img class="map" src="img/map.png" width="560" height="222"
               alt="Адрес магазина DEVICE по адресу г. Москва, ул. Строителей, 15"></a><br>
           <div>
-            <form action="form.html" target="_blank">
-              <button class="modal-open" type="submit">Напишите нам</button>
-            </form>
+            <a href="form.html" class="modal-open">Напишите нам</a>
             <div class="about-content"></div>
           </div>
         </section>
@@ -288,13 +290,13 @@
         <img class="footer1-div-img" src="img/logo-yellow.png" width="163" height="35" alt="Логотип магазина Девайс">
         <ul class="act-footer">
           <li>
-            <button type="button">Войти</button>
+            <a href="">Войти</a>
           </li>
           <li>
-            <button type="button">Сравнить</button>
+            <a href="">Сравнить</a>
           </li>
           <li>
-            <button type="button">Корзина</button>
+            <a href="">Корзина</a>
           </li>
         </ul>
       </div>
@@ -344,8 +346,8 @@
     <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
       <div class="popup">
         <div class="popup-close">
-          <button class="popup-close" type="button" aria-label="Закрыть"><img src="img/modal-close.svg"
-              alt="Иконка закрыть"></button>
+          <button class="popup-close" type="button" aria-label="Закрыть"><img width="55" height="55"
+              src="img/modal-close.svg" alt="Иконка закрыть"></button>
         </div>
         <div class="popup-person">
           <div>
@@ -362,7 +364,6 @@
           <textarea name="letter" id="letter" placeholder="В свободной форме"></textarea>
           <div>
             <button type="submit">Отправить</button>
-            <div class="content-popup"></div>
           </div>
         </div>
       </div>
@@ -373,9 +374,10 @@
     <iframe class="iframe"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112548877997!2d37.52742931589823!3d55.68703098053582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1570646546249!5m2!1sru!2sru"
       width="960" height="559" allowfullscreen=""></iframe>
-    <button class="popup-close-map" type="button" aria-label="Закрыть"><img class="close-img" src="img/modal-close.svg"
-        alt="Иконка закрыть"></button>
-    <img src="img/map-big.jpg" alt="Адрес магазина DEVICE по адресу г. Москва, ул. Строителей, 15">
+    <button class="popup-close-map" type="button" aria-label="Закрыть"><img width="55" height="55" class="close-img"
+        src="img/modal-close.svg" alt="Иконка закрыть"></button>
+    <img width="960" height="559" src="img/map-big.jpg"
+      alt="Адрес магазина DEVICE по адресу г. Москва, ул. Строителей, 15">
   </section>
   <script src="js/script.js"></script>
 </body>

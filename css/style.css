@@ -38,7 +38,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
-  font-family: "Gilroy", Arial, sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   min-width: 1440px;
 }
 
@@ -97,11 +97,12 @@ li {
   justify-content: flex-end;
 }
 
-.act button,
+.act a,
 .catalog a {
   vertical-align: baseline;
   padding: 0;
   display: inline-block;
+  vertical-align: baseline;
 }
 
 .basket-header {
@@ -184,12 +185,12 @@ li {
   padding: 0px;
   background-color: transparent;
   vertical-align: bottom;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 300;
   letter-spacing: 0.15px;
   display: none;
-  top: -23px;
+  top: -18px;
   position: absolute;
   right: 12px;
 }
@@ -207,7 +208,7 @@ li {
 .search {
   opacity: 0.3;
   color: #000000;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 28px;
@@ -215,13 +216,20 @@ li {
   border: none;
   background-color: transparent;
   position: relative;
-  background-image: url("../img/search.svg");
-  background-repeat: no-repeat;
-  background-position: 4px;
+  padding-left: 25px;
   outline: none;
-  padding-left: 40px;
-  height: 26px;
-  padding-bottom: 0;
+}
+
+.input-search::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-image: url(../img/search.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .input-search {
@@ -240,18 +248,19 @@ li {
 .input-search>.search:focus+.search-div-submit,
 .input-search:active>.search-div-submit {
   display: inline-block;
+  vertical-align: baseline;
 }
 
 .act {
   color: #000000;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
   letter-spacing: 0.15px;
 }
 
-.act button {
+.act a {
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -261,7 +270,7 @@ li {
 .catalog,
 .catalog-button {
   color: #000000;
-  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
+  font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -274,8 +283,8 @@ li {
   padding: 0;
 }
 
-.act button:hover,
-.act button:focus,
+.act a:hover,
+.act a:focus,
 .catalog li :hover,
 .catalog li :focus,
 .catalog-item a:hover,
@@ -285,7 +294,7 @@ li {
   opacity: 0.6;
 }
 
-.act button:active,
+.act a:active,
 .catalog li :active,
 .catalog-item a:active,
 .catalog-button:active {
@@ -314,7 +323,7 @@ li {
 
 .catalog-wrap {
   color: #000000;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 36px;
@@ -417,6 +426,39 @@ li {
   margin: 0 0 0 600px;
 }
 
+.section-slaider {
+  position: relative;
+  width: 1160px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.switch-slaider {
+  width: 90px;
+  min-height: 12px;
+  position: absolute;
+  top: 213px;
+  right: 128px;
+}
+
+.switch-slaider label {
+  display: inline-block;
+  vertical-align: baseline;
+  width: 12px;
+  height: 12px;
+  background-image: url(/img/slider-button-empty.svg);
+}
+
+.switch-slaider label:nth-child(1) {
+  background-image: url(/img/slider-button.svg);
+  background-repeat: no-repeat;
+  margin-right: 15px;
+}
+
+.switch-slaider label:nth-child(2) {
+  margin-right: 15px;
+}
+
 .slaider,
 .slaider2,
 .slaider3 {
@@ -471,7 +513,7 @@ li {
 
 .slaider h3 {
   color: white;
-  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
+  font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
   font-size: 179px;
   line-height: 179.2px;
   letter-spacing: 0.36px;
@@ -483,7 +525,7 @@ li {
 
 .slaider2 h3 {
   color: white;
-  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
+  font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
   font-size: 179px;
   line-height: 179.2px;
   letter-spacing: 0.36px;
@@ -495,7 +537,7 @@ li {
 
 .slaider3 h3 {
   color: white;
-  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
+  font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
   font-size: 179px;
   line-height: 179.2px;
   letter-spacing: 0.36px;
@@ -507,7 +549,7 @@ li {
 
 .slaider h4 {
   color: #000000;
-  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
+  font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
   font-size: 47px;
   line-height: 56px;
   letter-spacing: 0.55px;
@@ -518,7 +560,7 @@ li {
 .slaider2 h4 {
   width: 258px;
   color: #000000;
-  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
+  font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
   font-size: 47px;
   line-height: 56px;
   letter-spacing: 0.17px;
@@ -528,7 +570,7 @@ li {
 
 .slaider3 h4 {
   color: #000000;
-  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
+  font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
   font-size: 47px;
   line-height: 56px;
   letter-spacing: 0.17px;
@@ -540,7 +582,7 @@ li {
 .slaider p,
 .slaider2 p {
   color: #464646;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
@@ -553,7 +595,7 @@ li {
 
 .slaider3 p {
   color: #464646;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
@@ -570,11 +612,13 @@ li {
   padding-right: 43px;
   position: relative;
   cursor: pointer;
+  display: inline-block;
+  vertical-align: baseline;
 }
 
 .slaider-a-div a {
   color: #000000;
-  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
+  font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -586,25 +630,26 @@ li {
   margin-left: -3px;
 }
 
-.slaider-content {
+.slaider-a-div a::before {
+  content: "";
   position: absolute;
   width: 220px;
   height: 8px;
   background-color: #f0c52e;
-  left: 0px;
   top: 7px;
   z-index: -1;
   transition: 0.3s;
+  margin-left: -38px;
 }
 
-.slaider-a-div a:hover+.slaider-content,
-.slaider-a-div a:hover+.slaider-content {
+.slaider-a-div a:hover::before,
+.slaider-a-div a:hover::before {
   height: 40px;
   top: -10px;
 }
 
 .slaider-a-div a:active {
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .slaider-ul1-div>ul {
@@ -618,7 +663,7 @@ li {
 
 .slaider-ul1-div li {
   color: #000000;
-  font-family: "Gilroy", Arial, sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 300;
   line-height: 48px;
@@ -641,7 +686,7 @@ li {
 
 .slaider3-ul1-div li {
   color: #000000;
-  font-family: "Gilroy", Arial, sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 300;
   line-height: 48px;
@@ -663,7 +708,7 @@ li {
 
 .slaider-ul2-div li {
   color: #464646;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 13px;
   font-weight: 300;
   line-height: 20px;
@@ -685,7 +730,7 @@ li {
 
 .slaider3-ul2-div li {
   color: #464646;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 13px;
   font-weight: 300;
   line-height: 20px;
@@ -718,17 +763,13 @@ li {
 
 .gadget li {
   color: #000000;
-  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
+  font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.18px;
   margin-right: 40px;
   min-width: 160px;
-}
-
-.gadget li:nth-child(6) {
-  margin-right: 0px;
 }
 
 .gadget img {
@@ -740,7 +781,7 @@ li {
 
 .gadget a {
   color: #000000;
-  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
+  font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -809,7 +850,7 @@ li {
 
 .common-div li {
   color: #000000;
-  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
+  font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -840,7 +881,7 @@ li {
 
 .common-div button {
   width: 160px;
-  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
+  font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -919,7 +960,7 @@ li {
 .details-text2 h3,
 .details-text3 h3 {
   color: #000000;
-  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
+  font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
   font-size: 47px;
   font-weight: 400;
   line-height: 48px;
@@ -929,7 +970,7 @@ li {
 
 .details-text1 p {
   color: #464646;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
@@ -941,7 +982,7 @@ li {
 
 .details-text2 p {
   color: #464646;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
@@ -953,7 +994,7 @@ li {
 
 .details-text3 p {
   color: #464646;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
@@ -984,7 +1025,7 @@ li {
 .manufacturers-div {
   display: flex;
   flex-direction: row;
-  width: 1160px;
+  min-width: 1160px;
   min-height: 291px;
   margin-left: auto;
   margin-right: auto;
@@ -992,7 +1033,7 @@ li {
 
 .manufacturers-div ul {
   display: flex;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -1063,7 +1104,7 @@ li {
 
 .about h2 {
   color: #000000;
-  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
+  font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
   font-size: 47px;
   line-height: 48px;
   letter-spacing: 0.21px;
@@ -1072,7 +1113,7 @@ li {
 
 .p1-about {
   color: #464646;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
@@ -1082,7 +1123,7 @@ li {
 
 .p2-about {
   color: #464646;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
@@ -1093,7 +1134,7 @@ li {
 
 .about li {
   color: #000000;
-  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
+  font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
   font-size: 16px;
   line-height: 40px;
   list-style-type: none;
@@ -1108,7 +1149,7 @@ li {
   position: absolute;
   top: 16px;
   left: -9px;
-  background-image: url(../img/slider-button.png);
+  background-image: url(../img/slider-button.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1117,9 +1158,9 @@ li {
   margin: 66px 0 0 -30px;
 }
 
-.about button {
+.about a {
   color: #000000;
-  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
+  font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
@@ -1128,57 +1169,75 @@ li {
 
 .map {
   margin-top: 38px;
+  margin-bottom: 8px;
 }
 
-.about1-div button {
+.about1-div a {
   margin-top: 63px;
-  margin-left: 16px;
+  margin-left: 22px;
   border: none;
   background-color: transparent;
   cursor: pointer;
+  position: relative;
 }
 
 .about1-div section {
   min-height: 656px;
 }
 
-.about2-div button {
+.modal-open {
   margin-top: 74px;
-  margin-left: 34px;
+  margin-left: 42px;
   border: none;
   background-color: transparent;
   cursor: pointer;
+  position: relative;
 }
 
 .about1-div div,
 .about2-div div {
   position: relative;
   margin-bottom: 20px;
+  margin-top: 66px;
 }
 
-.about-content {
+.modal-open::before {
+  content: "";
   position: absolute;
   width: 260px;
   height: 8px;
   background-color: #f0c52e;
-  top: -17px;
+  top: 5px;
   z-index: -1;
   transition: 0.3s;
+  left: -41px;
 }
 
-.about1-div button:hover+.about-content,
-.about1-div button:focus+.about-content,
-.about1-div button:active+.about-content,
-.about2-div form:hover+.about-content,
-.about2-div form:focus+.about-content,
-.about2-div form:active+.about-content {
+.about1-div a::before {
+  content: "";
+  position: absolute;
+  width: 260px;
+  height: 8px;
+  background-color: #f0c52e;
+  top: 7px;
+  z-index: -1;
+  transition: 0.3s;
+  left: -22px;
+}
+
+.about1-div a:hover::before,
+.about1-div a:focus::before,
+.about1-div a:active::before,
+.modal-open:hover::before,
+.modal-open:focus::before,
+.modal-open:active::before {
   height: 40px;
-  top: -34px;
+  top: -9px;
 }
 
-.about1-div button:active,
-.about2-div button:active {
-  opacity: 0.3;
+.about1-div a:active,
+.about2-div a:active {
+  color: rgba(0, 0, 0, 0.3);
   outline: none;
 }
 
@@ -1324,7 +1383,7 @@ li {
 .phone-div a {
   margin: 0;
   color: #ffffff;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 30px;
@@ -1367,34 +1426,25 @@ li {
   align-items: center;
 }
 
-.footer3-div li:nth-child(2) {
+.socialnetwork.facebook-div {
   margin-left: 428px;
 }
 
-.footer3-div li:nth-child(3) {
+.socialnetwork.instagram-div {
   margin-left: 23px;
 }
 
-.footer3-div li:nth-child(4) {
+.socialnetwork.tviter-div {
   margin-left: 22px;
 }
 
-.footer3-div li:nth-child(5) {
+.socialnetwork.htmlacademy-div {
   margin-left: 483px;
-}
-
-.logo:hover,
-.logo:focus {
-  opacity: 0.6;
-}
-
-.logo:active {
-  opacity: 0.3;
 }
 
 .adress a {
   color: #ffffff;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
@@ -1405,10 +1455,10 @@ li {
   margin: 0;
 }
 
-.act-footer button {
+.act-footer a {
   opacity: 0.7;
   color: #ffffff;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 36px;
@@ -1421,15 +1471,15 @@ li {
 
 .features-footer a {
   color: #ffffff;
-  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
+  font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 3.6px;
 }
 
-.act-footer li:hover,
-.act-footer li:focus {
+.act-footer li a:hover,
+.act-footer li a:focus {
   border: none;
   outline: none;
   opacity: 1;
@@ -1455,17 +1505,13 @@ li {
   opacity: 0.3;
 }
 
-.socialnetwork img {
-  opacity: 0.7;
-}
-
 .socialnetwork img:hover,
 .socialnetwork img:focus {
-  opacity: 1;
+  opacity: 0.6;
 }
 
 .socialnetwork img:active {
-  opacity: 0.1;
+  opacity: 0.3;
 }
 
 .popup-close img,
@@ -1493,6 +1539,7 @@ li {
   border: 3px solid #f0c52e;
   background-color: #ffffff;
   opacity: 1;
+  outline: none;
 }
 
 @keyframes bounce {
@@ -1548,10 +1595,6 @@ li {
   display: none;
 }
 
-.modal-write-show {
-  display: block;
-}
-
 .popup {
   display: flex;
   width: 960px;
@@ -1594,7 +1637,7 @@ li {
   border: none;
   padding-left: 20px;
   color: #464646;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -1604,7 +1647,7 @@ li {
   padding-left: 0px;
   opacity: 0.4;
   color: #464646;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -1618,7 +1661,7 @@ li {
 .popup-person label,
 .popup-letter label {
   color: #000000;
-  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
+  font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -1648,20 +1691,20 @@ li {
   padding-left: 0px;
   opacity: 0.4;
   color: #464646;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
 }
 
 .popup-letter button {
-  margin-top: 55px;
+  margin-top: 43px;
   display: flex;
   justify-content: flex-start;
   padding: 0;
   border: none;
   color: #000000;
-  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
+  font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -1671,30 +1714,33 @@ li {
   margin-left: 34px;
   position: relative;
   cursor: pointer;
+  outline: none;
 }
 
 .popup-letter div {
   position: relative;
 }
 
-.content-popup {
+.popup-letter button::before {
+  content: "";
   position: absolute;
   width: 200px;
   height: 8px;
   background-color: #f0c52e;
   z-index: -1;
-  top: -16px;
+  top: 7px;
   transition: 0.3s;
+  left: -35px;
 }
 
-.popup-letter button:hover+.content-popup,
-.popup-letter button:active+.content-popup {
+.popup-letter button:hover::before,
+.popup-letter button:active::before {
   height: 40px;
-  top: -32px;
+  top: -11px;
 }
 
 .popup-letter button:active {
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3)
 }
 
 .map-popup {
@@ -1707,6 +1753,10 @@ li {
   margin-left: -481px;
   z-index: 2;
   top: 298px;
+}
+
+.modal-write-show {
+  display: block;
 }
 
 .popup-close-map {
@@ -1792,7 +1842,7 @@ li {
 
 .breadcrumb h1 {
   color: #000000;
-  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
+  font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
   font-size: 47px;
   font-weight: 400;
   line-height: 48px;
@@ -1811,9 +1861,8 @@ li {
 }
 
 .breadcrumbs ul {
-  opacity: 0.3;
   color: #000000;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
@@ -1825,6 +1874,10 @@ li {
 .breadcrumbs li {
   position: relative;
   margin-right: 40px;
+}
+
+.breadcrumbs a {
+  color: rgba(0, 0, 0, 0.3)
 }
 
 .breadcrumbs li::after {
@@ -1849,12 +1902,12 @@ li {
   cursor: default;
 }
 
-.breadcrumbs li a:hover {
-  opacity: 0.6;
+.breadcrumbs a:hover {
+  color: rgba(0, 0, 0, 0.6)
 }
 
 .breadcrumbs li a:active {
-  opacity: 0.1;
+  color: rgba(0, 0, 0, 0.1)
 }
 
 .global {
@@ -1896,7 +1949,7 @@ li {
 
 .wrap-filter-h2 h2 {
   color: #000000;
-  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
+  font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -1935,7 +1988,7 @@ li {
   margin-top: 11px;
   margin-bottom: 0;
   color: #000000;
-  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
+  font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -1952,6 +2005,7 @@ li {
 
 .color {
   display: inline-block;
+  vertical-align: baseline;
   flex-direction: column;
   min-height: 1004px;
 }
@@ -1959,7 +2013,7 @@ li {
 .color ul {
   padding: 0;
   color: #000000;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 40.5px;
@@ -1975,6 +2029,7 @@ li {
   user-select: none;
 }
 
+
 .filter-input-checkbox+label::before {
   content: "";
   position: absolute;
@@ -1987,6 +2042,14 @@ li {
   bottom: 8px;
 }
 
+.color label:hover::before,
+.color label:focus::before,
+.color label:hover::after,
+.color label:focus::after,
+.color input:focus {
+  opacity: 0.6;
+}
+
 .filter-input-checkbox:checked+label::after {
   content: "";
   position: absolute;
@@ -1997,6 +2060,10 @@ li {
   background-position: 0 0;
   left: -40px;
   bottom: 8px;
+}
+
+.filter-input-checkbox:checked+label::before {
+  display: none;
 }
 
 .filter-input-checkbox:checked+label::after:hover,
@@ -2036,9 +2103,16 @@ li {
   bottom: 8px;
 }
 
+.filter-input-checkbox:focus+label::after,
+.filter-input-checkbox:focus+label::before,
+.filter-input-radio:focus+label::after,
+.filter-input-radio:focus+label::before {
+  opacity: 0.6;
+}
+
 .color h3 {
   color: #000000;
-  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
+  font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -2050,7 +2124,7 @@ li {
 .color button {
   margin-top: 42px;
   color: #000000;
-  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
+  font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   text-transform: uppercase;
@@ -2066,35 +2140,38 @@ li {
 
 .wrap-button {
   position: relative;
+  margin-top: 32px;
 }
 
-.strip-button-filter {
+.color button::before {
+  content: "";
   position: absolute;
   width: 200px;
   height: 8px;
   background-color: #f0c52e;
-  top: 47px;
+  top: 7px;
   left: -40px;
   transition: 0.3s;
+  z-index: -1;
 }
 
-.color button:hover+.strip-button-filter,
-.color button:focus+.strip-button-filter,
-.color button:active+.strip-button-filter {
+.color button:hover::before,
+.color button:focus::before,
+.color button:active::before {
   height: 40px;
   background-color: #f0c52e;
-  top: 30px;
+  top: -10px;
 }
 
 .color button:active {
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .min-price,
 .max-price {
   opacity: 0.2;
   color: #000000;
-  font-family: "Gilroy", Arial, sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 24px;
@@ -2138,8 +2215,23 @@ li {
   left: 110px;
 }
 
+.toggle.toggle-min:active {
+  background-image: url(../img/catalog/filter-button-big.png);
+  width: 22px;
+  height: 24px;
+  left: -6px;
+}
+
+.toggle.toggle-max:active {
+  background-image: url(../img/catalog/filter-button-big.png);
+  width: 22px;
+  height: 24px;
+  left: 109px;
+}
+
 .price-controls label {
   display: inline-block;
+  vertical-align: baseline;
   width: 45%;
 }
 
@@ -2176,9 +2268,9 @@ li {
   align-items: center;
 }
 
-.sort input {
+.sort a {
   color: #000000;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -2187,24 +2279,21 @@ li {
   outline: none;
   background-color: transparent;
   padding: 0;
+  white-space: nowrap;
 }
 
-.selected {
-  opacity: 1;
-}
-
-.sort input:hover,
-.sort input:focus {
+.sort a:hover,
+.sort a:focus {
   opacity: 0.6;
 }
 
-.sort input:active {
+.sort a:active {
   opacity: 1;
 }
 
 .sort h2 {
   color: #000000;
-  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
+  font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -2213,12 +2302,17 @@ li {
   margin: 0 0 0 72px;
 }
 
-.sort input {
+.sort a {
   cursor: pointer;
+  position: relative;
 }
 
 .sort li:nth-child(1) {
   margin-left: 49px;
+}
+
+.sort li:nth-child(1) a {
+  opacity: 1;
 }
 
 .sort li:nth-child(2) {
@@ -2231,35 +2325,51 @@ li {
 
 .sort li:nth-child(4) {
   margin-left: 231px;
+}
+
+.a-opacity:before {
+  content: "";
   background-image: url(../img/catalog/icon-up-dir.svg);
   background-repeat: no-repeat;
   width: 11px;
   height: 10px;
   opacity: 0.2;
+  position: absolute;
+  top: -5px;
 }
 
 .sort li:nth-child(5) {
   margin-left: 19px;
+}
+
+.a-opacity-two.selected {
+  opacity: 1;
+}
+
+.a-opacity-two:before {
+  content: "";
   background-image: url(../img/catalog/icon-down-dir.svg);
   background-repeat: no-repeat;
   width: 11px;
   height: 10px;
+  position: absolute;
+  top: -5px;
 }
 
-.sort li:nth-child(4):hover,
-.sort li:nth-child(5):hover,
-.sort li:nth-child(4):focus,
-.sort li:nth-child(5):focus {
-  opacity: 0.4;
-}
-
-.sort li:nth-child(4):active,
+.a-opacity:active::before,
 .sort li:nth-child(5):active {
   opacity: 1;
 }
 
 .selected {
   opacity: 1;
+}
+
+.a-opacity:hover:before,
+.sort li:nth-child(5):hover,
+.a-opacity:focus:before,
+.sort li:nth-child(5):focus {
+  opacity: 0.4;
 }
 
 .selfi {
@@ -2290,7 +2400,7 @@ li {
 
 .selfi a {
   color: #000000;
-  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
+  font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -2299,7 +2409,7 @@ li {
 
 .selfi p {
   color: #464646;
-  font-family: "Gilroy", Arial, sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
@@ -2356,7 +2466,7 @@ li {
 
 .in-basket button {
   color: #000000;
-  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
+  font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -2401,7 +2511,7 @@ li {
 .to-compare button {
   opacity: 0.5;
   color: #000000;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 13px;
   font-weight: 300;
   line-height: 36px;
@@ -2454,11 +2564,13 @@ li {
   margin: 3px 0 0 -1px;
   padding: 0;
   background-color: #ebebeb;
+  min-width: 760px;
+  min-height: 70px;
 }
 
-.pages input {
+.pages a {
   color: #000000;
-  font-family: "Gilroy - Extra Bold", Arial, sans-serif;
+  font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -2467,46 +2579,50 @@ li {
   cursor: pointer;
 }
 
-.pages li input {
+.pages li a {
   border: none;
   background-color: transparent;
   outline: none;
+  display: inline-block;
+  vertical-align: top;
 }
 
-.pages li:nth-child(1) input,
-.pages li:nth-child(5) input {
+.pages li:nth-child(1) a,
+.pages li:nth-child(5) a {
   width: 131px;
   height: 70px;
   outline: none;
   cursor: pointer;
+  text-align: center;
+  padding-top: 22px;
 }
 
-.pages li:nth-child(1) input:hover,
-.pages li:nth-child(1) input:focus,
-.pages li:nth-child(1) input:active,
-.pages li:nth-child(5) input:hover,
-.pages li:nth-child(5) input:focus,
-.pages li:nth-child(5) input:active {
+.pages li:nth-child(1) a:hover,
+.pages li:nth-child(1) a:focus,
+.pages li:nth-child(1) a:active,
+.pages li:nth-child(5) a:hover,
+.pages li:nth-child(5) a:focus,
+.pages li:nth-child(5) a:active {
   background-color: #d8d8d8;
 }
 
-.pages li:nth-child(1) input:active,
-.pages li:nth-child(5) input:active {
+.pages li:nth-child(1) a:active,
+.pages li:nth-child(5) a:active {
   color: rgba(0, 0, 0, 0.3)
 }
 
-.pages li:nth-child(2) input:hover,
-.pages li:nth-child(2) input:focus,
-.pages li:nth-child(3) input:hover,
-.pages li:nth-child(3) input:focus,
-.pages li:nth-child(4) input:hover,
-.pages li:nth-child(4) input:focus {
-  opacity: 0.3;
+.pages li:nth-child(2) a:hover,
+.pages li:nth-child(2) a:focus,
+.pages li:nth-child(3) a:hover,
+.pages li:nth-child(3) a:focus,
+.pages li:nth-child(4) a:hover,
+.pages li:nth-child(4) a:focus {
+  opacity: 0.6;
 }
 
-.pages li:nth-child(2) input:active,
-.pages li:nth-child(3) input:active,
-.pages li:nth-child(4) input:active {
+.pages li:nth-child(2) a:active,
+.pages li:nth-child(3) a:active,
+.pages li:nth-child(4) a:active {
   opacity: 1;
 }
 
@@ -2526,7 +2642,7 @@ li {
 }
 
 .pages li:nth-child(5) {
-  margin-left: 197px;
+  margin-left: 232px;
 }
 
 .disable {
@@ -2653,7 +2769,7 @@ li {
 .phone-div-catalog a {
   margin: 0;
   color: #ffffff;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 30px;
