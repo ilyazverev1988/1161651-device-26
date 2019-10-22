@@ -83,9 +83,10 @@ li {
 
 .wrap-1 {
   display: flex;
-  margin-top: 43px;
+  margin-top: 44px;
   align-items: baseline;
   justify-content: space-between;
+  min-height: 32px;
 }
 
 .wrap-1 ul {
@@ -106,7 +107,7 @@ li {
 }
 
 .basket-header {
-  margin-right: 60px;
+  margin-right: 59px;
   padding-left: 25px;
   position: relative;
 }
@@ -116,8 +117,8 @@ li {
   width: 12px;
   height: 12px;
   position: absolute;
-  top: 2px;
-  left: -20px;
+  top: 8px;
+  left: -21px;
   background-image: url(../img/cart.png);
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -134,15 +135,15 @@ li {
   width: 10px;
   height: 10px;
   position: absolute;
-  top: 4px;
-  left: -19px;
+  top: 10px;
+  left: -18px;
   background-image: url(../img/compare.png);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .enter-header {
-  margin-right: 236px;
+  margin-right: 234px;
   padding-left: 25px;
   position: relative;
 }
@@ -152,7 +153,7 @@ li {
   width: 13px;
   height: 12px;
   position: absolute;
-  top: 2px;
+  top: 8px;
   left: -26px;
   background-image: url(../img/user.png);
   background-repeat: no-repeat;
@@ -169,19 +170,19 @@ li {
 }
 
 .search-div {
-  margin-left: 58px;
+  margin-left: 63px;
   width: 460px;
   vertical-align: middle
 }
 
 .search-div input[type="search"] {
-  width: 356px;
+  width: 355px;
 }
 
 .search-div input[type="submit"] {
   width: 85px;
   height: 49px;
-  border: 1px solid #000000;
+  border: 2px solid #000000;
   padding: 0px;
   background-color: transparent;
   vertical-align: bottom;
@@ -190,7 +191,7 @@ li {
   font-weight: 300;
   letter-spacing: 0.15px;
   display: none;
-  top: -18px;
+  top: -17.5px;
   position: absolute;
   right: 12px;
 }
@@ -216,8 +217,12 @@ li {
   border: none;
   background-color: transparent;
   position: relative;
-  padding-left: 25px;
+  padding-left: 35px;
   outline: none;
+}
+
+.search::placeholder {
+  margin-left: 20px;
 }
 
 .input-search::before {
@@ -225,8 +230,7 @@ li {
   width: 16px;
   height: 16px;
   position: absolute;
-  top: 5px;
-  left: 5px;
+  top: 7px;
   background-image: url(../img/search.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -242,7 +246,7 @@ li {
 
 .search:focus {
   opacity: 1;
-  border-bottom: 1px solid #000000;
+  border-bottom: 2px solid #000000;
 }
 
 .input-search>.search:focus+.search-div-submit,
@@ -347,12 +351,12 @@ li {
 
 .catalog-menu {
   display: flex;
-  margin-top: 41px;
+  margin-top: 38px;
 }
 
 .catalog-menu-catalog {
   display: flex;
-  margin-top: 40px;
+  margin-top: 39px;
 }
 
 .catalog-wrap-a:hover div.catalog-wrap {
@@ -437,8 +441,8 @@ li {
   width: 90px;
   min-height: 12px;
   position: absolute;
-  top: 213px;
-  right: 128px;
+  top: 215px;
+  right: 71px;
 }
 
 .switch-slaider label {
@@ -452,11 +456,11 @@ li {
 .switch-slaider label:nth-child(1) {
   background-image: url(/img/slider-button.svg);
   background-repeat: no-repeat;
-  margin-right: 15px;
+  margin-right: 16px;
 }
 
 .switch-slaider label:nth-child(2) {
-  margin-right: 15px;
+  margin-right: 17px;
 }
 
 .slaider,
@@ -503,7 +507,7 @@ li {
 .slaider-img,
 .slaider-img2,
 .slaider-img3 {
-  width: 599px;
+  width: 600px;
 }
 
 .slaider-wrap {
@@ -607,7 +611,7 @@ li {
 }
 
 .slaider-a-div {
-  margin-top: 51px;
+  margin-top: 52px;
   padding-left: 46px;
   padding-right: 43px;
   position: relative;
@@ -639,7 +643,7 @@ li {
   top: 7px;
   z-index: -1;
   transition: 0.3s;
-  margin-left: -38px;
+  margin-left: -41px;
 }
 
 .slaider-a-div a:hover::before,
@@ -701,7 +705,7 @@ li {
 .slaider-ul2-div {
   display: flex;
   flex-direction: row;
-  margin-top: 9px;
+  margin-top: 7px;
   padding: 0;
   margin-bottom: 112px;
 }
@@ -843,7 +847,7 @@ li {
 }
 
 .common-div ul {
-  margin: -12px 0 0 144px;
+  margin: -12px 0 0 142px;
   padding: 0;
   z-index: 2;
 }
@@ -891,9 +895,11 @@ li {
   padding: 0;
   border: none;
   cursor: pointer;
+  position: relative;
 }
 
-.common-div-content {
+.common-div button::before {
+  content: "";
   position: absolute;
   width: 160px;
   height: 8px;
@@ -902,14 +908,15 @@ li {
   z-index: -1;
   outline: none;
   transition: 0.3s;
+  margin-left: -37px;
 }
 
-.common-div button:hover+.common-div-content {
+.common-div button:hover::before {
   height: 40px;
   top: -8px;
 }
 
-.common-div button:active+.common-div-content {
+.common-div button:active::before {
   width: 278px;
   height: 40px;
   background-color: #000000;
@@ -923,12 +930,28 @@ li {
   border: none;
 }
 
-.common-div-content.focus {
+.common-div .focus::before {
+  content: "";
+  position: absolute;
   width: 278px;
   height: 40px;
   background-color: #000000;
   top: -8px;
   outline: none;
+  margin-left: -16px;
+}
+
+.common-div .common-div-guarantee::before {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 8px;
+  background-color: #f0c52e;
+  top: 7px;
+  z-index: -1;
+  outline: none;
+  transition: 0.3s;
+  margin-left: -24px;
 }
 
 .focus {
@@ -941,7 +964,7 @@ li {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 121px;
+  padding-left: 118px;
   min-width: 1016px;
 }
 
@@ -965,7 +988,7 @@ li {
   font-weight: 400;
   line-height: 48px;
   letter-spacing: 1.21px;
-  margin: -28px 0 0 0;
+  margin: -27px 0 0 0;
 }
 
 .details-text1 p {
@@ -1005,9 +1028,9 @@ li {
 }
 
 .details-text1 img {
-  margin-left: 118px;
+  margin-left: 119px;
   position: absolute;
-  top: -16px;
+  top: -15px;
 }
 
 .details-text2 img {
@@ -1087,7 +1110,7 @@ li {
 .about1-div {
   position: relative;
   width: 462px;
-  margin-right: 137px;
+  margin-right: 139px;
 }
 
 .about2-div {
@@ -1118,7 +1141,7 @@ li {
   font-weight: 300;
   line-height: 30px;
   margin: 43px 0 0 -2px;
-  letter-spacing: -0.17px;
+  letter-spacing: -0.2px;
 }
 
 .p2-about {
@@ -1130,6 +1153,7 @@ li {
   margin: 30px 0 0 -2px;
   letter-spacing: -0.47px;
   height: 59px;
+  white-space: nowrap;
 }
 
 .about li {
@@ -1149,13 +1173,13 @@ li {
   position: absolute;
   top: 16px;
   left: -9px;
-  background-image: url(../img/slider-button.svg);
+  background-image: url(../img/button-ul.png);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .about ul {
-  margin: 66px 0 0 -30px;
+  margin: 67px 0 0 -30px;
 }
 
 .about a {
@@ -1169,7 +1193,7 @@ li {
 
 .map {
   margin-top: 38px;
-  margin-bottom: 8px;
+  margin-bottom: 9px;
 }
 
 .about1-div a {
@@ -1198,7 +1222,7 @@ li {
 .about2-div div {
   position: relative;
   margin-bottom: 20px;
-  margin-top: 66px;
+  margin-top: 63px;
 }
 
 .modal-open::before {
@@ -1207,7 +1231,7 @@ li {
   width: 260px;
   height: 8px;
   background-color: #f0c52e;
-  top: 5px;
+  top: 7px;
   z-index: -1;
   transition: 0.3s;
   left: -41px;
@@ -1259,7 +1283,7 @@ li {
 
 .footer1-div {
   display: flex;
-  margin-top: 53px;
+  margin-top: 54px;
   align-items: center;
   width: 100%;
   justify-content: flex-start;
@@ -1300,7 +1324,7 @@ li {
 }
 
 .footer1-div li:nth-child(3) {
-  margin-right: 138px;
+  margin-right: 137px;
   position: relative;
 }
 
@@ -1362,7 +1386,7 @@ li {
 .footer2-div ul {
   display: flex;
   flex-wrap: wrap;
-  margin: 6px 0 0 -2px;
+  margin: 8px 0 0 -2px;
   width: 594px;
   justify-content: flex-end;
 }
@@ -1413,7 +1437,7 @@ li {
   height: 7px;
   background-color: #ffc600;
   border: 0;
-  margin: 0 0 0 140px;
+  margin: -6px 0 0 140px;
 }
 
 .footer3-div ul {
@@ -1796,11 +1820,11 @@ li {
 }
 
 .act.catalog-ul li:nth-child(1) {
-  margin-right: -2px;
+  margin-right: -3px;
 }
 
 .act.catalog-ul li:nth-child(2) {
-  margin-right: 27px;
+  margin-right: 24px;
 }
 
 .act.catalog-ul li:nth-child(3) {
@@ -1822,7 +1846,7 @@ li {
   width: 13px;
   height: 12px;
   position: absolute;
-  top: 2px;
+  top: 8px;
   left: -24px;
   background-image: url(../img/user.png);
   background-repeat: no-repeat;
@@ -2117,7 +2141,7 @@ li {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.18px;
-  margin-top: 13px;
+  margin-top: 11px;
   margin-bottom: 17px;
 }
 
@@ -2140,7 +2164,6 @@ li {
 
 .wrap-button {
   position: relative;
-  margin-top: 32px;
 }
 
 .color button::before {
@@ -2327,13 +2350,26 @@ li {
   margin-left: 231px;
 }
 
+.sort .a-opacity::before {
+  opacity: 0.2;
+}
+
+.sort .a-opacity:hover::before,
+.a-opacity-two.selected:hover::before {
+  opacity: 0.4;
+}
+
+.sort .a-opacity:active::before,
+.a-opacity-two.selected:active::before {
+  opacity: 1;
+}
+
 .a-opacity:before {
   content: "";
   background-image: url(../img/catalog/icon-up-dir.svg);
   background-repeat: no-repeat;
   width: 11px;
   height: 10px;
-  opacity: 0.2;
   position: absolute;
   top: -5px;
 }
@@ -2353,7 +2389,8 @@ li {
   width: 11px;
   height: 10px;
   position: absolute;
-  top: -5px;
+  top: -4px;
+  left: 12px;
 }
 
 .a-opacity:active::before,
@@ -2594,7 +2631,7 @@ li {
   outline: none;
   cursor: pointer;
   text-align: center;
-  padding-top: 22px;
+  padding-top: 23px;
 }
 
 .pages li:nth-child(1) a:hover,
@@ -2627,22 +2664,22 @@ li {
 }
 
 .pages li:nth-child(2) {
-  margin-left: 201px;
+  margin-left: 207px;
   margin-top: 23px;
 }
 
 .pages li:nth-child(3) {
-  margin-left: 15px;
-  margin-top: 23px;
+  margin-left: 28px;
+  margin-top: 24px;
 }
 
 .pages li:nth-child(4) {
-  margin-left: 16px;
-  margin-top: 23px;
+  margin-left: 29px;
+  margin-top: 24px;
 }
 
 .pages li:nth-child(5) {
-  margin-left: 232px;
+  margin-left: 202px;
 }
 
 .disable {
@@ -2668,7 +2705,7 @@ li {
 }
 
 .footer1-div-catalog img {
-  margin-left: 156px;
+  margin-left: 159px;
 }
 
 .footer1-div-catalog li {
@@ -2693,7 +2730,7 @@ li {
   height: 12px;
   position: absolute;
   top: 11px;
-  left: 4px;
+  left: 3px;
   background-image: url(../img/cart_n.png);
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -2723,7 +2760,7 @@ li {
 }
 
 .footer1-div-catalog li:nth-child(1) {
-  margin-right: 15px;
+  margin-right: 16px;
   padding-left: 22px;
   position: relative;
 }
@@ -2734,7 +2771,7 @@ li {
   height: 12px;
   position: absolute;
   top: 12px;
-  left: -1px;
+  left: -3px;
   background-image: url(../img/user_n.png);
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -2793,7 +2830,7 @@ li {
 }
 
 .footer2-div-catalog li:nth-child(3) {
-  margin-right: 3px;
+  margin-right: 1px;
 }
 
 .phone-div-catalog {
