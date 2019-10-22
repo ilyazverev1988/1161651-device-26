@@ -450,11 +450,11 @@ li {
   vertical-align: baseline;
   width: 12px;
   height: 12px;
-  background-image: url(/img/slider-button-empty.svg);
+  background-image: url(../img/slider-button-empty.svg);
 }
 
 .switch-slaider label:nth-child(1) {
-  background-image: url(/img/slider-button.svg);
+  background-image: url(../img/slider-button.svg);
   background-repeat: no-repeat;
   margin-right: 16px;
 }
@@ -917,7 +917,7 @@ li {
 }
 
 .common-div button:active::before {
-  width: 278px;
+  width: 281px;
   height: 40px;
   background-color: #000000;
   top: -8px;
