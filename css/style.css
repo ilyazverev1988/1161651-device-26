@@ -443,6 +443,7 @@ li {
   position: absolute;
   top: 215px;
   right: 71px;
+  z-index: 2;
 }
 
 .switch-slaider label {
@@ -450,11 +451,18 @@ li {
   vertical-align: baseline;
   width: 12px;
   height: 12px;
-  background-image: url(../img/slider-button-empty.svg);
+  border: 1px solid #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.promo-btn-1:checked~.switch-slaider>label[for="promo-btn-1"],
+.promo-btn-2:checked~.switch-slaider>label[for="promo-btn-2"],
+.promo-btn-3:checked~.switch-slaider>label[for="promo-btn-3"] {
+  box-shadow: inset 0 0 0 3px #fff, inset 0 0 0 4px #000;
 }
 
 .switch-slaider label:nth-child(1) {
-  background-image: url(../img/slider-button.svg);
   background-repeat: no-repeat;
   margin-right: 16px;
 }
@@ -746,6 +754,12 @@ li {
   margin-right: 0px;
 }
 
+.gadget-section {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1162px;
+}
+
 .gadget {
   display: flex;
   position: relative;
@@ -753,7 +767,7 @@ li {
   min-height: 422px;
   margin-left: auto;
   margin-right: auto;
-  width: 1160px;
+  width: 1200px;
   align-items: flex-start;
   margin-top: -8px;
 }
@@ -763,6 +777,7 @@ li {
   flex-direction: row;
   padding: 0;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 .gadget li {
@@ -773,7 +788,8 @@ li {
   line-height: 24px;
   letter-spacing: 0.18px;
   margin-right: 40px;
-  min-width: 160px;
+  width: 160px;
+  margin-bottom: 104px;
 }
 
 .gadget img {
@@ -847,7 +863,7 @@ li {
 }
 
 .common-div ul {
-  margin: -12px 0 0 142px;
+  margin: -12px 0 0 157px;
   padding: 0;
   z-index: 2;
 }
@@ -871,6 +887,11 @@ li {
 
 .common-div li:nth-child(2) {
   margin-bottom: 43px;
+  margin-left: 5px;
+}
+
+.common-div li:nth-child(3) {
+  margin-left: 20px;
 }
 
 .strip-common {
@@ -883,7 +904,7 @@ li {
   border: 0;
 }
 
-.common-div button {
+.common-div a {
   width: 160px;
   font-family: "Gilroy - Extra Bold", "Arial", sans-serif;
   font-size: 18px;
@@ -898,7 +919,7 @@ li {
   position: relative;
 }
 
-.common-div button::before {
+.common-div a::before {
   content: "";
   position: absolute;
   width: 160px;
@@ -911,12 +932,12 @@ li {
   margin-left: -37px;
 }
 
-.common-div button:hover::before {
+.common-div a:hover::before {
   height: 40px;
   top: -8px;
 }
 
-.common-div button:active::before {
+.common-div a:active::before {
   width: 281px;
   height: 40px;
   background-color: #000000;
@@ -924,7 +945,7 @@ li {
   outline: none;
 }
 
-.common-div button:active {
+.common-div a:active {
   color: #f7e184;
   outline: none;
   border: none;
@@ -1058,6 +1079,7 @@ li {
   display: flex;
   margin: 0 auto;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .manufacturers-div li {
@@ -1428,8 +1450,9 @@ li {
   flex-direction: row;
   margin: 62px 0 0 0;
   padding: 0;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
+  min-width: 1160px;
 }
 
 .strip-footer {
@@ -1437,7 +1460,7 @@ li {
   height: 7px;
   background-color: #ffc600;
   border: 0;
-  margin: -6px 0 0 140px;
+  margin: -4px 0 0 136px;
 }
 
 .footer3-div ul {
@@ -1450,8 +1473,8 @@ li {
   align-items: center;
 }
 
-.socialnetwork.facebook-div {
-  margin-left: 428px;
+.socialnetwork-div {
+  margin-right: 52px;
 }
 
 .socialnetwork.instagram-div {
@@ -1459,11 +1482,11 @@ li {
 }
 
 .socialnetwork.tviter-div {
-  margin-left: 22px;
+  margin-left: 16px;
 }
 
 .socialnetwork.htmlacademy-div {
-  margin-left: 483px;
+  margin-right: 141px;
 }
 
 .adress a {
@@ -2053,7 +2076,6 @@ li {
   user-select: none;
 }
 
-
 .filter-input-checkbox+label::before {
   content: "";
   position: absolute;
@@ -2303,6 +2325,8 @@ li {
   background-color: transparent;
   padding: 0;
   white-space: nowrap;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .sort a:hover,
@@ -2518,7 +2542,8 @@ li {
   z-index: 2;
 }
 
-.in-basket-strip {
+.in-basket button::before {
+  content: "";
   position: absolute;
   width: 200px;
   height: 8px;
@@ -2526,10 +2551,11 @@ li {
   left: -36px;
   top: 8px;
   transition: 0.3s;
+  z-index: -1;
 }
 
-.in-basket button:hover+.in-basket-strip,
-.in-basket button:hover+.in-basket-strip {
+.in-basket button:hover::before,
+.in-basket button:focus::before {
   height: 40px;
   top: -10px;
 }
